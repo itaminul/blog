@@ -25,6 +25,7 @@ import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
+ import AddHomeIcon from '@mui/icons-material/AddHome';
 
 const drawerWidth = 240;
 
@@ -135,43 +136,18 @@ const SideBar = () => {
           <Divider />
           <List>
               <ListItem disablePadding sx={{ display: 'block' }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? 'initial' : 'center',
-                    px: 2.5,
-                  }}
-                >
-                     <InboxIcon />
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : 'auto',
-                      justifyContent: 'center',
-                    }}
-                  >
-                 <Link to="/">Home</Link>
-                 
-                  </ListItemIcon>
+                <ListItemButton>                    
+                <ListItemIcon>
+                        <AddHomeIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="abc" />
                   <ListItemText sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding sx={{ display: 'block' }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? 'initial' : 'center',
-                    px: 2.5,
-                  }}
-                >
+                <ListItemButton>
                      <InboxIcon />
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : 'auto',
-                      justifyContent: 'center',
-                    }}
-                  >
+                  <ListItemIcon>
                  <Link to="/aboutus">About Us</Link>
                  
                   </ListItemIcon>
