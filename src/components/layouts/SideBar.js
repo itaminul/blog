@@ -140,17 +140,16 @@ const SideBar = () => {
                 <ListItemIcon>
                         <AddHomeIcon />
                     </ListItemIcon>
-                    <ListItemText primary="abc" />
+                  <Link to="/">  <ListItemText primary="Home" /></Link>
                   <ListItemText sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding sx={{ display: 'block' }}>
-                <ListItemButton>
-                     <InboxIcon />
-                  <ListItemIcon>
-                 <Link to="/aboutus">About Us</Link>
-                 
-                  </ListItemIcon>
+              <ListItemButton>                    
+                <ListItemIcon>
+                        <AddHomeIcon />
+                    </ListItemIcon>
+                  <Link to="/aboutus">  <ListItemText primary="About Us" /></Link>
                   <ListItemText sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
@@ -170,7 +169,9 @@ const SideBar = () => {
                           <ListItemIcon>
                               <StarBorder />
                           </ListItemIcon>
+                          <Link to="/batch">
                           <ListItemText primary="Batch" />
+                          </Link>
                       </ListItemButton>
                     </List>
               </Collapse>
