@@ -123,8 +123,7 @@ const SideBar = () => {
             </IconButton>
             <Typography variant="h6" noWrap component="div">
               Home
-            </Typography>
-            
+            </Typography>            
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
@@ -136,49 +135,42 @@ const SideBar = () => {
           <Divider />
           <List>
               <ListItem disablePadding sx={{ display: 'block' }}>
-                <ListItemButton>                    
+                <ListItemButton component={Link} to="/aboutus">                    
                 <ListItemIcon>
                         <AddHomeIcon />
                     </ListItemIcon>
-                  <Link to="/">  <ListItemText primary="Home" /></Link>
+                    <ListItemText primary="Home" />
                   <ListItemText sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding sx={{ display: 'block' }}>
-              <ListItemButton>                    
+              <ListItemButton component={Link} to="/aboutus">                    
                 <ListItemIcon>
                         <AddHomeIcon />
                     </ListItemIcon>
-                  <Link to="/aboutus">  <ListItemText primary="About Us" /></Link>
+                   <ListItemText primary="About Us" />
                   <ListItemText sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-
               <ListItemButton onClick={handleClick}>
                     <ListItemIcon>
                         <InboxIcon />
-
                     </ListItemIcon>
                     <ListItemText primary="Setup" />
                    {dropdownOpen ?  <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-
               <Collapse in={dropdownOpen} timeout="auto" unmountOnExit>
                     <List component="div" disabblePadding>
-                      <ListItemButton>
+                      <ListItemButton component={Link} to="/batch">
                           <ListItemIcon>
                               <StarBorder />
                           </ListItemIcon>
-                          <Link to="/batch">
                           <ListItemText primary="Batch" />
-                          </Link>
                       </ListItemButton>
                     </List>
-              </Collapse>
-            
+              </Collapse>            
           </List>
-          <Divider />
-          
+          <Divider />          
         </Drawer>
       </Box>
     );
