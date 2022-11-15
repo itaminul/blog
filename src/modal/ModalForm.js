@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import  React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -16,7 +17,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
+export default function BasicModal(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -32,6 +33,7 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
+            {props.showId}
             Text in a modal
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>

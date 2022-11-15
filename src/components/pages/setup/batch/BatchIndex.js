@@ -282,6 +282,8 @@ function Table({ columns, data }) {
     previousPage,
     setPageSize,
     state: { pageIndex, pageSize },
+    selectedFlatRows,
+    state: { selectedRowIds }
   } = useTable({
     columns,
     data,
@@ -293,6 +295,47 @@ function Table({ columns, data }) {
   useGlobalFilter,
   usePagination,
   useRowSelect,
+  hooks => {
+    hooks.visibleColumns.push(columns => [
+      // Let's make a column for selection
+      {
+        id: 'selection',
+        // The header can use the table's getToggleAllRowsSelectedProps method
+        // to render a checkbox
+        Header: ({ getToggleAllRowsSelectedProps }) => (
+          <div>
+            <IndeterminateCheckbox {...getToggleAllRowsSelectedProps()} />
+                       
+          </div>
+        ),
+        // The cell can use the individual row's getToggleRowSelectedProps method
+        // to the render a checkbox
+        Cell: ({ row }) => (
+          <div>
+            <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
+          </div>
+        ),
+      },
+      ...columns,
+    ])
+  }
+    )
+
+    const IndeterminateCheckbox = React.forwardRef(
+      ({ indeterminate, ...rest }, ref) => {
+        const defaultRef = React.useRef()
+        const resolvedRef = ref || defaultRef
+    
+        React.useEffect(() => {
+          resolvedRef.current.indeterminate = indeterminate
+        }, [resolvedRef, indeterminate])
+    
+        return (
+          <>
+            <input type="checkbox" ref={resolvedRef} {...rest} />
+          </>
+        )
+      }
     )
 
   //const firstPageRows = rows.slice(0, 20)
@@ -355,6 +398,21 @@ filterGreaterThan.autoRemove = val => typeof val !== 'number'
           })}
         </tbody>
       </table>
+      <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
+      <pre>
+        <code>
+          {JSON.stringify(
+            {
+              selectedRowIds: selectedRowIds,
+              'selectedFlatRows[].original': selectedFlatRows.map(
+                d => d.original
+              ),
+            },
+            null,
+            2
+          )}
+        </code>
+      </pre>
       <div className="pagination">
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
@@ -426,11 +484,10 @@ const BatchIndex = () => {
       });
     }, [])
 
-    
+    const [show, setShow] = useState(false)
 
-    const handleEdit = () => {
-      <BasicModal />
-
+    const handleShowModal = () => {
+    setShow(true)
     }
 
     const columns = useMemo(
@@ -454,6 +511,8 @@ const BatchIndex = () => {
           Cell: page => (
             <div>
               <button onClick={e=> handleEdit(page.page.original)}>Edit</button>
+              <button onClick={handleShowModal}>Modal</button>
+              <BasicModal showId={5}></BasicModal>
 
             </div>
           )
