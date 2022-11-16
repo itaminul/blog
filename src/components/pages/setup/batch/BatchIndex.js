@@ -1,11 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import BasicModal from '../../../../modal/ModalForm'
 import SideBar from '../../../layouts/SideBar'
+import Breadcrumb from '../../../../breadcrumb/Breadcrumb'
 // import  Table  from './Table'
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { useTable, usePagination, useRowSelect,useFilters, useGlobalFilter, useAsyncDebounce  } from 'react-table'
-
+import  {EditBatch} from './EditBatch'
 const Styles = styled.div`
 /* This is required to make the table full-width */
 display: block;
@@ -19,9 +20,9 @@ max-width: 100%;
   border-bottom: 1px solid black;
 }
 table {
-  /* Make sure the inner table is always as wide as needed */
   width: 100%;
   border-spacing: 0;
+  border: 1px solid black;
   tr {
     :last-child {
       td {
@@ -35,13 +36,6 @@ table {
     padding: 0.5rem;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    /* The secret sauce */
-    /* Each cell should grow equally */
-    width: 1%;
-    /* But "collapsed" cells should be as small as possible */
-    &.collapse {
-      width: 0.0000000001%;
-    }
     :last-child {
       border-right: 0;
     }
@@ -294,49 +288,9 @@ function Table({ columns, data }) {
    useFilters,
   useGlobalFilter,
   usePagination,
-  useRowSelect,
-  hooks => {
-    hooks.visibleColumns.push(columns => [
-      // Let's make a column for selection
-      {
-        id: 'selection',
-        // The header can use the table's getToggleAllRowsSelectedProps method
-        // to render a checkbox
-        Header: ({ getToggleAllRowsSelectedProps }) => (
-          <div>
-            <IndeterminateCheckbox {...getToggleAllRowsSelectedProps()} />
-                       
-          </div>
-        ),
-        // The cell can use the individual row's getToggleRowSelectedProps method
-        // to the render a checkbox
-        Cell: ({ row }) => (
-          <div>
-            <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
-          </div>
-        ),
-      },
-      ...columns,
-    ])
-  }
+  useRowSelect
     )
 
-    const IndeterminateCheckbox = React.forwardRef(
-      ({ indeterminate, ...rest }, ref) => {
-        const defaultRef = React.useRef()
-        const resolvedRef = ref || defaultRef
-    
-        React.useEffect(() => {
-          resolvedRef.current.indeterminate = indeterminate
-        }, [resolvedRef, indeterminate])
-    
-        return (
-          <>
-            <input type="checkbox" ref={resolvedRef} {...rest} />
-          </>
-        )
-      }
-    )
 
   //const firstPageRows = rows.slice(0, 20)
 
@@ -399,20 +353,7 @@ filterGreaterThan.autoRemove = val => typeof val !== 'number'
         </tbody>
       </table>
       <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
-      <pre>
-        <code>
-          {JSON.stringify(
-            {
-              selectedRowIds: selectedRowIds,
-              'selectedFlatRows[].original': selectedFlatRows.map(
-                d => d.original
-              ),
-            },
-            null,
-            2
-          )}
-        </code>
-      </pre>
+      
       <div className="pagination">
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
@@ -484,12 +425,7 @@ const BatchIndex = () => {
       });
     }, [])
 
-    const [show, setShow] = useState(false)
-
-    const handleShowModal = () => {
-    setShow(true)
-    }
-
+    
     const columns = useMemo(
       () => [
         {
@@ -508,11 +444,10 @@ const BatchIndex = () => {
         {
           Header: 'Action',
           accessor: 'action',
-          Cell: page => (
+          Cell:( { row }) => (
             <div>
-              <button onClick={e=> handleEdit(page.page.original)}>Edit</button>
-              <button onClick={handleShowModal}>Modal</button>
-              <BasicModal showId={5}></BasicModal>
+
+              <BasicModal title="Edit Batch" dynData={<EditBatch />} showId={row.id} />
 
             </div>
           )
@@ -524,6 +459,7 @@ const BatchIndex = () => {
     <div style={open == true ? {marginTop: "100px", marginLeft: "270px"} : {marginTop: "100px", marginLeft: "76px"}}>
         <SideBar />     
         <div>
+          <Breadcrumb />
             <Table columns={columns} data={data} />
           
           </div>
