@@ -5,9 +5,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import EditIcon from '@mui/icons-material/Edit';
-const style = {
+import AddIcon from '@mui/icons-material/Add';
+const styleM = {
   position: 'absolute',
-  top: '24%',
+  top: '20%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 600,
@@ -25,7 +26,18 @@ export default function BasicModal(props) {
   return (
     <div>
       <Button onClick={handleOpen}>
-        <EditIcon />
+        {props.btnType == 'create' ?
+         (<div>  
+          <AddIcon          
+           style={{background: 'black', height: '38px',
+            color: 'white', width: '50px', marginTop: '-20px',position: 'fixed',}}
+            />
+            </div>) 
+        :props.btnType == 'edit' ?  
+        (<div>  <EditIcon /> </div>)        
+        :('default')
+        }
+      
       </Button>
       <Modal
         open={open}
@@ -33,7 +45,7 @@ export default function BasicModal(props) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={styleM}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* {props.showId} */}
            {props.title}

@@ -105,9 +105,9 @@ const SideBar = () => {
     }
   
     return (
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex',  }}>
         <CssBaseline />
-        <AppBar position="fixed" open={open}>
+        <AppBar position="fixed" sx={{background: 'black'}} open={open}>
           <Toolbar>
             <IconButton
               color="inherit"

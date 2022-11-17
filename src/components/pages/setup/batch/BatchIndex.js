@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { useTable, usePagination, useRowSelect,useFilters, useGlobalFilter, useAsyncDebounce  } from 'react-table'
 import  {EditBatch} from './EditBatch'
+import BatchCreate from './BatchCreate'
 const Styles = styled.div`
 /* This is required to make the table full-width */
 display: block;
@@ -447,7 +448,13 @@ const BatchIndex = () => {
           Cell:( { row }) => (
             <div>
 
-              <BasicModal title="Edit Batch" dynData={<EditBatch />} showId={row.id} />
+              <BasicModal 
+              title="Edit Batch" 
+              btnType="edit"
+              dynData={<EditBatch  />} 
+              showId={row.id}
+              
+              />
 
             </div>
           )
@@ -459,7 +466,17 @@ const BatchIndex = () => {
     <div style={open == true ? {marginTop: "100px", marginLeft: "270px"} : {marginTop: "100px", marginLeft: "76px"}}>
         <SideBar />     
         <div>
-          <Breadcrumb />
+          <div>
+          <Breadcrumb
+          titleType="Setup"
+          title="Batch"
+          modalForm={ <BasicModal
+          title="Create Batch" 
+          btnType="create" 
+          dynData={ <BatchCreate  />} 
+          /> } 
+          />
+          </div>
             <Table columns={columns} data={data} />
           
           </div>
