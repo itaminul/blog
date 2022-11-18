@@ -27,6 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 const breacrambStyle = {
   border: '2px solid black',
+  borderRadius: '5px',
   color: 'black',
   marginTop: '-10px',
   marginLeft: '10px',
@@ -36,12 +37,12 @@ const featuresStyle = {
   width: '250px',
   marginLeft: '1030px',
   marginTop: '2px',
-  border: '2px solid black',
+  border: '3px solid blue',
   textAlign: 'center',
   color: 'black',
   borderRadius: '10px',
   padding: '5px 15px 10px 15px',
-  borderBottomRightRadius: '50px',
+  borderBottomRightRadius: '40px',
 }
 const Breadcrumb = (props) => {
   const [openb, setOpenb] = React.useState(false);
@@ -60,8 +61,8 @@ const Breadcrumb = (props) => {
   }
      return (
     <div role="presentation">
-    <Box sx={{ flexGrow: 1 }}>
-      <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
+    <Box sx={{ flexGrow: 1 }} >
+      <Popper open={open} anchorEl={anchorEl}  placement={placement} transition>
        
         {({ TransitionProps }) => (
           <Fade {...TransitionProps} timeout={350}>
@@ -245,7 +246,7 @@ const Breadcrumb = (props) => {
       </Breadcrumbs>
         </Grid>
         <Grid xs={1}>
-        <Button style={{marginTop: '-8px', marginLeft: '9px', background: 'black', color: 'white'}} onClick={handleClick('bottom')}>Features</Button>
+        <Button style={{marginTop: '-8px', marginLeft: '-20px', background: 'black', color: 'white', position: 'fixed'}} onClick={handleClick('bottom')}>Features</Button>
         </Grid>
         <Grid xs={1}>
         {props.modalForm}

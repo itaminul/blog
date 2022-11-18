@@ -30,14 +30,13 @@ export default function BasicModal(props) {
          (<div>  
           <AddIcon          
            style={{background: 'black', height: '38px',
-            color: 'white', width: '50px', marginTop: '-20px',position: 'fixed',}}
+            color: 'white', width: '50px', marginTop: '-22px',position: 'fixed',}}
             />
             </div>) 
         :props.btnType == 'edit' ?  
         (<div>  <EditIcon /> </div>)        
         :('default')
-        }
-      
+        }      
       </Button>
       <Modal
         open={open}

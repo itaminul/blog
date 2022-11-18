@@ -37,6 +37,7 @@ table {
     padding: 0.5rem;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+    white-space: nowrap;
     :last-child {
       border-right: 0;
     }
@@ -463,7 +464,7 @@ const BatchIndex = () => {
       []
     )
   return (
-    <div style={open == true ? {marginTop: "100px", marginLeft: "270px"} : {marginTop: "100px", marginLeft: "76px"}}>
+    <div style={open == true ? {marginTop: "100px", marginLeft: "250px"} : {marginTop: "100px", marginLeft: "76px"}}>
         <SideBar />     
         <div>
           <div>
