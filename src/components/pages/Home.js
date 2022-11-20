@@ -9,6 +9,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { TableCell } from '@mui/material';
+import TopBar from '../layouts/TopBar'
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -23,7 +24,7 @@ function Home(){
     <>
   
       <nav>
-       <SideBar />
+       <TopBar />
       </nav>
       <main>
       <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>

@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { handleDrawerOpen, handleDrawerClose } from '../../features/sidebar/sidebarSlice'
+import {  handleDrawerClose } from '../../features/sidebar/sidebarSlice'
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
+
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
@@ -26,7 +26,9 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
  import AddHomeIcon from '@mui/icons-material/AddHome';
+import { MenuItem } from '@mui/material';
 
+import Appbar from './TopBar';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -107,25 +109,7 @@ const SideBar = () => {
     return (
       <Box sx={{ display: 'flex',  }}>
         <CssBaseline />
-        <AppBar position="fixed" sx={{background: 'black'}} open={open}>
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={() => dispatch(handleDrawerOpen())}
-              edge="start"
-              sx={{
-                marginRight: 5,
-                ...(open && { display: 'none' }),
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" noWrap component="div">
-              Home
-            </Typography>            
-          </Toolbar>
-        </AppBar>
+        {/* <Appbar /> */}
         <Drawer variant="permanent" open={open}>
           <DrawerHeader>
             <IconButton onClick={() => dispatch(handleDrawerClose())}>
