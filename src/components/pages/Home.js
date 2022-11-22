@@ -10,7 +10,19 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { TableCell } from '@mui/material';
 import TopBar from '../layouts/TopBar'
-import {Wrapper, ImageContainer, SelfSummary, Section } from './Home.styled';
+import {
+  Wrapper,
+   ImageContainer,
+   SelfSummary, 
+   Section,
+   Title,
+   SubTitle,
+   TitleSummary,
+   ExperienceButtonSection,
+   ExperienceButtonTitle,
+   MarginTop,
+   HireMe
+   } from './Home.styled';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -32,12 +44,74 @@ function Home(){
         <Wrapper>
           <Section>
           <ImageContainer>
-             ddddddddddddd
+             Photo
           </ImageContainer> 
           <SelfSummary>
-             ddddddddddddd
-          </SelfSummary>   
+             <Title>
+                Aminul Huq
+                <SubTitle>
+                Senior Web Developer in ATI Limited, Uttar, Dhaka since November 15, 2014
+                </SubTitle>
+             </Title>
+             <TitleSummary>
+             Since 2011, Emily has been working in UI/UX, mobile, and product design leading projects for clients including Samsung, YETI, Toronto Star, Thomson Reuters, SmartThings, Pizza Hut, a blockchain company, and more. Emily also has experience in project management and leading design teams and she enjoys working closely with engineers to deliver intuitive user experiences. All in all, Emily is a collaborative team member and a positive thinker.
+             </TitleSummary>
+             <MarginTop />
+             <ExperienceButtonSection>
+               <ExperienceButtonTitle>
+                  JavaScript
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  ReactJs
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  NodeJs
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  ExpressJs
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  MySql
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Oracle
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  MongoDb
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  PostGrl
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Jquery
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  PHP
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Laravel
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Codeigniter
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  API
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Bootstrap
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  StyledComponent
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  MUI
+                </ExperienceButtonTitle>
+          </ExperienceButtonSection>
+          </SelfSummary>  
           </Section>       
+        </Wrapper>
+        <Wrapper>
+        <HireMe>Hire me ddddddddddddddddddddd</HireMe>
         </Wrapper>
       {/* <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>
       <Grid container spacing={3}>

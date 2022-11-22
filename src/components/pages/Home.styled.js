@@ -2,34 +2,99 @@ import styled from "styled-components"
  export const Wrapper = styled.section`
 padding-top: 84px;
 background: papayawhip;
-
+display: flex;
 `
 
 export const Section = styled.div`
-box-sizing: border-box;
-  border: 1px solid blue;
   width: 100%;
   float: left;`
+  
 
 export const ImageContainer = styled.div`
+display: flex;
 width: 28%;
 height: 260px;
-border: 1px solid black;
+border: 0px solid black;
 padding-top: 10%;
 margin-left:2%;
 background: #d9d9d9;
 border-bottom-right-radius: 25%;
 float: left;
+@media (min-width: 1024px) {
+  font-size: 1.5rem;
+}
 `
-
-
 export const SelfSummary = styled.div`
-width: 28%;
+width: 66%;
 height: 260px;
-border: 1px solid black;
+border: 0px solid black;
 padding-top: 10%;
 margin-left:2%;
 background: #d9d9d9;
-border-bottom-right-radius: 80px 80px;
 float: right;
+@media (min-width: 1024px) {
+  font-size: 1.5rem;
+}
+`
+
+export const Title = styled.div`
+font-size: 25px;
+text-align: left;
+margin-top: -12%;
+padding: 0 0px 0px 0px;
+`
+
+export const SubTitle = styled.div`
+font-size: 15px;
+text-align: left;
+margin-top: 2%;
+`
+
+
+export const TitleSummary = styled.div`
+font-size: 15px;
+text-align: left;
+margin-top: 2%;
+`
+export const MarginTop = styled.div`
+  margin-top: 13%;
+  `
+
+  export const ExperienceButtonSection = styled.div `
+  border: 2px solid white;
+  `
+export const ExperienceButtonTitle = styled.div`
+  margin-left: 0%;
+  margin-top: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  &:hover {
+    background-color: #105b72c2;
+  }
+`
+export const HireMe = styled.div`
+border: 3px solid black;
+background: blue;
+width: 100%;
+height: 70px;
+@media (min-width: 1024px) {
+  font-size: 1.5rem;
+}
 `
