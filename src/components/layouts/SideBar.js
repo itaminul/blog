@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import {  handleDrawerClose } from '../../features/sidebar/sidebarSlice'
+import {  handleDrawerOpen, handleDrawerClose } from '../../features/sidebar/sidebarSlice'
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
@@ -26,9 +26,8 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
  import AddHomeIcon from '@mui/icons-material/AddHome';
-import { MenuItem } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
-import Appbar from './TopBar';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -115,9 +114,31 @@ const SideBar = () => {
             <IconButton onClick={() => dispatch(handleDrawerClose())}>
               {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </IconButton>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={() => dispatch(handleDrawerOpen())}
+              edge="start"
+              sx={{
+                marginRight: 0,
+                ...(open && { display: 'none' }),
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
           </DrawerHeader>
           <Divider />
           <List>
+
+          <ListItem disablePadding sx={{ display: 'block' }}>
+                <ListItemButton component={Link} to="/">                    
+                <ListItemIcon>
+                        <AddHomeIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Profile" />
+                  <ListItemText sx={{ opacity: open ? 1 : 0 }} />
+                </ListItemButton>
+              </ListItem>
               <ListItem disablePadding sx={{ display: 'block' }}>
                 <ListItemButton component={Link} to="/aboutus">                    
                 <ListItemIcon>

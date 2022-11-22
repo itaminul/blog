@@ -10,6 +10,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { TableCell } from '@mui/material';
 import TopBar from '../layouts/TopBar'
+import {Wrapper, ImageContainer, SelfSummary, Section } from './Home.styled';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -27,7 +29,17 @@ function Home(){
        <TopBar />
       </nav>
       <main>
-      <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>
+        <Wrapper>
+          <Section>
+          <ImageContainer>
+             ddddddddddddd
+          </ImageContainer> 
+          <SelfSummary>
+             ddddddddddddd
+          </SelfSummary>   
+          </Section>       
+        </Wrapper>
+      {/* <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
           <div className='grid-elements'>
@@ -46,7 +58,7 @@ function Home(){
           </div>
         </Grid>
       </Grid>
-    </Box>
+    </Box> */}
       </main>
     </>
  
