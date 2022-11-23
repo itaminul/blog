@@ -21,7 +21,14 @@ import {
    ExperienceButtonSection,
    ExperienceButtonTitle,
    MarginTop,
-   HireMe
+   HireMe,
+   WrapperSlogan,
+   PortFoleo,
+   PortTitle,
+   PortTitleDes,
+   ExperienceTitle,
+   ExperienceYears,
+   ExperienceTitleButton
    } from './Home.styled';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -106,13 +113,88 @@ function Home(){
                 <ExperienceButtonTitle>
                   MUI
                 </ExperienceButtonTitle>
+                <HireMe>Hire me ddddddddddddddddddddd</HireMe>
           </ExperienceButtonSection>
+          
           </SelfSummary>  
-          </Section>       
+        
+          </Section>    
         </Wrapper>
-        <Wrapper>
-        <HireMe>Hire me ddddddddddddddddddddd</HireMe>
-        </Wrapper>
+
+        <WrapperSlogan>
+          
+          <Section>            
+          <PortFoleo>
+             <PortTitle>
+             Portfolio
+             <PortTitleDes>
+              
+             The Ticketing Co.
+ESLint, Jest, PostgreSQL, Prisma, Express.js, GraphQL, React, TypeScript
+Pentius
+ESLint, Jest, Babel, Webpack, Lerna, Storybook, TypeScript, LitElement
+Agility
+Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
+
+             </PortTitleDes>
+             </PortTitle>
+          </PortFoleo> 
+          <PortFoleo>
+          <PortTitle>
+          Experience
+            <ExperienceTitle>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+                PHP
+              </ExperienceTitleButton>
+
+            </ExperienceTitle>
+            <ExperienceYears>
+              s
+
+            </ExperienceYears>
+             </PortTitle>
+          </PortFoleo> 
+          <PortFoleo>
+          <PortTitle>
+          Location
+             </PortTitle>
+          </PortFoleo> 
+        
+          </Section>    
+        </WrapperSlogan>
       {/* <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
