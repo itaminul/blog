@@ -91,11 +91,11 @@ export const ExperienceButtonTitle = styled.div`
   }
 `
 export const HireMe = styled.div`
-border: 3px solid black;
-background: blue;
+border: 0px solid black;
+background: #c2d6d6;
 width: 100%;
 margin-top: 5%;
-height: 70px;
+height: 50px;
 @media (min-width: 1024px) {
   font-size: 1.5rem;
 }
@@ -107,26 +107,21 @@ background: papayawhip;
 `
 
 
+
 export const PortFoleo = styled.div`
 width: 30%;
 height: auto;
-height: auto;
 border: 0px solid black;
 padding-top: 10%;
-margin-left:2%;
+margin-left: 2%;
 background: #d9d9d9;
 float: left;
 `
-
-
 export const PortTitle = styled.div`
 font-size: 25px;
-text-align: left;
 margin-top: -40%;
 padding: 0 0px 0px 0px;
 `
-
-
 export const PortTitleDes = styled.div`
 font-size: 15px;
 text-align: left;
@@ -138,7 +133,7 @@ float: left;
 font-size: 15px;
 text-align: left;
 padding: 40px 0px 0px 0px;
-max-width: 50%
+max-width: 13%
 `
 
 
@@ -146,14 +141,14 @@ export const ExperienceYears = styled.div`
 float: right;
 font-size: 15px;
 text-align: left;
-padding: 40px 0px 0px 0px;
+padding: 21px 0px 0px 0px;
 max-width: 50%
 `
 
 export const ExperienceTitleButton = styled.div`
 float: left;
 margin-left: 0%;
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: #d9d9d9;
   border: 1px solid #d5d9d9;
   border-radius: 8px;
@@ -165,7 +160,7 @@ margin-left: 0%;
   font-family: "Amazon Ember",sans-serif;
   font-size: 13px;
   line-height: 22px;
-  padding: 0 10px 0 11px;
+  padding: 0 10px 5px 0px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -177,3 +172,70 @@ margin-left: 0%;
     background-color: #105b72c2;
   }
 `
+
+
+export const ExperienceYearTitle = styled.div`
+float: right;
+font-size: 15px;
+text-align: left;
+padding: 0px 0px 0px 0px;
+max-width: 80%
+`
+export const ExperienceYearButton = styled.div`
+  float: right;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: #d9d9d9;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 0px 10px 5px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  &:hover {
+    background-color: #105b72c2;
+  }
+`
+
+export const WrapperEmployment = styled.section`
+margin-top: 10%;
+padding-top: 10%;
+background: papayawhip;
+`
+
+export const WrapperEmploymentLeft = styled.section`
+float: left;
+width: 32%;
+padding-top: 10%;
+background: green;
+`
+
+
+export const WrapperEmploymentRight = styled.section`
+float: right;
+width: 66%;
+padding-top: 10%;
+background: blue;
+`
+export const VerticalAling = styled.button`  
+border: none;
+border-left: 6px solid red;
+height: 150px !important; 
+display: table-cell;
+  vertical-align: middle;
+  width: @icon-size;
+  height: @icon-size;
+`
+

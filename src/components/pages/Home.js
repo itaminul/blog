@@ -10,6 +10,10 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { TableCell } from '@mui/material';
 import TopBar from '../layouts/TopBar'
+import ImportContactsIcon from '@mui/icons-material/ImportContacts';
+import RunningWithErrorsIcon from '@mui/icons-material/RunningWithErrors';
+import HailIcon from '@mui/icons-material/Hail';
+// import profilePic from '../../../../profilepic.png'
 import {
   Wrapper,
    ImageContainer,
@@ -28,7 +32,13 @@ import {
    PortTitleDes,
    ExperienceTitle,
    ExperienceYears,
-   ExperienceTitleButton
+   ExperienceTitleButton,
+   ExperienceYearTitle,
+   ExperienceYearButton,
+   WrapperEmployment,
+   WrapperEmploymentLeft,
+   WrapperEmploymentRight,
+   VerticalAling
    } from './Home.styled';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -51,7 +61,7 @@ function Home(){
         <Wrapper>
           <Section>
           <ImageContainer>
-             Photo
+          <img src="/images.jpeg" alt="image" />
           </ImageContainer> 
           <SelfSummary>
              <Title>
@@ -113,7 +123,7 @@ function Home(){
                 <ExperienceButtonTitle>
                   MUI
                 </ExperienceButtonTitle>
-                <HireMe>Hire me ddddddddddddddddddddd</HireMe>
+                <HireMe>Hire me</HireMe>
           </ExperienceButtonSection>
           
           </SelfSummary>  
@@ -126,6 +136,7 @@ function Home(){
           <Section>            
           <PortFoleo>
              <PortTitle>
+              <ImportContactsIcon fontSize="small" ></ImportContactsIcon>
              Portfolio
              <PortTitleDes>
               
@@ -141,6 +152,7 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
           </PortFoleo> 
           <PortFoleo>
           <PortTitle>
+          <RunningWithErrorsIcon fontSize="small" ></RunningWithErrorsIcon>
           Experience
             <ExperienceTitle>
               <ExperienceTitleButton>
@@ -164,37 +176,60 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
               <ExperienceTitleButton>
                 PHP
               </ExperienceTitleButton>
-              <ExperienceTitleButton>
-                PHP
-              </ExperienceTitleButton>
-              <ExperienceTitleButton>
-                PHP
-              </ExperienceTitleButton>
-              <ExperienceTitleButton>
-                PHP
-              </ExperienceTitleButton>
-              <ExperienceTitleButton>
-                PHP
-              </ExperienceTitleButton>
-              <ExperienceTitleButton>
-                PHP
-              </ExperienceTitleButton>
-
+            
             </ExperienceTitle>
+
             <ExperienceYears>
-              s
+              <ExperienceYearTitle>
+              <ExperienceYearButton>
+                1 Years
+              </ExperienceYearButton>
+              <ExperienceYearButton>
+                2 Years
+              </ExperienceYearButton>
+              <ExperienceYearButton>
+                3 Years
+              </ExperienceYearButton>
+              <ExperienceYearButton>
+                4 Years
+              </ExperienceYearButton>
+              <ExperienceYearButton>
+                5 Years
+              </ExperienceYearButton>
+              <ExperienceYearButton>
+                6 Years
+              </ExperienceYearButton>
+              <ExperienceYearButton>
+                7 Years
+              </ExperienceYearButton>
+              </ExperienceYearTitle>
 
             </ExperienceYears>
              </PortTitle>
           </PortFoleo> 
           <PortFoleo>
           <PortTitle>
+          <HailIcon fontSize="small" ></HailIcon>
           Location
              </PortTitle>
           </PortFoleo> 
         
           </Section>    
         </WrapperSlogan>
+        <WrapperEmployment>
+          <Section>
+            <WrapperEmploymentLeft>
+              
+             ddddddddddd
+            </WrapperEmploymentLeft>
+
+            <VerticalAling style={{height: "500px"}}/>   
+                
+            <WrapperEmploymentRight>
+              r
+            </WrapperEmploymentRight> 
+            </Section>
+        </WrapperEmployment>
       {/* <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
