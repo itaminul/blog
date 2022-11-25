@@ -1,7 +1,6 @@
 import styled from "styled-components"
  export const Wrapper = styled.section`
 padding-top: 84px;
-background: papayawhip;
 display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -17,14 +16,20 @@ export const Section = styled.div`
 export const ImageContainer = styled.div`
 display: flex;
 width: 28%;
-height: 260px;
 border: 0px solid black;
 padding-top: 10%;
 margin-left:2%;
-background: #d9d9d9;
 border-bottom-right-radius: 25%;
 float: left;
-@media (min-width: 1024px) {
+display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  grid-area: content;
+  justify-content: center;
+@media (min-width: 554px) {
   font-size: 1.5rem;
 }
 `
@@ -34,7 +39,6 @@ height: auto;
 border: 0px solid black;
 padding-top: 10%;
 margin-left:2%;
-background: #d9d9d9;
 float: right;
 `
 
@@ -103,7 +107,6 @@ height: 50px;
 
 export const WrapperSlogan = styled.section`
 padding-top: 5%;
-background: papayawhip;
 `
 
 
@@ -114,13 +117,14 @@ height: auto;
 border: 0px solid black;
 padding-top: 10%;
 margin-left: 2%;
-background: #d9d9d9;
 float: left;
 `
 export const PortTitle = styled.div`
 font-size: 25px;
-margin-top: -40%;
-padding: 0 0px 0px 0px;
+margin-top: -45%;
+padding: 0px 0px 0px 10px;
+line-height: 57px;
+height: 350px;
 `
 export const PortTitleDes = styled.div`
 font-size: 15px;
@@ -146,9 +150,8 @@ max-width: 50%
 `
 
 export const ExperienceTitleButton = styled.div`
-float: left;
-margin-left: 0%;
-  margin-top: 5px;
+
+padding: 5px 10px 5px 10px;
   background-color: #d9d9d9;
   border: 1px solid #d5d9d9;
   border-radius: 8px;
@@ -160,26 +163,25 @@ margin-left: 0%;
   font-family: "Amazon Ember",sans-serif;
   font-size: 13px;
   line-height: 22px;
-  padding: 0 10px 5px 0px;
-  position: relative;
-  text-align: center;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100px;
+  width: 850%;
   &:hover {
     background-color: #105b72c2;
   }
 `
-
-
+export const ExperButtonMarginLeft = styled.div`
+margin-left: 110px;
+`
 export const ExperienceYearTitle = styled.div`
 float: right;
 font-size: 15px;
 text-align: left;
 padding: 0px 0px 0px 0px;
 max-width: 80%
+line-height: 10px;
 `
 export const ExperienceYearButton = styled.div`
   float: right;
@@ -212,30 +214,52 @@ export const ExperienceYearButton = styled.div`
 export const WrapperEmployment = styled.section`
 margin-top: 10%;
 padding-top: 10%;
-background: papayawhip;
+
+`
+export const EmploymentTitle = styled.div`
+font-size: 25px;
+margin-top: -45%;
+padding: 0px 0px 0px 10px;
+line-height: 57px;
+height: 350px;
 `
 
 export const WrapperEmploymentLeft = styled.section`
 float: left;
 width: 32%;
 padding-top: 10%;
-background: green;
+`
+export const WrapperEmploymentTitle = styled.section`
+margin-top: -120px;
+margin-left: -250px;
 `
 
 
 export const WrapperEmploymentRight = styled.section`
 float: right;
 width: 66%;
-padding-top: 10%;
-background: blue;
+padding-top: 2%;
 `
 export const VerticalAling = styled.button`  
 border: none;
-border-left: 6px solid red;
-height: 150px !important; 
+border-left: 2px solid black;
+hyphens: auto;
+height: 50px; 
 display: table-cell;
   vertical-align: middle;
   width: @icon-size;
   height: @icon-size;
+  
+  position:relative;
+  padding: 0px 0px 0px 0px;
+  box-sizing:border-box;
+  
 `
-
+export const ArrowSign = styled.div`
+border-right:2px solid black;
+    border-bottom:2px solid black;
+    width:10px;
+    height:10px;
+    transform: rotate(-45deg);
+    margin-top:40px;
+    `

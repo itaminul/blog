@@ -13,6 +13,7 @@ import TopBar from '../layouts/TopBar'
 import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 import RunningWithErrorsIcon from '@mui/icons-material/RunningWithErrors';
 import HailIcon from '@mui/icons-material/Hail';
+import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
 // import profilePic from '../../../../profilepic.png'
 import {
   Wrapper,
@@ -38,7 +39,11 @@ import {
    WrapperEmployment,
    WrapperEmploymentLeft,
    WrapperEmploymentRight,
-   VerticalAling
+   VerticalAling,
+   ArrowSign,
+   WrapperEmploymentTitle,
+   EmploymentTitle,
+   ExperButtonMarginLeft
    } from './Home.styled';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -151,35 +156,58 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
              </PortTitle>
           </PortFoleo> 
           <PortFoleo>
-          <PortTitle>
+          <EmploymentTitle>
           <RunningWithErrorsIcon fontSize="small" ></RunningWithErrorsIcon>
           Experience
             <ExperienceTitle>
               <ExperienceTitleButton>
-                PHP
+                <span>NodeJs </span>
+                 <span style={{marginLeft: "74%"}}>10 years</span>
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-                PHP
+              <span>ExpressJs </span>
+                 <span style={{marginLeft: "70%"}}>10 years</span>
+                
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-                PHP
+              <span>TypeScript </span>
+                 <span style={{marginLeft: "70%"}}>10 years</span>
+                
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-                PHP
+              <span>ReactJs </span>
+                 <span style={{marginLeft: "74%"}}>10 years</span>
+                
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-                PHP
+              <span>JavaScript </span>
+                 <span style={{marginLeft: "70%"}}>10 years</span>
+                
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-                PHP
+              <span>PHP </span>
+                 <span style={{marginLeft: "74%"}}>10 years</span>
+                
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-                PHP
+              <span>MongoDb </span>
+                 <span style={{marginLeft: "70%"}}>10 years</span>
+                
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+              <span>Mysql </span>
+                 <span style={{marginLeft: "74%"}}>10 years</span>
+                
+              </ExperienceTitleButton>
+              <ExperienceTitleButton>
+              <span>Oracle </span>
+                 <span style={{marginLeft: "74%"}}>10 years</span>
+                
               </ExperienceTitleButton>
             
             </ExperienceTitle>
 
-            <ExperienceYears>
+            {/* <ExperienceYears>
               <ExperienceYearTitle>
               <ExperienceYearButton>
                 1 Years
@@ -204,8 +232,8 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
               </ExperienceYearButton>
               </ExperienceYearTitle>
 
-            </ExperienceYears>
-             </PortTitle>
+            </ExperienceYears> */}
+             </EmploymentTitle>
           </PortFoleo> 
           <PortFoleo>
           <PortTitle>
@@ -218,15 +246,52 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
         </WrapperSlogan>
         <WrapperEmployment>
           <Section>
-            <WrapperEmploymentLeft>
-              
-             ddddddddddd
+            <WrapperEmploymentLeft>   
+                     
+            <WrapperEmploymentTitle>
+            <BrightnessMediumIcon fontSize="smal" style={{marginRight: "10px"}}></BrightnessMediumIcon>  
+            Employment</WrapperEmploymentTitle>
             </WrapperEmploymentLeft>
 
-            <VerticalAling style={{height: "500px"}}/>   
+            <VerticalAling style={{height: "520px", marginTop: "20px"}}/>   
                 
             <WrapperEmploymentRight>
-              r
+              <ul>
+               <ol style={{textAlign: "left"}}>Senior Web Developer with team lead</ol>
+                <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+                  <ArrowSign></ArrowSign>
+                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
+                  Senior Web Develop
+                  </ol>
+              </ul>
             </WrapperEmploymentRight> 
             </Section>
         </WrapperEmployment>
