@@ -43,7 +43,11 @@ import {
    ArrowSign,
    WrapperEmploymentTitle,
    EmploymentTitle,
-   ExperButtonMarginLeft
+   ExperButtonMarginLeft,
+   WrapperSkils,
+   SectionSkils,
+   WrapperSkilsLeft,
+   WrapperSkilsRight
    } from './Home.styled';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -90,7 +94,7 @@ function Home(){
                   NodeJs
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
-                  ExpressJs
+                  Express
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
                   MySql
@@ -102,7 +106,7 @@ function Home(){
                   MongoDb
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
-                  PostGrl
+                PostgreSQL
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
                   Jquery
@@ -114,7 +118,7 @@ function Home(){
                   Laravel
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
-                  Codeigniter
+                CodeIgniter
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
                   API
@@ -128,7 +132,7 @@ function Home(){
                 <ExperienceButtonTitle>
                   MUI
                 </ExperienceButtonTitle>
-                <HireMe>Hire me</HireMe>
+                <HireMe>Aminul is now available for hire</HireMe>
           </ExperienceButtonSection>
           
           </SelfSummary>  
@@ -141,23 +145,23 @@ function Home(){
           <Section>            
           <PortFoleo>
              <PortTitle>
-              <ImportContactsIcon fontSize="small" ></ImportContactsIcon>
+              <ImportContactsIcon 
+              fontSize="small"
+              style={{marginRight: "10px"}}
+               ></ImportContactsIcon>
              Portfolio
              <PortTitleDes>
               
-             The Ticketing Co.
-ESLint, Jest, PostgreSQL, Prisma, Express.js, GraphQL, React, TypeScript
-Pentius
-ESLint, Jest, Babel, Webpack, Lerna, Storybook, TypeScript, LitElement
-Agility
-Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
+             The Ticketing Co. ESLint, Jest, PostgreSQL, Prisma, Express.js, GraphQL, React, TypeScript Pentius ESLint, Jest, Babel, Webpack, Lerna, Storybook, TypeScript, LitElement Agility Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
 
              </PortTitleDes>
              </PortTitle>
           </PortFoleo> 
           <PortFoleo>
           <EmploymentTitle>
-          <RunningWithErrorsIcon fontSize="small" ></RunningWithErrorsIcon>
+          <RunningWithErrorsIcon fontSize="small" 
+          style={{marginRight: "10px"}}
+          ></RunningWithErrorsIcon>
           Experience
             <ExperienceTitle>
               <ExperienceTitleButton>
@@ -237,13 +241,16 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
           </PortFoleo> 
           <PortFoleo>
           <PortTitle>
-          <HailIcon fontSize="small" ></HailIcon>
+          <HailIcon fontSize="small" 
+          style={{marginRight: "10px"}}
+          ></HailIcon>
           Location
              </PortTitle>
           </PortFoleo> 
         
           </Section>    
         </WrapperSlogan>
+
         <WrapperEmployment>
           <Section>
             <WrapperEmploymentLeft>   
@@ -257,44 +264,124 @@ Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
                 
             <WrapperEmploymentRight>
               <ul>
-               <ol style={{textAlign: "left"}}>Senior Web Developer with team lead</ol>
+               <ol style={{textAlign: "left"}}>
+                Senior Web Developer with team lead
+                </ol>
                 <ArrowSign></ArrowSign>
                 <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
-                  </ol>
+                Helped direct, build, and engineer most of the company’s projects.
 
-                  <ArrowSign></ArrowSign>
-                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
                   </ol>
                   <ArrowSign></ArrowSign>
                 <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
+                Introduced new technologies into the company’s production team.
                   </ol>
                   <ArrowSign></ArrowSign>
                 <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
+                Helped implement back-end services and APIs.
                   </ol>
                   <ArrowSign></ArrowSign>
                 <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
+                  API Intregration
                   </ol>
                   <ArrowSign></ArrowSign>
                 <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
+                  Front-End
                   </ol>
                   <ArrowSign></ArrowSign>
                 <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
+                  Back-End
                   </ol>
-                  <ArrowSign></ArrowSign>
-                <ol style={{textAlign: "left", marginTop: "-35px", paddingTop: "20px"}}>
-                  Senior Web Develop
-                  </ol>
+                
+               
               </ul>
             </WrapperEmploymentRight> 
             </Section>
         </WrapperEmployment>
+
+        <WrapperSkils>
+          <SectionSkils>
+            <WrapperSkilsLeft>   
+                     
+            <WrapperEmploymentTitle>
+            <BrightnessMediumIcon fontSize="smal" style={{marginRight: "10px"}}></BrightnessMediumIcon>  
+            Slils</WrapperEmploymentTitle>
+            </WrapperSkilsLeft>
+
+            {/* <VerticalAling style={{height: "520px", marginTop: "20px"}}/>    */}
+                
+            <WrapperSkilsRight>
+            Languages
+              <ul>
+                <li>
+                HTML, PHP, JavaScript, CSS.
+                </li>
+              </ul>
+              
+              Frameworks
+              <ul>
+                <li>              
+                 Express, Laravel, Codeigniter
+
+                </li>
+              </ul>
+
+
+              Libraries/APIs
+              <ul>
+                <li>              
+                Stripe API, jQuery, Facebook API, React
+
+                </li>
+              </ul>
+
+              Tools
+              <ul>
+                <li>              
+                
+                  PhpStorm, Sublime Text 3, Git, Composer, Terminal, VS code
+
+                </li>
+              </ul>
+              Paradigms
+              <ul>
+                <li>              
+                
+                REST, Model View Controller (MVC)
+
+                </li>
+              </ul>
+
+              Platforms
+              <ul>
+                <li>              
+                
+                 Linux, Windows
+
+                </li>
+              </ul>
+
+
+              Storage
+              <ul>
+                <li>              
+                
+                  MySQL, Oracle, MongoDB, Relational Databases, NoSQL.
+
+                </li>
+              </ul>
+
+              Other
+              <ul>
+                <li>              
+                Back-end Development, Leadership, Software Architecture, Software Development, QA Testing, Software Development, Full-stack, Front-end Development, Data Visualization.
+
+                </li>
+              </ul>
+            </WrapperSkilsRight> 
+            
+            </SectionSkils>
+        </WrapperSkils>
       {/* <Box sx={{ flexGrow: 1 }} style={{marginTop: '220px'}}>
       <Grid container spacing={3}>
         <Grid item xs={4}>

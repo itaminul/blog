@@ -60,6 +60,8 @@ export const TitleSummary = styled.div`
 font-size: 15px;
 text-align: left;
 margin-top: 2%;
+line-height: 28px;
+font-weight: 400;
 `
 export const MarginTop = styled.div`
   margin-top: 13%;
@@ -67,9 +69,10 @@ export const MarginTop = styled.div`
 
   export const ExperienceButtonSection = styled.div `
   border: 2px solid white;
+  margin-left: -31px;
   `
 export const ExperienceButtonTitle = styled.div`
-  margin-left: 0%;
+  margin-left: 1%;
   margin-top: 10px;
   background-color: #d9d9d9;
   border: 1px solid #d5d9d9;
@@ -97,8 +100,10 @@ export const ExperienceButtonTitle = styled.div`
 export const HireMe = styled.div`
 border: 0px solid black;
 background: #c2d6d6;
+font-size: 10px;
 width: 100%;
 margin-top: 5%;
+padding: 15px 0px 0px 0px;
 height: 50px;
 @media (min-width: 1024px) {
   font-size: 1.5rem;
@@ -129,7 +134,8 @@ height: 350px;
 export const PortTitleDes = styled.div`
 font-size: 15px;
 text-align: left;
-padding: 10px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+line-height: 30px;
 `
 
 export const ExperienceTitle = styled.div`
@@ -239,6 +245,10 @@ export const WrapperEmploymentRight = styled.section`
 float: right;
 width: 66%;
 padding-top: 2%;
+font-weight: 350;
+ul ol {  
+  font-weight: 30;
+}
 `
 export const VerticalAling = styled.button`  
 border: none;
@@ -263,3 +273,30 @@ border-right:2px solid black;
     transform: rotate(-45deg);
     margin-top:40px;
     `
+
+    export const WrapperSkils = styled.div`
+    margin-top: 10%;
+    padding-top: 10%;
+    
+    `
+    export const SectionSkils = styled.div`
+    width: 100%;
+    float: left;`
+    
+export const WrapperSkilsLeft = styled.section`
+float: left;
+width: 32%;
+padding-top: 10%;
+`
+
+export const WrapperSkilsRight = styled.section`
+float: right;
+width: 66%;
+padding-top: 2%;
+text-align: left;
+font-weight: 350;
+ul li {  
+  font-weight: 30;
+}
+`
+
