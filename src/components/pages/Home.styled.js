@@ -69,7 +69,6 @@ export const MarginTop = styled.div`
 
   export const ExperienceButtonSection = styled.div `
   border: 2px solid white;
-  margin-left: -31px;
   `
 export const ExperienceButtonTitle = styled.div`
   margin-left: 1%;
@@ -126,6 +125,7 @@ float: left;
 `
 export const PortTitle = styled.div`
 font-size: 25px;
+font-weight: 40;
 margin-top: -45%;
 padding: 0px 0px 0px 10px;
 line-height: 57px;
@@ -133,6 +133,7 @@ height: 350px;
 `
 export const PortTitleDes = styled.div`
 font-size: 15px;
+font-weight: 30;
 text-align: left;
 padding: 0px 0px 0px 0px;
 line-height: 30px;
@@ -140,6 +141,7 @@ line-height: 30px;
 
 export const ExperienceTitle = styled.div`
 float: left;
+font-weight: 40;
 font-size: 15px;
 text-align: left;
 padding: 40px 0px 0px 0px;
@@ -238,6 +240,7 @@ padding-top: 10%;
 export const WrapperEmploymentTitle = styled.section`
 margin-top: -120px;
 margin-left: -250px;
+font-weight: 40;
 `
 
 

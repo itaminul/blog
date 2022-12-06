@@ -103,7 +103,7 @@ function Home(){
                   Oracle
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
-                  MongoDb
+                MongoDB
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
                 PostgreSQL
@@ -127,10 +127,19 @@ function Home(){
                   Bootstrap
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
-                  StyledComponent
+                  CSS
                 </ExperienceButtonTitle>
                 <ExperienceButtonTitle>
                   MUI
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  ReduxToolkit
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Prisma
+                </ExperienceButtonTitle>
+                <ExperienceButtonTitle>
+                  Mongoose
                 </ExperienceButtonTitle>
                 <HireMe>Aminul is now available for hire</HireMe>
           </ExperienceButtonSection>
@@ -152,7 +161,7 @@ function Home(){
              Portfolio
              <PortTitleDes>
               
-             The Ticketing Co. ESLint, Jest, PostgreSQL, Prisma, Express.js, GraphQL, React, TypeScript Pentius ESLint, Jest, Babel, Webpack, Lerna, Storybook, TypeScript, LitElement Agility Puppeteer, Storybook, Jest, MUI (Material UI), Styled-components, GraphQL...
+            Node.js, Express.js, Prisma,React, Babel, Webpack, MUI (Material UI), Styled-components,MySQL, Oracle, MongoDB, Mongoose
 
              </PortTitleDes>
              </PortTitle>
@@ -161,51 +170,50 @@ function Home(){
           <EmploymentTitle>
           <RunningWithErrorsIcon fontSize="small" 
           style={{marginRight: "10px"}}
-          ></RunningWithErrorsIcon>
-          Experience
+          >
+
+          </RunningWithErrorsIcon>
+        <span style={{fontWeight: '40'}}>
+        Experience
+        </span>  
             <ExperienceTitle>
               <ExperienceTitleButton>
                 <span>NodeJs </span>
-                 <span style={{marginLeft: "74%"}}>10 years</span>
+                 <span style={{marginLeft: "74%"}}>2 years</span>
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>ExpressJs </span>
-                 <span style={{marginLeft: "70%"}}>10 years</span>
-                
-              </ExperienceTitleButton>
-              <ExperienceTitleButton>
-              <span>TypeScript </span>
-                 <span style={{marginLeft: "70%"}}>10 years</span>
+                 <span style={{marginLeft: "70%"}}>2 years</span>
                 
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>ReactJs </span>
-                 <span style={{marginLeft: "74%"}}>10 years</span>
+                 <span style={{marginLeft: "74%"}}>1 years</span>
                 
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>JavaScript </span>
-                 <span style={{marginLeft: "70%"}}>10 years</span>
+                 <span style={{marginLeft: "70%"}}>8 years</span>
                 
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>PHP </span>
-                 <span style={{marginLeft: "74%"}}>10 years</span>
+                 <span style={{marginLeft: "74%"}}>8 years</span>
                 
               </ExperienceTitleButton>
               <ExperienceTitleButton>
-              <span>MongoDb </span>
-                 <span style={{marginLeft: "70%"}}>10 years</span>
+              <span>MongoDB </span>
+                 <span style={{marginLeft: "70%"}}>2 years</span>
                 
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>Mysql </span>
-                 <span style={{marginLeft: "74%"}}>10 years</span>
+                 <span style={{marginLeft: "74%"}}>8 years</span>
                 
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>Oracle </span>
-                 <span style={{marginLeft: "74%"}}>10 years</span>
+                 <span style={{marginLeft: "74%"}}>8 years</span>
                 
               </ExperienceTitleButton>
             
@@ -244,7 +252,10 @@ function Home(){
           <HailIcon fontSize="small" 
           style={{marginRight: "10px"}}
           ></HailIcon>
+          <span style={{fontWeight: '40'}}>
           Location
+          </span>
+          
              </PortTitle>
           </PortFoleo> 
         
@@ -257,7 +268,9 @@ function Home(){
                      
             <WrapperEmploymentTitle>
             <BrightnessMediumIcon fontSize="smal" style={{marginRight: "10px"}}></BrightnessMediumIcon>  
-            Employment</WrapperEmploymentTitle>
+            
+            Employment
+            </WrapperEmploymentTitle>
             </WrapperEmploymentLeft>
 
             <VerticalAling style={{height: "520px", marginTop: "20px"}}/>   
@@ -330,7 +343,7 @@ function Home(){
               Libraries/APIs
               <ul>
                 <li>              
-                Stripe API, jQuery, Facebook API, React
+                Node.js, jQuery, Facebook API, React
 
                 </li>
               </ul>
