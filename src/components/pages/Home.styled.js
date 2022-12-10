@@ -1,4 +1,41 @@
 import styled from "styled-components"
+export const BoxArea = styled.div`{
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  align-content: space-between;
+  margin-top: 100px;
+  border: 1px solid red;
+}`;
+
+export const BoxAreaLeft = styled.div`{
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  border: 1px solid red;
+  width: 30%;
+}`;
+
+export const BoxAreaRight = styled.div`{
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  border: 1px solid red;
+  width: 70%;
+}`;
+
+export const SummaryTitle = styled.h1`
+font-size: 1.5em;
+text-align: left;
+`;
+
+export const Img1Wrap = styled.div`
+width: 100%;
+height: auto;
+`;
+
+
+
  export const Wrapper = styled.section`
 padding-top: 84px;
 display: flex;

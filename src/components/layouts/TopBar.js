@@ -59,7 +59,7 @@ const TopBar = () => {
            <Link to="/dashbord" style={{ textDecoration: 'none', color: 'white', paddingLeft: 15 }}>
             Dashbord
            </Link>
-           <Link to="/" style={{ textDecoration: 'none', color: 'white', paddingLeft: 15 }}>
+           <Link to="/profile" style={{ textDecoration: 'none', color: 'white', paddingLeft: 15 }}>
             Profile
            </Link>
             </Typography>            

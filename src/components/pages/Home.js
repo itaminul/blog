@@ -47,7 +47,12 @@ import {
    WrapperSkils,
    SectionSkils,
    WrapperSkilsLeft,
-   WrapperSkilsRight
+   WrapperSkilsRight,
+   BoxArea,
+   BoxAreaLeft,
+   BoxAreaRight,
+   SummaryTitle,
+   Img1Wrap,
    } from './Home.styled';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -66,11 +71,14 @@ function Home(){
       <nav>
        <TopBar />
       </nav>
-      <main>
+      <main>    
+
         <Wrapper>
           <Section>
           <ImageContainer>
+
           <img src="/images.jpeg" alt="image" />
+          
           </ImageContainer> 
           <SelfSummary>
              <Title>
