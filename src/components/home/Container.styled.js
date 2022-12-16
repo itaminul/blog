@@ -41,7 +41,7 @@ box-sizing: border-box;
 export const BoxRight = styled.div`
 width: 60%;
 height: 376px;
-border: 1px solid red;
+background: white;
 margin: 10px;
 margin-top: -90px;
 box-size: 20px;
@@ -70,8 +70,88 @@ margin: 0px 0px 40px 10px;
 
 export const TitleSummary = styled.div`
 font-size: 15px;
+font-weight: 30;
 text-align: left;
 margin: 0px 20px 10px 10px;
 line-height: 28px;
-font-weight: 400;
+`
+export const ExpSummary = styled.div`
+font-size: 15px;
+font-weight: 30;
+text-align: left;
+line-height: 28px;
+
+@media screen and (max-width:1200px) {    
+        width: 40%;   
+        margin-top: 10px
+}
+@media screen and (max-width:600px) {
+         width: 90%;
+         margin-top: 10px
+ }
+`
+
+export const ExpButton = styled.button`
+background-color: #d9d9d9;
+border: 2px solid #d5d9d9;
+box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+color: #0f1111;
+cursor: pointer;
+display: inline-block;
+font-family: "Amazon Ember",sans-serif;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+font-size: 10px;
+font-weight: 30;
+  margin: 3px 3px 3px 3px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+&:hover {
+  background-color: #105b72c2;
+}
+
+@media screen and (max-width:100px) {    
+        width: 100%;   
+        margin-top: 10px;
+        margin: 3px 3px 3px 3px;
+        padding: 5px 5px 5px 5px;
+        font-size: 15px;
+       font-weight: 30;
+}
+@media screen and (max-width:100px) {
+         width: 100%;
+         margin-top: 10px
+         margin: 3px 3px 3px 3px;
+         padding: 5px 5px 5px 5px;
+         font-size: 15px;
+         font-weight: 30;
+ }
+`
+
+
+export const HireMe = styled.div`
+border: 0px solid black;
+background: #c2d6d6;
+font-size: 10px;
+width: 100%;
+margin-top: 1%;
+padding: 15px 0px 0px 0px;
+height: 50px;
+@media screen and (max-width:1200px) {    
+        width: 100%;   
+        margin-top: 190px;
+        ont-size: 1.5rem;
+}
+
+@media screen and (max-width:600px) {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        width: 90%;
+        margin-top: 190px
+ }
+
 `
