@@ -1,13 +1,21 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/pages/Home';
+import { ThemeProvider } from 'styled-components'
+import Home from './components/home/Home';
 import About from './components/pages/AboutUs';
 import BatchIndex from './components/pages/setup/batch/BatchIndex';
 import Dashbord from './components/layouts/Dashbord';
-import Global from './styles/global';
+import Global from './styles/GlobalStyles';
 import Profile from './components/portfolio/PortfolioHome'
 function App() {
+  const theme = {
+    colors: {
+      header: 'black',
+      body: 'black'
+    }
+  }
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
       <Global />
       <Routes>
@@ -18,6 +26,7 @@ function App() {
         <Route path='/profile' element={<Profile />} />
       </Routes>
     </div>
+    </ThemeProvider>
   );
 }
 

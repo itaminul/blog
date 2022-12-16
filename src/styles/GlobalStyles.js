@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const Globals = createGlobalStyle`
+const GlobalsStyles = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400,700|Montserrat:500i&display=swap');
 
@@ -11,8 +11,9 @@ const Globals = createGlobalStyle`
  }
 
 body {
+  background: ${( {theme} ) => theme.colors.body}
   font-size: 100%;
-  color: hotpink;
+  color: black;
   background: #fff;
   font-family: 'Lato', sans-serif;
   /* font-family: 'Montserrat', sans-serif; */
@@ -65,4 +66,4 @@ p {
 }
 `;
 
-export default Globals;
+export default GlobalsStyles;
