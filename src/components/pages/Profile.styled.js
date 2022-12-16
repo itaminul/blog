@@ -82,6 +82,30 @@ font-weight: 400;
 `
 
 
+export const Content3 = styled.div`
+background: #a6b8b9;
+height: 100%;
+margin-bottom: 15px;
+padding: 0px 15px;
+grid-area: col1;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+`;
+export const Content4 = styled.div`
+margin-bottom: 15px;
+padding: 0 15px;
+grid-area: col2;
+  background: #a6b8b9;
+  width: 100%;
+  height: 100%;
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+`;
+
+
+
 export const ExperienceButtonSection = styled.div `
 border: 2px solid white;
 `
@@ -111,4 +135,18 @@ export const ExperienceButtonTitle = styled.div`
   &:hover {
     background-color: #105b72c2;
   }
+`
+
+export const Container2 = styled.div`
+position: 'absolute',
+    top: '0px',
+    left: '0px',
+    width: '100%',
+    height: '220px',
+    maxHeight: '0px',
+    transition: 'max-height 0.3s ease-out',
+    overflow: 'hidden'
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1fr;
 `
