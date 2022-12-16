@@ -2,6 +2,7 @@ import React from 'react'
 import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 import RunningWithErrorsIcon from '@mui/icons-material/RunningWithErrors';
 import HailIcon from '@mui/icons-material/Hail';
+import { GoogleMap } from './GoogleMap';
 import { 
 Container,
 BoxLeft,
@@ -12,7 +13,7 @@ PortTitleDes,
 EmploymentTitle,
 ExperienceTitleButton,
 Location
-} from '../home/Service.styled'
+} from '../portfolio/Service.styled'
 function Service () {
   return (
     <div>
@@ -97,6 +98,19 @@ function Service () {
           <span style={{fontWeight: '40'}}>
           Location
           </span>
+          <div className="mapouter">
+            <div className="gmap_canvas">
+            <iframe className="gmap_iframe" width="100%" 
+           src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Dhaka Bangladesh&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+           style={{height: "310px"}}
+           >
+
+           </iframe>
+           </div>
+           </div>
+           
+        
+          {/* <GoogleMap /> */}
 
           </Location>
         </BoxRight>

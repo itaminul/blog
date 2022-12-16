@@ -1,5 +1,4 @@
 import React from 'react'
-import { ExperienceButton } from './ExperienceButton';
 import { Container, BoxLeft, BoxRight, TopBackground,
   Title,
   SubTitle,
@@ -8,7 +7,7 @@ import { Container, BoxLeft, BoxRight, TopBackground,
   ExpSummary
  } from './Container.styled'
 
-function ScrollToTop () {
+function ProfileSummary () {
   return (
     <div>
       <Container>
@@ -58,4 +57,4 @@ function ScrollToTop () {
   )
 }
 
-export default ScrollToTop;
+export default ProfileSummary;

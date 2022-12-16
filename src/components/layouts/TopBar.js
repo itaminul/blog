@@ -38,7 +38,7 @@ const TopBar = () => {
 
   return (
     <div>
-          <AppBar position="fixed" sx={{background: 'black'}} open={open}>
+          <AppBar position="fixed" sx={{background: 'white'}} open={open}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -53,13 +53,13 @@ const TopBar = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap component="div">
-            <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+            <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
              Home
            </Link>
-           <Link to="/dashbord" style={{ textDecoration: 'none', color: 'white', paddingLeft: 15 }}>
+           <Link to="/dashbord" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
             Dashbord
            </Link>
-           <Link to="/profile" style={{ textDecoration: 'none', color: 'white', paddingLeft: 15 }}>
+           <Link to="/profile" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
             Profile
            </Link>
             </Typography>            

@@ -12,7 +12,9 @@ flex-flow: wrap;
 export const TopBackground = styled.div`
 width: 100%;
 height: 126px;
-background: blue;
+background: rgb(0,36,34);
+background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 100%);
+
 box-sizing: border-box;
 @media (max-width: 967px) {  
     margin-top: 50px
@@ -58,7 +60,7 @@ box-sizing: border-box;
 
 export const Title = styled.h1`
 text-align: left;
-margin: 0px 0px 20px 10px;
+margin: 15px 0px 20px 10px;
 `
 
 export const SubTitle = styled.div`
@@ -109,7 +111,7 @@ font-size: 10px;
 font-weight: 30;
   margin: 3px 3px 3px 3px;
   padding: 5px 5px 5px 5px;
-  border-radius: 3px;
+  border-radius: 5px;
 &:hover {
   background-color: #105b72c2;
 }

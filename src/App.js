@@ -5,8 +5,7 @@ import About from './components/pages/AboutUs';
 import BatchIndex from './components/pages/setup/batch/BatchIndex';
 import Dashbord from './components/layouts/Dashbord';
 import Global from './styles/global';
-import Profile from './components/pages/Profile';
-import Profiletwo from './components/pages/Profiletwo';
+import Profile from './components/portfolio/PortfolioHome'
 function App() {
   return (
     <div className="App">
@@ -17,9 +16,6 @@ function App() {
         <Route path='/batch' element={<BatchIndex />} />
         <Route path='/dashbord' element={<Dashbord />} />
         <Route path='/profile' element={<Profile />} />
-        <Route path='/profile2' 
-        element={<Profiletwo />}
-         />
       </Routes>
     </div>
   );
