@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Global />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home theme={theme} />} />
         <Route path='/aboutUs' element={<About />} />
         <Route path='/batch' element={<BatchIndex />} />
         <Route path='/dashbord' element={<Dashbord />} />

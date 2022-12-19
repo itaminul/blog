@@ -14,7 +14,6 @@ body {
   background: ${( {theme} ) => theme.colors.body}
   font-size: 100%;
   color: black;
-  background: #fff;
   font-family: 'Lato', sans-serif;
   /* font-family: 'Montserrat', sans-serif; */
 }
