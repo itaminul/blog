@@ -28,19 +28,17 @@ function Home() {
         <BoxLeft>
           <BlogBox>
               <Blog>
-                <img src="/reactImage.png" />
+              <h2>Total Post - 50</h2>
               
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
+          <h2>Learn React</h2>
+
+          <br />  
+          <br />  
+          <br />  
+          <br />  
+          <br />  
+          <br />  
+            <h4>Total Post (50)</h4>
 
               </Blog>
 

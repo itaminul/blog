@@ -15,7 +15,7 @@ margin-top: 65px;
 width: 100%;
 height: 450px;
 color: white;
-background: #002D62;
+background: #333333; 
 
 `
 export const BoxLeft = styled.div`
@@ -64,6 +64,7 @@ margin: 10px;
 margin-top: -90px;
 box-size: 20px;
 box-sizing: border-box;
+
 @media screen and (max-width:1200px) {    
         width: 40%;   
         margin-top: 10px
@@ -76,6 +77,7 @@ box-sizing: border-box;
  export const BlogBox = styled.div`
  box-sizing: border-box;
  width: 100%;
+ height: 120%;
  border: solid #5B6DCD 0px;
  padding: 5px;
  display: flex;
@@ -88,21 +90,20 @@ box-sizing: border-box;
 export const Blog = styled.div`
 box-sizing: border-box;
 width: 24%;
-border: solid #5B6DCD 0px;
+border: solid #5B6DCD 1px;
 padding: 5px;
 margin-left: 0px;
-color: white;
+color: black;
 border-radius: 3%;
  
 transition: transform 250ms;
 &:hover{
+        background: white;
+        border: solid #5B6DCD 3px;
        transform: translateY(-50px);
 }
 
 
-background: -webkit-gradient(linear, left top, left bottom, from(#1C7CE0), to(#150051));
-    background: linear-gradient(to bottom, #1C7CE0, #150051);
-    color: #fff;
 
 
 @media screen and (max-width:1200px) {    
