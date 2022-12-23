@@ -9,12 +9,21 @@ flex-direction: row;
 justify-content: space-around;
 flex-flow: wrap;
 `
+
+export const SliderBox = styled.div`
+margin-top: 65px;
+width: 100%;
+height: 450px;
+color: white;
+background: #002D62;
+
+`
 export const BoxLeft = styled.div`
-width: 68%;
+width: 100%;
 height: 376px;
 background: white;
 margin: 10px;
-margin-top: -90px;
+margin-top: -230px;
 box-size: 20px;
 box-sizing: border-box;
 @media screen and (max-width:1200px) {    
@@ -67,23 +76,33 @@ box-sizing: border-box;
  export const BlogBox = styled.div`
  box-sizing: border-box;
  width: 100%;
- border: solid #5B6DCD 2px;
+ border: solid #5B6DCD 0px;
  padding: 5px;
  display: flex;
  flex-direction: row;
  justify-content: space-around;
  flex-flow: wrap; 
+
  ` 
 
 export const Blog = styled.div`
 box-sizing: border-box;
-width: 48%;
-border: solid #5B6DCD 2px;
+width: 24%;
+border: solid #5B6DCD 0px;
 padding: 5px;
 margin-left: 0px;
-background: #403B4A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+border-radius: 3%;
+ 
+transition: transform 250ms;
+&:hover{
+       transform: translateY(-50px);
+}
+
+
+background: -webkit-gradient(linear, left top, left bottom, from(#1C7CE0), to(#150051));
+    background: linear-gradient(to bottom, #1C7CE0, #150051);
+    color: #fff;
 
 
 @media screen and (max-width:1200px) {    

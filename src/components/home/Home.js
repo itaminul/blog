@@ -1,13 +1,29 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
-import { Container, BoxLeft, BoxRight, Blog, BlogTitle, BlogBox } from '../home/Home.styled'
+import {
+   Container, 
+   BoxLeft,
+   BoxRight,
+   Blog,
+   BlogTitle,
+   BlogBox,
+   SliderBox
+   } from '../home/Home.styled'
+
+//https://www.npmjs.com/package/react-awesome-watermark
+
 function Home() {
   return (
     <>
+      <SliderBox>
+
+      pppppppppppppppppppppppppp
+      </SliderBox> 
      <Container>  
       <div>
         <TopBar />
-      </div>    
+      </div> 
+
      
         <BoxLeft>
           <BlogBox>
@@ -43,25 +59,43 @@ function Home() {
             ddddddddddddddddddddd
 
               </Blog>
+
+
+              <Blog>
+              
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+
+              <Blog>
+              
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+
           </BlogBox>
 
-        </BoxLeft>
-
-        <BoxRight>
-
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-        ddddddddddddddddddddd
-       pp ddddddddddddddddddddd
-       pp ddddddddddddddddddddd
-
-        </BoxRight>
+        </BoxLeft>        
    
       </Container>
       
