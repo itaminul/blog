@@ -1,5 +1,8 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
+import SliderArea from './SliderArea'
+import SearchBox from './SearchBox'
+
 import {
    Container, 
    BoxLeft,
@@ -12,12 +15,16 @@ import {
 
 //https://www.npmjs.com/package/react-awesome-watermark
 
+const tutorials = ["   Javascript ", "   React ", "   NodeJs "];
+
 function Home() {
   return (
     <>
       <SliderBox>
 
-      pppppppppppppppppppppppppp
+        <SliderArea items={tutorials} />
+        <SearchBox />
+      
       </SliderBox> 
      <Container>  
       <div>
@@ -32,12 +39,6 @@ function Home() {
               
           <h2>Learn React</h2>
 
-          <br />  
-          <br />  
-          <br />  
-          <br />  
-          <br />  
-          <br />  
             <h4>Total Post (50)</h4>
 
               </Blog>
