@@ -91,19 +91,18 @@ export const Blog = styled.div`
 box-sizing: border-box;
 width: 24%;
 border: solid #5B6DCD 1px;
-padding: 5px;
+padding: 5px 5px 5px 5px;
+margin-top: 10px;
 margin-left: 0px;
 color: black;
 border-radius: 3%;
  
-transition: transform 250ms;
-&:hover{
-        background: white;
-        border: solid #5B6DCD 3px;
-       transform: translateY(-50px);
-}
-
-
+// transition: transform 250ms;
+// &:hover{
+//         background: white;
+//         border: solid #5B6DCD 1px;
+//        transform: translateY(-50px);
+// }
 
 
 @media screen and (max-width:1200px) {    
@@ -127,7 +126,7 @@ padding: 30px 20px 20px 20px;
 
 export const ReadMore = styled.button`
 background: transparent;
-border-radius: 3px;
+border-radius: 10px;
 border: 3px solid palevioletred;
 color: palevioletred;
 margin: 0 0em;

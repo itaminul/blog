@@ -2,6 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import SliderArea from './SliderArea'
 import SearchBox from './SearchBox'
+import { Link } from 'react-router-dom'
 
 import {
    Container, 
@@ -39,25 +40,13 @@ function Home() {
                 <img src="./reactImage.png" />
               <BlogTitle>Total Post - 50</BlogTitle>
               <h2>Learn React</h2>
+              <Link to='/react-details'>
               <ReadMore>Read More</ReadMore>
-              </Blog>
+              </Link>
+
               
-              <Blog>
-              
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
-            ddddddddddddddddddddd
 
               </Blog>
-
 
               <Blog>
               
@@ -77,6 +66,81 @@ function Home() {
 
               <Blog>
               
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+
+              <Blog>
+              
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+              <Blog>
+              
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+              <Blog>
+              
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+              <Blog>
+              
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+            ddddddddddddddddddddd
+
+              </Blog>
+              <Blog>              
             ddddddddddddddddddddd
             ddddddddddddddddddddd
             ddddddddddddddddddddd
