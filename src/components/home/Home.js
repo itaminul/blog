@@ -10,7 +10,8 @@ import {
    Blog,
    BlogTitle,
    BlogBox,
-   SliderBox
+   SliderBox,
+   ReadMore,
    } from '../home/Home.styled'
 
 //https://www.npmjs.com/package/react-awesome-watermark
@@ -35,14 +36,12 @@ function Home() {
         <BoxLeft>
           <BlogBox>
               <Blog>
-              <h2>Total Post - 50</h2>
-              
-          <h2>Learn React</h2>
-
-            <h4>Total Post (50)</h4>
-
+                <img src="./reactImage.png" />
+              <BlogTitle>Total Post - 50</BlogTitle>
+              <h2>Learn React</h2>
+              <ReadMore>Read More</ReadMore>
               </Blog>
-
+              
               <Blog>
               
             ddddddddddddddddddddd

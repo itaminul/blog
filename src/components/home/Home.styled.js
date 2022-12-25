@@ -15,7 +15,7 @@ margin-top: 65px;
 width: 100%;
 height: 450px;
 color: white;
-background: #333333; 
+background: #3346a8;
 
 `
 export const BoxLeft = styled.div`
@@ -118,5 +118,30 @@ transition: transform 250ms;
 `
 
 export const BlogTitle = styled.div`
+font-size: 25px;
+width: 100%;
+padding: 30px 20px 20px 20px;
+`
 
+
+
+export const ReadMore = styled.button`
+background: transparent;
+border-radius: 3px;
+border: 3px solid palevioletred;
+color: palevioletred;
+margin: 0 0em;
+margin-top: 70px;
+width: 100%;
+height: 35px;
+font-size: 1.08rem;
+padding: 0em .0em;
+&:hover{
+    background: blue;
+}
+@media screen and (max-width: 45em) {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+   }
 `

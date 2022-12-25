@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 const SearchBox = () => {
   return (
     <div>
-        <Input></Input>
+        <Input placeholder = 'Enter text'></Input>
         <Button>
         Search
         </Button>

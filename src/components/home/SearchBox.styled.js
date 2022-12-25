@@ -25,14 +25,19 @@ transition: margin 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 `
 
 export const Button = styled.button`
-line-height: 1;
-pointer-events: ${props => (props.barOpened ? "auto" : "none")};
-cursor: ${props => (props.barOpened ? "pointer" : "none")};
-background-color: white;
-border: none;
-outline: none;
-color: black;
-font-size: 25px;
-border-radius: 10%;
-padding: 5px 5px 5px 5px;
+background: transparent;
+border-radius: 3px;
+border: 3px solid palevioletred;
+color: palevioletred;
+margin: 0 1em;
+font-size: 1.08rem;
+padding: 0.25em 1em;
+&:hover{
+    background: blue;
+}
+@media screen and (max-width: 45em) {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+   }
 `
