@@ -117,7 +117,7 @@ border-radius: 3%;
 `
 
 export const BlogTitle = styled.div`
-font-size: 25px;
+font-size: 20px;
 width: 100%;
 padding: 30px 20px 20px 20px;
 `
@@ -127,20 +127,28 @@ padding: 30px 20px 20px 20px;
 export const ReadMore = styled.button`
 background: transparent;
 border-radius: 10px;
-border: 3px solid palevioletred;
-color: palevioletred;
+border: 1px solid palevioletred;
+color: black;
 margin: 0 0em;
 margin-top: 70px;
 width: 100%;
 height: 35px;
 font-size: 1.08rem;
+font-weight: 800;
 padding: 0em .0em;
 &:hover{
-    background: blue;
+    color: blue;
 }
 @media screen and (max-width: 45em) {
     padding: 1rem 1rem;
     font-size: 1rem;
     margin: 0.5rem;
    }
+`
+
+export const List = styled.ul`
+list-style: none;
+padding: 3px 10px 10px 10px;
+marign-bottom: 0px;
+text-align: center;
 `

@@ -21,6 +21,4 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-flow: wrap; 
-
-
 `

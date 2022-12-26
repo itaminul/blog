@@ -14,7 +14,8 @@ body {
   background: ${( {theme} ) => theme.colors.body}
   font-size: 100%;
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -29,6 +30,7 @@ h2 {
   font-size: 2em;
   margin-bottom: 1em;
   margin-bottom: 0.75em;
+  
 }
 
 h3 {
