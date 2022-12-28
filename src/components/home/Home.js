@@ -3,6 +3,7 @@ import TopBar from '../layouts/TopBar'
 import SliderArea from './SliderArea'
 import SearchBox from './SearchBox'
 import { Link } from 'react-router-dom'
+import Footer from '../layouts/Footer'
 import {
    Container, 
    BoxLeft,
@@ -128,6 +129,7 @@ function Home() {
              <ExpButton>styled-components</ExpButton>
              </ExplorSummary>
       </Container>
+      <Footer />
     </>
   )
 }

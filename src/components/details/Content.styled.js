@@ -14,11 +14,13 @@ flex-flow: wrap;
 
 export const Details = styled.div`
 box-sizing: border-box;
-width: 100%;
 border: solid #5B6DCD 1px;
 padding: 0px;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-flow: wrap; 
+`
+
+
+export const DetailsTitle = styled.div`
+`
+export const DetailsDescription = styled.div`
+padding: 5px 5px 5px 50px;
 `

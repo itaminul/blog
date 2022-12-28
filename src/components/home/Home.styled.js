@@ -118,7 +118,6 @@ width: 100%;
 padding: 30px 20px 20px 20px;
 `
 export const ReadMore = styled.button`
-background: transparent;
 border-radius: 10px;
 border: 0px solid palevioletred;
 color: black;
