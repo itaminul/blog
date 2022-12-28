@@ -10,8 +10,12 @@ import {
    BlogTitle,
    BlogBox,
    SliderBox,
-   ReadMore
+   ReadMore,
+   ExplorAllTopic,
+   ExplorSummary,
+   ExpButton
    } from '../home/Home.styled'
+
 
 //https://www.npmjs.com/package/react-awesome-watermark
 
@@ -59,7 +63,7 @@ function Home() {
               <Blog>              
                   <img src="./express.png" width="35%" />
                   <BlogTitle>Total Post - 50</BlogTitle>
-                  <h2 style={{fontWeight: '300'}}>Express</h2>                
+                  <h2 style={{fontWeight: '300'}}>Express.js</h2>                
                   <Link to='/react-details'>
                   <ReadMore>Read More</ReadMore>
                   </Link>   
@@ -83,7 +87,7 @@ function Home() {
               <Blog>              
                     <img src="./mongodb.jpeg"  width="35%" height="30%" />
                     <BlogTitle>Total Post - 50</BlogTitle>
-                    <h2 style={{fontWeight: '300'}}>Mongodb</h2>    
+                    <h2 style={{fontWeight: '300'}}>MongoDB</h2>    
                     <Link to='/react-details'>
                     <ReadMore>Read More</ReadMore>
                     </Link>   
@@ -98,6 +102,31 @@ function Home() {
               </Blog>
           </BlogBox>
         </BoxLeft>  
+        <ExplorAllTopic>
+        Explore all topics
+        </ExplorAllTopic>
+        <ExplorSummary>
+             <ExpButton>API</ExpButton>
+             <ExpButton>JavaScript</ExpButton>
+             <ExpButton>ReactJs</ExpButton>
+             <ExpButton>NodeJs</ExpButton>
+             <ExpButton>Express.js</ExpButton>
+             <ExpButton>Redux Toolkit</ExpButton>
+             <ExpButton>MongoDB</ExpButton>
+             <ExpButton>Mongoose</ExpButton>
+             <ExpButton>Prisma ORM</ExpButton>
+             <ExpButton>PHP</ExpButton>
+             <ExpButton>CodeIgniter</ExpButton>
+             <ExpButton>MySQL</ExpButton>
+             <ExpButton>Oracle</ExpButton>
+             <ExpButton>PostgreSQL</ExpButton>
+             <ExpButton>Jquery</ExpButton>
+             <ExpButton>Ajax</ExpButton>
+             <ExpButton>CSS</ExpButton>
+             <ExpButton>Bootstrap</ExpButton>
+             <ExpButton>MUI</ExpButton>
+             <ExpButton>styled-components</ExpButton>
+             </ExplorSummary>
       </Container>
     </>
   )

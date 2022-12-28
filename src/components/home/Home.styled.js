@@ -146,3 +146,79 @@ padding: 3px 10px 10px 10px;
 marign-bottom: 0px;
 text-align: center;
 `
+
+export const ExplorAllTopic = styled.ul`
+padding: 3px 10px 10px 10px;
+margin-top: 350px;
+text-align: center;
+font-weight: 900;
+font-size: 26px;
+@media screen and (max-width: 45em) {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        margin-top: 350px;
+       }
+`
+
+
+export const ExplorSummary = styled.div`
+font-size: 25px;
+font-weight: 30;
+text-align: left;
+line-height: 38px;
+width: 85%;
+
+@media screen and (max-width:1200px) {    
+        width: 40%;   
+        margin-top: 100px
+}
+@media screen and (max-width:600px) {
+        width: 85%;
+         margin-top: 540%
+        
+ }
+`
+
+export const ExpButton = styled.button`
+padding-left: 200px;
+width: auto;
+border-radius: 2px;
+border: 1px solid blue;
+color: #0f1111;
+cursor: pointer;
+display: inline-block;
+font-family: "Amazon Ember",sans-serif;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+  margin: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+&:hover {
+  color: blue;
+  font-size: 16px;
+}
+
+@media screen and (max-width:100px) {    
+        width: 100%;   
+        margin-top: 10px;
+        margin: 3px 3px 3px 3px;
+        padding: 5px 5px 5px 5px;
+        font-size: 15px;
+       font-weight: 30;
+}
+@media screen and (max-width:100px) {
+         width: 100%;
+         margin-top: 10px
+         margin: 0px 0px 0px 0px;
+         padding: 0px 0px 0px 0px;
+         font-size: 15px;
+         font-weight: 30;
+         width: 15%;
+border-radius: 10%;
+border: 2px solid blue;
+ }
+`

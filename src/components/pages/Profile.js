@@ -40,7 +40,7 @@ const EnhancedText = props => (
 const Profile = () => {
   return (
     <div>
-             <TopBar />
+           <TopBar />
         <ThemeProvider theme={theme}>
       <Fragment>
       <Grid
