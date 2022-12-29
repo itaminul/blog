@@ -20,7 +20,11 @@ padding: 0px;
 
 
 export const DetailsTitle = styled.div`
+font-size: 20px;
+text-align: justify;
+padding: 5px 5px 5px 5px;
 `
 export const DetailsDescription = styled.div`
-padding: 5px 5px 5px 50px;
+padding: 5px 5px 5px 5px;
+text-align: justify;
 `

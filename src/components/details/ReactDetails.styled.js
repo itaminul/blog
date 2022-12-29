@@ -27,7 +27,7 @@ height: 150px;
 `
 
 export const DetailsContent = styled.div`
-width: 80%;
+width: 70%;
 
 @media screen and (max-width:1200px) {    
     width: 100%;   

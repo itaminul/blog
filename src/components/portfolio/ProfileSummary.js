@@ -30,14 +30,14 @@ function ProfileSummary () {
              <ExpButton>JavaScript</ExpButton>
              <ExpButton>ReactJs</ExpButton>
              <ExpButton>NodeJs</ExpButton>
-             <ExpButton>ExpressJs</ExpButton>
-             <ExpButton>ReduxToolkit</ExpButton>
-             <ExpButton>MongoDb</ExpButton>
-             <ExpButton>Mongoose ORM</ExpButton>
+             <ExpButton>Express.js</ExpButton>
+             <ExpButton>Redux Toolkit</ExpButton>
+             <ExpButton>MongoDB</ExpButton>
+             <ExpButton>Mongoose</ExpButton>
              <ExpButton>Prisma ORM</ExpButton>
              <ExpButton>PHP</ExpButton>
-             <ExpButton>Codeigniter</ExpButton>
-             <ExpButton>Mysql</ExpButton>
+             <ExpButton>CodeIgniter</ExpButton>
+             <ExpButton>MySQL</ExpButton>
              <ExpButton>Oracle</ExpButton>
              <ExpButton>PostgreSQL</ExpButton>
              <ExpButton>Jquery</ExpButton>
@@ -45,7 +45,7 @@ function ProfileSummary () {
              <ExpButton>CSS</ExpButton>
              <ExpButton>Bootstrap</ExpButton>
              <ExpButton>MUI</ExpButton>
-             <ExpButton>StyledCompnent</ExpButton>
+             <ExpButton>styled-components</ExpButton>
              </ExpSummary>
 
         </BoxRight>

@@ -1,7 +1,7 @@
 
 import styled from 'styled-components'
 export const RecentPostContainer = styled.div`
-width: 20%;
+width: 30%;
 border-left: 2px solid green;
 height: 150px;
 
