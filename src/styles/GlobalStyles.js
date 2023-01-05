@@ -15,6 +15,8 @@ body {
   font-size: 100%;
   color: black;
   font-weight: 300;
+  font-style: normal;
+line-height: 30px;
   font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   /* font-family: 'Montserrat', sans-serif; */
 }

@@ -15,16 +15,28 @@ flex-flow: wrap;
 export const Details = styled.div`
 box-sizing: border-box;
 border: solid #5B6DCD 1px;
-padding: 0px;
+border-radius: 10px;
+padding: 5px 5px 5px 5px;
+margin-top: 8px;
 `
 
 
 export const DetailsTitle = styled.div`
 font-size: 20px;
+width: 100%;
+font-weight: 900;
 text-align: justify;
-padding: 5px 5px 5px 5px;
+padding: 10px 10px 10px 10px;
+display: flex;
+flex-direction: row;
+flex-flow: wrap;
 `
 export const DetailsDescription = styled.div`
-padding: 5px 5px 5px 5px;
+width: 100%;
+padding: 10px 10px 10px 10px;
 text-align: justify;
+display: flex;
+flex-direction: row;
+flex-flow: wrap;
+    
 `

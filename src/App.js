@@ -9,6 +9,7 @@ import Global from './styles/GlobalStyles';
 import Profile from './components/portfolio/PortfolioHome'
 import BlogIndex from './components/blog/BlogIndex';
 import ReactDetails from './components/details/ReactDetails';
+import Hooks from './components/details/reactPost/Hooks';
 function App() {
   const theme = {
     colors: {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/dashbord' element={<Dashbord />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/react-details' element={<ReactDetails />} />
+        <Route path='/hooks' element={ <Hooks />} />
       </Routes>
     </div>
     </ThemeProvider>

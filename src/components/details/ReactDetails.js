@@ -1,9 +1,9 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
 import LeftSide from './LeftSide'
-import Content from './Content'
+import Content from './ReactPost'
 import RecentPost from '../post/RecentPost'
-
+import Footer from '../layouts/Footer'
 import {
      Container,
     LeftSideBar,
@@ -26,6 +26,8 @@ const ReactDetails = () => {
                <RecentPost />
             </RecentPostContainer>
         </Container>
+        <Footer />
+       
     </>
   )
 }
