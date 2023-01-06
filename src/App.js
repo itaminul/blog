@@ -17,6 +17,13 @@ function App() {
       body: 'black'
     }
   }
+  const BreadCrumbsItems = {
+    react: 'React -> React Details',
+    hooks: 'React -> React Hooks',
+    country: 'Austria'
+  };
+
+
   return (
     <ThemeProvider theme={theme}>
     <div className="App">
@@ -27,8 +34,8 @@ function App() {
         <Route path='/batch' element={<BatchIndex />} />
         <Route path='/dashbord' element={<Dashbord />} />
         <Route path='/profile' element={<Profile />} />
-        <Route path='/react-details' element={<ReactDetails />} />
-        <Route path='/hooks' element={ <Hooks />} />
+        <Route path='/react-details' element={<ReactDetails breadcrumbs={BreadCrumbsItems}  />} />
+        <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
       </Routes>
     </div>
     </ThemeProvider>

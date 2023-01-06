@@ -1,5 +1,6 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
+import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftSide from './LeftSide'
 import Content from './ReactPost'
 import RecentPost from '../post/RecentPost'
@@ -13,10 +14,12 @@ import {
     RecentPostContainer
 } from '../post/RecentPost.styled'
 
-const ReactDetails = () => {
+const ReactDetails = (props) => {
   return (
     <>
         <TopBar />
+        <Breadcrumbs bread={props.breadcrumbs.react} />
+        
         <Container>
             <DetailsContent>
                 <Content />

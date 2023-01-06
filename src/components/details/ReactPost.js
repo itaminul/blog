@@ -25,7 +25,6 @@ const ReactPost = () => {
        ))}   
         */}
    <Container>
-    React
     <Details>
       <DetailsTitle>
         What is Hooks?

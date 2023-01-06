@@ -10,10 +10,9 @@ export const HooksDetails = () => {
   return (
     <>
         <Container>
-            React
             <Details>
             <DetailsTitle>
-                What is Hooks?
+                What is Hooks? 
             </DetailsTitle>
 
             <DetailsDescription>
