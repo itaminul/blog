@@ -11,6 +11,9 @@ import BlogIndex from './components/blog/BlogIndex';
 import ReactDetails from './components/details/ReactDetails';
 import Hooks from './components/details/reactPost/Hooks';
 import ReadMore from './components/readMore/ReadMore';
+
+
+
 function App() {
   const theme = {
     colors: {
@@ -22,7 +25,8 @@ function App() {
     javascript: 'Javascript  ->   Read More ',
     react: 'React  ->   Read More ',
     hooks: 'React -> React Hooks',
-    country: 'Austria'
+    country: 'Austria',
+    blog: 'Blog -> Blog Details'
   };
 
 
@@ -39,6 +43,7 @@ function App() {
         {/* <Route path='/read-more' element={<ReactDetails breadcrumbs={BreadCrumbsItems}  />} /> */}
         <Route path='/read-more' element={<ReadMore breadcrumbs={BreadCrumbsItems} />}  />
         <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/blogs' element={ <BlogIndex breadcrumbs={BreadCrumbsItems} /> }  />
       </Routes>
     </div>
     </ThemeProvider>
