@@ -10,6 +10,7 @@ import Profile from './components/portfolio/PortfolioHome'
 import BlogIndex from './components/blog/BlogIndex';
 import ReactDetails from './components/details/ReactDetails';
 import Hooks from './components/details/reactPost/Hooks';
+import ReadMore from './components/readMore/ReadMore';
 function App() {
   const theme = {
     colors: {
@@ -18,7 +19,8 @@ function App() {
     }
   }
   const BreadCrumbsItems = {
-    react: 'React -> React Details',
+    javascript: 'Javascript  ->   Read More ',
+    react: 'React  ->   Read More ',
     hooks: 'React -> React Hooks',
     country: 'Austria'
   };
@@ -34,7 +36,8 @@ function App() {
         <Route path='/batch' element={<BatchIndex />} />
         <Route path='/dashbord' element={<Dashbord />} />
         <Route path='/profile' element={<Profile />} />
-        <Route path='/react-details' element={<ReactDetails breadcrumbs={BreadCrumbsItems}  />} />
+        {/* <Route path='/read-more' element={<ReactDetails breadcrumbs={BreadCrumbsItems}  />} /> */}
+        <Route path='/read-more' element={<ReadMore breadcrumbs={BreadCrumbsItems} />}  />
         <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
       </Routes>
     </div>

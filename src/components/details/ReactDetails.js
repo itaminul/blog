@@ -7,6 +7,7 @@ import RecentPost from '../post/RecentPost'
 import Footer from '../layouts/Footer'
 import {
      Container,
+     LeftMenu,
     LeftSideBar,
     DetailsContent
     } from './ReactDetails.styled'
@@ -21,6 +22,9 @@ const ReactDetails = (props) => {
         <Breadcrumbs bread={props.breadcrumbs.react} />
         
         <Container>
+            <LeftMenu>
+                dddddd
+            </LeftMenu>
             <DetailsContent>
                 <Content />
             </DetailsContent>

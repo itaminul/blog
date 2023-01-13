@@ -41,7 +41,7 @@ function Home() {
                   <h2 style={{fontWeight: '300'}}> 
                   Javascript
                   </h2>  
-                  <Link to='/react-details'>
+                  <Link to='/read-more'>
                   <ReadMore>Read More</ReadMore>
                   </Link>           
               </Blog>

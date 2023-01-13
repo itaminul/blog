@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-padding-top: 120px;
+export const LeftContainer = styled.div`
+padding-top: 0px;
 width: 100%;
-height: auto;
 background: white;
+height: 410px;
+overflow: scroll;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -14,26 +15,10 @@ export const LeftMenu = styled.div`
 text-align: justify;
 width: 18%;
 height: 150px;
-
-
-`
-export const LeftSideBar = styled.div`
-width: 20%;
-border-left: 2px solid green;
-height: 150px;
-
-@media screen and (max-width:1200px) {    
-    width: 100%;   
-    margin-top: 10px
-}
-@media screen and (max-width:600px) {
-     width: 100%;
-     margin-top: 10px
-}
 `
 
 export const DetailsContent = styled.div`
-width: 62%;
+width: 64%;
 @media screen and (max-width:1200px) {    
     width: 100%;   
     margin-top: 10px
@@ -42,4 +27,9 @@ width: 62%;
      width: 100%;
      margin-top: 10px
 }
+`
+export const RightMenu = styled.div`
+text-align: justify;
+width: 18%;
+height: 150px;
 `
