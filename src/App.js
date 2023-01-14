@@ -11,7 +11,7 @@ import BlogIndex from './components/blog/BlogIndex';
 import ReactDetails from './components/details/ReactDetails';
 import Hooks from './components/details/reactPost/Hooks';
 import ReadMore from './components/readMore/ReadMore';
-
+import WhatIsJavascript from './components/javascript/WhatIsJavascript';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
   }
   const BreadCrumbsItems = {
     javascript: 'Javascript  ->   Read More ',
+    whatisjavascript: 'Javascript  -   Read More - What is javascript ',
     react: 'React  ->   Read More ',
     hooks: 'React -> React Hooks',
     country: 'Austria',
@@ -44,6 +45,8 @@ function App() {
         <Route path='/read-more' element={<ReadMore breadcrumbs={BreadCrumbsItems} />}  />
         <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/blogs' element={ <BlogIndex breadcrumbs={BreadCrumbsItems} /> }  />
+        {/* javascript */}
+        <Route path='/what-is-javascript' element={ <WhatIsJavascript breadcrumbs={BreadCrumbsItems} /> }/>
       </Routes>
     </div>
     </ThemeProvider>
