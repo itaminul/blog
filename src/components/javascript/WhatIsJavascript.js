@@ -4,10 +4,12 @@ import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import WhatisjavascriptDetails from './WhatisjavascriptDetails'
 import JavascriptArticelList from './JavascriptArticelList'
+import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
     Container,
     DetailsContent,
-    RightMenu
+    RightMenu,
+    LeftMenu
 } from './Common.styled'
 const WhatIsJavascript = (props) => {
   return (
@@ -16,7 +18,11 @@ const WhatIsJavascript = (props) => {
         <Breadcrumbs 
         bread={props.breadcrumbs.whatisjavascript} />
     <Container>
+        <LeftMenu>
+         <ReadMoreLeft/>
+    </LeftMenu>
         <DetailsContent>
+            
             <WhatisjavascriptDetails />            
         </DetailsContent>
         {/* <RightMenu>      

@@ -3,7 +3,7 @@ import React from 'react'
 const JavascriptArticelList = () => {
   return (
     <div>        
-        What is JavaScript?
+       j What is JavaScript? d
     </div>
   )
 }
