@@ -12,7 +12,18 @@ import ReactDetails from './components/details/ReactDetails';
 import Hooks from './components/details/reactPost/Hooks';
 import ReadMore from './components/readMore/ReadMore';
 import WhatIsJavascript from './components/javascript/WhatIsJavascript';
-
+import JavascriptScriptDataTypes from './components/javascript/JavascriptScriptDataTypes';
+import ArrowFunction from './components/javascript/ArrowFunction';
+import Async from './components/javascript/Async';
+import Await from './components/javascript/Await';
+import BlockScope from './components/javascript/BlockScope';
+import CallStack from './components/javascript/CallStack';
+import DefaultParameter from './components/javascript/DefaultParameter';
+import EventLoop from './components/javascript/EventLoop';
+import EventQueue from './components/javascript/EventQueue';
+import LexicalScope from './components/javascript/LexicalScope';
+import Prototypes from './components/javascript/Prototypes';
+import Promises from './components/javascript/Promises';
 
 function App() {
   const theme = {
@@ -47,6 +58,21 @@ function App() {
         <Route path='/blogs' element={ <BlogIndex breadcrumbs={BreadCrumbsItems} /> }  />
         {/* javascript */}
         <Route path='/what-is-javascript' element={ <WhatIsJavascript breadcrumbs={BreadCrumbsItems} /> }/>
+        <Route path='/javascript-script-data-types' element={ <JavascriptScriptDataTypes breadcrumbs={BreadCrumbsItems} />} />
+
+
+        <Route path='/javascript-arrow-function' element={ <ArrowFunction breadcrumbs={BreadCrumbsItems} />} />
+
+        <Route path='/javascript-async' element={ <Async breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-await' element={ <Await breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-block-scope' element={ <BlockScope breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-call-stack' element={ <CallStack breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-default-parameter' element={ <DefaultParameter breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-event-loop' element={ <EventLoop breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-event-queue' element={ <EventQueue breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-lexical-scope' element={ <LexicalScope breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-proto-type' element={ <Prototypes breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-promise' element={ <Promises breadcrumbs={BreadCrumbsItems} />} />
       </Routes>
     </div>
     </ThemeProvider>

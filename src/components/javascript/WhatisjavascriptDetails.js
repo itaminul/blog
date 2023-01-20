@@ -1,6 +1,7 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import JavascriptArticelList from './JavascriptArticelList'
+import parse from 'html-react-parser'
 import {
     DetailsContainer,
     DetailsContainerContent,
@@ -13,6 +14,24 @@ import {
     GeneralExample,
     OverviewTitle
 } from './Common.styled'
+
+
+const showExample = `
+<html>
+<div>
+  <p>The <strong>rat</strong> hates the <strong>cat</strong></p>
+  <p><i>This is something special</i></p>
+  <div>
+    <img src="https://www.kindacode.com/wp-content/uploads/2021/06/cute-dog.jpeg"/>
+  </div>
+  <h1>H1</h1>
+  <h2>H2</h2>
+  <h3>H3</h3>
+  <h4>Just Another Heading</h4>
+</div>
+</html>
+`; 
+
 
 const WhatisjavascriptDetails = () => {
   return (
@@ -63,7 +82,14 @@ const WhatisjavascriptDetails = () => {
                 </Overview>
                 <Example>
                   <div id="example">
-                    example
+                    Example
+                    <GeneralExample>
+                    {/* <div {{ __html: showExample }}></div> */}
+                    {/* <div dangerouslySetInnerHTML={{__html: html}}></div> */}
+                    <div dangerouslySetInnerHTML={{ __html: "<p>some data </p>" }} />
+
+                   {/* {parse(showExample)} */}
+                    </GeneralExample>
                   </div>
                 </Example>
         </DetailsContainerContent>

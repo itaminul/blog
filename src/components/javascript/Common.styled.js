@@ -99,8 +99,8 @@ flex-flow: wrap;
 export const Title = styled.div`
 width: 100%;
 text-aling: justify;
-font-size: 20px;
-font-color: green;
+font-size: 1.5rem;
+color: #374151;
 @media screen and (max-width:600px) {
      width: 100%;
      margin-top: 10px
@@ -119,7 +119,8 @@ text-aling: justify;
 export const Example = styled.div`
 width: 100%;
 text-aling: justify;
-font-size: 20px;
+font-size: 1.5rem;
+color: #374151;
 @media screen and (max-width:600px) {
      width: 100%;
      margin-top: 10px
@@ -132,7 +133,7 @@ text-aling: justify;
 font-size: 17px;
 background: #282828;
 color: white;
-padding: 2px 2px 2px 50px;
+padding: 2px 2px 2px 5px;
 @media screen and (max-width:600px) {
      width: 100%;
      margin-top: 10px
@@ -141,7 +142,8 @@ padding: 2px 2px 2px 50px;
 export const Overview = styled.div`
 width: 100%;
 text-aling: justify;
-font-size: 20px;
+font-size: 1.5rem;
+color: #374151;
 @media screen and (max-width:600px) {
      width: 100%;
      margin-top: 10px
