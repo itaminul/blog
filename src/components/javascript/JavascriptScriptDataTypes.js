@@ -17,7 +17,7 @@ const JavascriptScriptDataTypes = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.dataTypes} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

@@ -17,7 +17,7 @@ const Prototypes = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.protoType} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

@@ -17,7 +17,7 @@ const DefaultParameter = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.defaultParameter} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

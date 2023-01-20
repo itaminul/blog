@@ -17,7 +17,7 @@ const ArrowFunction = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.arrowFunction} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

@@ -18,7 +18,7 @@ const Promises = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.promise} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

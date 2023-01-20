@@ -25,6 +25,9 @@ import LexicalScope from './components/javascript/LexicalScope';
 import Prototypes from './components/javascript/Prototypes';
 import Promises from './components/javascript/Promises';
 
+//react more react 
+import ReactHome from './components/react/ReactHome';
+
 function App() {
   const theme = {
     colors: {
@@ -33,12 +36,27 @@ function App() {
     }
   }
   const BreadCrumbsItems = {
+    //javascript
     javascript: 'Javascript  ->   Read More ',
     whatisjavascript: 'Javascript  -   Read More - What is javascript ',
+    dataTypes: 'Javascript  -   Read More - What is dataTypes ',
+    arrowFunction: 'Javascript  -   Read More - What is arrowFunction ',
+    async: 'Javascript  -   Read More - What is async ',
+    await: 'Javascript  -   Read More - What is await ',
+    blockScope: 'Javascript  -   Read More - What is block scope ',
+    eventLoop: 'Javascript  -   Read More - What is event loop ',
+    defaultParameter: 'Javascript  -   Read More - What is default parameter ',
+    callStack: 'Javascript  -   Read More - What is call stack ',
+    eventQueue: 'Javascript  -   Read More - What is event queue ',
+    lexicalScope: 'Javascript  -   Read More - What is laxical scope ',
+    protoType: 'Javascript  -   Read More - What is prototype ',
+    promise: 'Javascript  -   Read More - What is promise ',
+
     react: 'React  ->   Read More ',
     hooks: 'React -> React Hooks',
     country: 'Austria',
-    blog: 'Blog -> Blog Details'
+    blog: 'Blog -> Blog Details',
+    hoisting: '',
   };
 
 
@@ -73,6 +91,10 @@ function App() {
         <Route path='/javascript-lexical-scope' element={ <LexicalScope breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/javascript-proto-type' element={ <Prototypes breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/javascript-promise' element={ <Promises breadcrumbs={BreadCrumbsItems} />} />
+
+        {/* react read more*/}
+        <Route path='/read-more-react' element={ <ReactHome breadcrumbs={BreadCrumbsItems} /> } />
+
       </Routes>
     </div>
     </ThemeProvider>

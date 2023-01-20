@@ -18,7 +18,7 @@ const EventLoop = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.eventLoop} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

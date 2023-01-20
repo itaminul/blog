@@ -49,7 +49,7 @@ function Home() {
                   <img src="./reactImage.png" width="35%" height="30%" />
                   <BlogTitle>Total Post - 50</BlogTitle>
                   <h2 style={{fontWeight: '300'}}>React</h2>                 
-                  <Link to='/react-details'>
+                  <Link to='/read-more-react'>
                   <ReadMore>Read More</ReadMore>
                   </Link>   
               </Blog>
@@ -57,7 +57,7 @@ function Home() {
                   <img src="./nodejs.png" width="35%" />
                   <BlogTitle>Total Post - 50</BlogTitle>
                   <h2 style={{fontWeight: '300'}}>NodeJS</h2>
-                  <Link to='/react-details'>
+                  <Link to='/read-more-node'>
                   <ReadMore>Read More</ReadMore>
                   </Link>   
               </Blog>
@@ -65,7 +65,7 @@ function Home() {
                   <img src="./express.png" width="35%" />
                   <BlogTitle>Total Post - 50</BlogTitle>
                   <h2 style={{fontWeight: '300'}}>Express.js</h2>                
-                  <Link to='/react-details'>
+                  <Link to='/read-more-express'>
                   <ReadMore>Read More</ReadMore>
                   </Link>   
               </Blog>
@@ -73,7 +73,7 @@ function Home() {
                     <img src="./php.png"  width="35%" />
                     <BlogTitle>Total Post - 50</BlogTitle>
                     <h2 style={{fontWeight: '300'}}>PHP</h2> 
-                    <Link to='/react-details'>
+                    <Link to='/read-more-php'>
                     <ReadMore>Read More</ReadMore>
                     </Link>   
               </Blog>
@@ -81,7 +81,7 @@ function Home() {
                     <img src="./mysql.png" width="35%" height="30%" />
                     <BlogTitle>Total Post - 50</BlogTitle>
                     <h2 style={{fontWeight: '300'}}>Mysql</h2>  
-                    <Link to='/react-details'>
+                    <Link to='/read-more-mysql'>
                     <ReadMore>Read More</ReadMore>
                     </Link>   
               </Blog>
@@ -89,7 +89,7 @@ function Home() {
                     <img src="./mongodb.jpeg"  width="35%" height="30%" />
                     <BlogTitle>Total Post - 50</BlogTitle>
                     <h2 style={{fontWeight: '300'}}>MongoDB</h2>    
-                    <Link to='/react-details'>
+                    <Link to='/read-mpre-mongodb'>
                     <ReadMore>Read More</ReadMore>
                     </Link>   
               </Blog>
@@ -97,7 +97,7 @@ function Home() {
                     <img src="./prisam.png" width="35%" height="30%" />
                     <BlogTitle>Total Post - 50</BlogTitle>
                     <h2 style={{fontWeight: '300'}}>Prisma</h2>    
-                    <Link to='/react-details'>
+                    <Link to='/read-more-prisma'>
                     <ReadMore>Read More</ReadMore>
                     </Link>   
               </Blog>

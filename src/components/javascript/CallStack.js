@@ -18,7 +18,7 @@ const CallStack = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.callStack} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

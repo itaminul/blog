@@ -18,7 +18,7 @@ const EventQueue = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.eventQueue} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

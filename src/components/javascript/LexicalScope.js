@@ -17,7 +17,7 @@ const LexicalScope = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.whatisjavascript} />
+        bread={props.breadcrumbs.lexicalScope} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>
