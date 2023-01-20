@@ -28,6 +28,22 @@ import Promises from './components/javascript/Promises';
 //react more react 
 import ReactHome from './components/react/ReactHome';
 
+//read more node js
+import ReadMoreHomeNode from './components/readMore/nodejsLayouts/ReadMoreHomeNode';
+
+// read more express
+import ReadMoreHomeExpress from './components/readMore/expressjsLayouts/ReadMoreHomeExpress';
+
+//read more PHP
+import ReadMoreHomePhp from './components/readMore/phpLayouts/ReadMoreHomePhp';
+
+//read more mysql
+import ReadMoreHomeMysql from './components/readMore/mysqlLayouts/ReadMoreHomeMysql';
+//read more mongobd
+import ReadMoreHomeMongodb from './components/readMore/mongodbLayouts/ReadMoreHomeMongodb';
+//read more prisma
+import ReadMoreHomePrisma from './components/readMore/prismaLayouts/ReadMoreHomePrisma';
+
 function App() {
   const theme = {
     colors: {
@@ -94,6 +110,14 @@ function App() {
 
         {/* react read more*/}
         <Route path='/read-more-react' element={ <ReactHome breadcrumbs={BreadCrumbsItems} /> } />
+
+        <Route path='/read-more-node' element={ <ReadMoreHomeNode breadcrumbs={BreadCrumbsItems}  />} />
+        <Route path='/read-more-express' element={ <ReadMoreHomeExpress breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-php' element={<ReadMoreHomePhp breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  breadcrumbs={BreadCrumbsItems}
+        /> } />
+        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  breadcrumbs={BreadCrumbsItems} />} />
 
       </Routes>
     </div>

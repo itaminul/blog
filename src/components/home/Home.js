@@ -89,7 +89,7 @@ function Home() {
                     <img src="./mongodb.jpeg"  width="35%" height="30%" />
                     <BlogTitle>Total Post - 50</BlogTitle>
                     <h2 style={{fontWeight: '300'}}>MongoDB</h2>    
-                    <Link to='/read-mpre-mongodb'>
+                    <Link to='/read-more-mongodb'>
                     <ReadMore>Read More</ReadMore>
                     </Link>   
               </Blog>
