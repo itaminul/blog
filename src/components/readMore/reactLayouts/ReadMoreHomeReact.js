@@ -1,19 +1,19 @@
 import React from 'react'
-import Breadcrumb from '../layouts/Breadcrumbs'
-import TopBar from '../layouts/TopBar'
+import Breadcrumb from '../../layouts/Breadcrumbs'
+import TopBar from '../../layouts/TopBar'
 import {
     Container,
     LeftMenu,
     DetailsContent,
     RightMenu
 
- } from '../readMore/reactLayouts/ReadMore.styled'
+ } from '../reactLayouts/ReadMore.styled'
 
- import ReadMoreLeft from '../readMore/reactLayouts/ReadMoreLeft'
- import ReadMoreContent from '../readMore/reactLayouts/ReadMoreContent'
- import ReadMoreRight from '../readMore/reactLayouts/ReadMoreRight'
+ import ReadMoreLeft from '../reactLayouts/ReadMoreLeft'
+ import ReadMoreContent from '../reactLayouts/ReadMoreContent'
+ import ReadMoreRight from '../reactLayouts/ReadMoreRight'
 
-const ReactHome = (props) => {
+const ReadMoreHomeReact = (props) => {
   return (
     <div>
         <TopBar />
@@ -35,4 +35,4 @@ const ReactHome = (props) => {
   )
 }
 
-export default ReactHome
+export default ReadMoreHomeReact

@@ -22,8 +22,7 @@ const ArrowFunction = (props) => {
         <LeftMenu>
          <ReadMoreLeft/>
     </LeftMenu>
-        <DetailsContent>
-            
+        <DetailsContent>            
             <WhatisjavascriptDetails />            
         </DetailsContent>
         {/* <RightMenu>      

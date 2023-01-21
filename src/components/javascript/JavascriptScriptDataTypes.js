@@ -11,13 +11,14 @@ import {
     RightMenu,
     LeftMenu
 } from './Common.styled'
+
+
 const JavascriptScriptDataTypes = (props) => {
   return (
    <>
    <TopBar />
 
-   <Breadcrumbs 
-        bread={props.breadcrumbs.dataTypes} />
+   <Breadcrumbs  bread={props.breadcrumbs.dataTypes} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>

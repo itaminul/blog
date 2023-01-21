@@ -1,31 +1,27 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
-import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
-import JavascriptArticelList from './JavascriptArticelList'
-import ReadMoreLeft from '../readMore/ReadMoreLeft'
-
+import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import ReadMoreLeft from '../readMore/reactLayouts/ReadMoreLeft'
 import {
     Container,
     DetailsContent,
     RightMenu,
     LeftMenu
-} from './Common.styled'
+} from '../javascript/Common.styled'
 
-const Async = (props) => {
+const State = (props) => {
   return (
    <>
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.async} />
+        bread={props.breadcrumbs.arrowFunction} />
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>
     </LeftMenu>
-        <DetailsContent>
-            
+        <DetailsContent>            
             <WhatisjavascriptDetails />            
         </DetailsContent>
         {/* <RightMenu>      
@@ -38,4 +34,4 @@ const Async = (props) => {
   )
 }
 
-export default Async
+export default State

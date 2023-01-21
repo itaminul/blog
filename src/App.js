@@ -26,7 +26,14 @@ import Prototypes from './components/javascript/Prototypes';
 import Promises from './components/javascript/Promises';
 
 //react more react 
-import ReactHome from './components/react/ReactHome';
+import ReadMoreHomeReact from './components/readMore/reactLayouts/ReadMoreHomeReact';
+import Dom from './components/react/Dom';
+import Fragments from './components/react/Fragments';
+import State from './components/react/State';
+import UseCallBack from './components/react/UseCallBack';
+import UseState from './components/react/UseState'
+import UseMemo from './components/react/UseMemo';
+import UseRef from './components/react/UseRef';
 
 //read more node js
 import ReadMoreHomeNode from './components/readMore/nodejsLayouts/ReadMoreHomeNode';
@@ -67,7 +74,7 @@ function App() {
     lexicalScope: 'Javascript  -   Read More - What is laxical scope ',
     protoType: 'Javascript  -   Read More - What is prototype ',
     promise: 'Javascript  -   Read More - What is promise ',
-
+    //react 
     react: 'React  ->   Read More ',
     hooks: 'React -> React Hooks',
     country: 'Austria',
@@ -109,7 +116,17 @@ function App() {
         <Route path='/javascript-promise' element={ <Promises breadcrumbs={BreadCrumbsItems} />} />
 
         {/* react read more*/}
-        <Route path='/read-more-react' element={ <ReactHome breadcrumbs={BreadCrumbsItems} /> } />
+        <Route path='/read-more-react' element={ <ReadMoreHomeReact breadcrumbs={BreadCrumbsItems} /> } />
+
+        <Route path='/react-dom' element={ <Dom breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-fragment' element={ <Fragments breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-state' element={ <State breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-use-callback' element={ <UseCallBack breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-use-state' element={ <UseState breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-use-memo' element={ <UseMemo breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-use-ref' element={ <UseRef breadcrumbs={BreadCrumbsItems} />} />
+
+        
 
         <Route path='/read-more-node' element={ <ReadMoreHomeNode breadcrumbs={BreadCrumbsItems}  />} />
         <Route path='/read-more-express' element={ <ReadMoreHomeExpress breadcrumbs={BreadCrumbsItems} />} />
@@ -124,6 +141,27 @@ function App() {
     </ThemeProvider>
   );
 }
+
+//RFL brb-cable   tar bigle 1 koil 1745- 1*23500
+//2.5 2015
+// 1 4030
+//dis tar 3080
+//wify 700
+// 15066
+
+// nikk - 6pin  5646 //1*13
+// 1872
+//3pin geng - 1833
+//2pin 765
+// gliger 525
+//coling bel 254
+// 10800
+
+
+//2000
+// 
+
+//2room - 3000
 
 
 //https://codesandbox.io/s/marcus-9s7g8?from-embed=&file=/src/styles.css
