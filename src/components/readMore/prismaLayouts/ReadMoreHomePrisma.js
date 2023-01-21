@@ -9,9 +9,9 @@ import {
 
  } from '../reactLayouts/ReadMore.styled'
 
- import ReadMoreLeft from '../reactLayouts/ReadMoreLeft'
- import ReadMoreContent from '../reactLayouts/ReadMoreContent'
- import ReadMoreRight from '../reactLayouts/ReadMoreRight'
+ import ReadMoreLeft from '../prismaLayouts/ReadMoreLeft'
+ import ReadMoreContent from '../prismaLayouts/ReadMoreContent'
+ import ReadMoreRight from '../prismaLayouts/ReadMoreRight'
 
 const ReadMoreHomePrisma = (props) => {
   return (

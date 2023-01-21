@@ -9,9 +9,9 @@ import {
 
  } from '../reactLayouts/ReadMore.styled'
 
- import ReadMoreLeft from '../reactLayouts/ReadMoreLeft'
- import ReadMoreContent from '../reactLayouts/ReadMoreContent'
- import ReadMoreRight from '../reactLayouts/ReadMoreRight'
+ import ReadMoreLeft from '../mongodbLayouts/ReadMoreLeft'
+ import ReadMoreContent from '../mongodbLayouts/ReadMoreContent'
+ import ReadMoreRight from '../mongodbLayouts/ReadMoreRight'
 
 const ReadMoreHomeMongodb = (props) => {
   return (

@@ -71,8 +71,19 @@ import Distinct from './components/mysql/Distinct';
 
 //read more mongobd
 import ReadMoreHomeMongodb from './components/readMore/mongodbLayouts/ReadMoreHomeMongodb';
+import WhatIsMongodb from './components/mongodb/WhatIsMongodb';
+import Advantages from './components/mongodb/Advantages';
+import MongodbDocuments from './components/mongodb/MongodbDocuments';
+import MongodbCollection from './components/mongodb/MongodbCollection';
+import MongodbShell from './components/mongodb/MongodbShell';
+import MongodbFeatures from './components/mongodb/MongodbFeatures';
+
 //read more prisma
 import ReadMoreHomePrisma from './components/readMore/prismaLayouts/ReadMoreHomePrisma';
+import WhatIsPrisma from './components/prisma/WhatIsPrisma';
+import PrismaCli from './components/prisma/PrismaCli';
+import PrismaClient from './components/prisma/PrismaClient';
+import PrismaMigrations from './components/prisma/PrismaMigrations';
 
 function App() {
   const theme = {
@@ -192,12 +203,22 @@ function App() {
           <Route path='/mysql-distinct'  element={ <Distinct  breadcrumbs={BreadCrumbsItems}
         /> } />
 
-        
 
-
+        {/* mongodb */}
         <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb  breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/mongodb-what-is-mongodb' element={ <WhatIsMongodb  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-advantages' element={ <Advantages  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-documents' element={ <MongodbDocuments  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-collection' element={ <MongodbCollection  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-shell' element={ <MongodbShell  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-features' element={ <MongodbFeatures  breadcrumbs={BreadCrumbsItems}/> } />
 
+      {/*prisma*/}
+        <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/prisma-what-is-prisma' element={ <WhatIsPrisma  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/prisma-cli' element={ <PrismaCli  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/prisma-client' element={ <PrismaClient  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/prisma-migrations' element={ <PrismaMigrations  breadcrumbs={BreadCrumbsItems} />} />
       </Routes>
     </div>
     </ThemeProvider>
