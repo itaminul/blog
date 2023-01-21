@@ -43,6 +43,13 @@ import Nonblocking from './components/nodejs/NoneBlocking';
 // read more express
 import ReadMoreHomeExpress from './components/readMore/expressjsLayouts/ReadMoreHomeExpress';
 
+import HttpMethods from './components/expressjs/HttpMethods';
+import UsesOfExpress from './components/expressjs/UsesOfExpress';
+import RouteHandler from './components/expressjs/RouteHandler';
+import Cors from './components/expressjs/Cors';
+import ErrorHandler from './components/expressjs/ErrorHandler';
+import Middleware from './components/expressjs/Middleware';
+
 //read more PHP
 import ReadMoreHomePhp from './components/readMore/phpLayouts/ReadMoreHomePhp';
 
@@ -134,7 +141,18 @@ function App() {
         <Route path='/node-js-blocking' element={ <Blocking breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/node-js-none-blocking' element={ <Nonblocking breadcrumbs={BreadCrumbsItems} />} />
 
+        {/*express js*/}
+
         <Route path='/read-more-express' element={ <ReadMoreHomeExpress breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-http-methods' element={ <HttpMethods breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-uses' element={ <UsesOfExpress breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-route-handler' element={ <RouteHandler breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-cors' element={ <Cors breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-error-handler' element={ <ErrorHandler breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-middleware' element={ <Middleware breadcrumbs={BreadCrumbsItems} />} />
+
+
+
         <Route path='/read-more-php' element={<ReadMoreHomePhp breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  breadcrumbs={BreadCrumbsItems}
         /> } />

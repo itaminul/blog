@@ -9,9 +9,9 @@ import {
 
  } from '../reactLayouts/ReadMore.styled'
 
- import ReadMoreLeft from '../reactLayouts/ReadMoreLeft'
- import ReadMoreContent from '../reactLayouts/ReadMoreContent'
- import ReadMoreRight from '../reactLayouts/ReadMoreRight'
+ import ReadMoreLeft from '../expressjsLayouts/ReadMoreLeft'
+ import ReadMoreContent from '../expressjsLayouts/ReadMoreContent'
+ import ReadMoreRight from '../expressjsLayouts/ReadMoreRight'
 
 const ReadMoreHomeExpress = (props) => {
   return (
