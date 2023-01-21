@@ -9,9 +9,9 @@ import {
 
  } from '../reactLayouts/ReadMore.styled'
 
- import ReadMoreLeft from '../reactLayouts/ReadMoreLeft'
- import ReadMoreContent from '../reactLayouts/ReadMoreContent'
- import ReadMoreRight from '../reactLayouts/ReadMoreRight'
+ import ReadMoreLeft from '../mysqlLayouts/ReadMoreLeft'
+ import ReadMoreContent from '../mysqlLayouts/ReadMoreContent'
+ import ReadMoreRight from '../mysqlLayouts/ReadMoreRight'
 
 const ReadMoreHomeMysql = (props) => {
   return (

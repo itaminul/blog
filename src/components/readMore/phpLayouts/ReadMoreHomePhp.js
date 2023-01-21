@@ -9,9 +9,9 @@ import {
 
  } from '../reactLayouts/ReadMore.styled'
 
- import ReadMoreLeft from '../reactLayouts/ReadMoreLeft'
- import ReadMoreContent from '../reactLayouts/ReadMoreContent'
- import ReadMoreRight from '../reactLayouts/ReadMoreRight'
+ import ReadMoreLeft from '../phpLayouts/ReadMoreLeft'
+ import ReadMoreContent from '../phpLayouts/ReadMoreContent'
+ import ReadMoreRight from '../phpLayouts/ReadMoreRight'
 
 const ReadMoreHomePhp = (props) => {
   return (

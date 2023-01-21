@@ -52,9 +52,23 @@ import Middleware from './components/expressjs/Middleware';
 
 //read more PHP
 import ReadMoreHomePhp from './components/readMore/phpLayouts/ReadMoreHomePhp';
+import WhatIsPhp from './components/php/WhatIsPhp';
+import TypesOfArray from './components/php/TypesOfArray';
+import VarDump from './components/php/VarDump';
+import PrintR from './components/php/PrintR';
+import Pear from './components/php/Pear';
+import GetAndPost from './components/php/GetAndPost';
+
 
 //read more mysql
 import ReadMoreHomeMysql from './components/readMore/mysqlLayouts/ReadMoreHomeMysql';
+import WhatIsMysql from './components/mysql/WhatIsMysql';
+import AddColumn from './components/mysql/AddColumn';
+import ForeignKey from './components/mysql/ForeignKey';
+import JoinTables from './components/mysql/JoinTables';
+import CharAndVarchar from './components/mysql/CharAndVarchar';
+import Distinct from './components/mysql/Distinct';
+
 //read more mongobd
 import ReadMoreHomeMongodb from './components/readMore/mongodbLayouts/ReadMoreHomeMongodb';
 //read more prisma
@@ -152,10 +166,35 @@ function App() {
         <Route path='/express-js-middleware' element={ <Middleware breadcrumbs={BreadCrumbsItems} />} />
 
 
-
+      {/*php*/}
         <Route path='/read-more-php' element={<ReadMoreHomePhp breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-what-is-php' element={<WhatIsPhp breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-types-of-array' element={<TypesOfArray breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-var-dump' element={<VarDump breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-print-r' element={<PrintR breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-pear' element={<Pear breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-get-post' element={<GetAndPost breadcrumbs={BreadCrumbsItems} />} />
+        
+
+      {/*mysql*/}
         <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  breadcrumbs={BreadCrumbsItems}
         /> } />
+          <Route path='/mysql-what-is-mysql'  element={ <WhatIsMysql  breadcrumbs={BreadCrumbsItems}
+        /> } />
+          <Route path='/mysql-add-column'  element={ <AddColumn  breadcrumbs={BreadCrumbsItems}
+        /> } />
+          <Route path='/mysql-foreign-key'  element={ <ForeignKey  breadcrumbs={BreadCrumbsItems}
+        /> } />
+          <Route path='/mysql-join-tables'  element={ <JoinTables  breadcrumbs={BreadCrumbsItems}
+        /> } />
+          <Route path='/mysql-char-varchar'  element={ <CharAndVarchar  breadcrumbs={BreadCrumbsItems}
+        /> } />
+          <Route path='/mysql-distinct'  element={ <Distinct  breadcrumbs={BreadCrumbsItems}
+        /> } />
+
+        
+
+
         <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb  breadcrumbs={BreadCrumbsItems}/> } />
         <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  breadcrumbs={BreadCrumbsItems} />} />
 
