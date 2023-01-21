@@ -37,6 +37,8 @@ import UseRef from './components/react/UseRef';
 
 //read more node js
 import ReadMoreHomeNode from './components/readMore/nodejsLayouts/ReadMoreHomeNode';
+import Blocking from './components/nodejs/Blocking';
+import Nonblocking from './components/nodejs/NoneBlocking';
 
 // read more express
 import ReadMoreHomeExpress from './components/readMore/expressjsLayouts/ReadMoreHomeExpress';
@@ -127,8 +129,11 @@ function App() {
         <Route path='/react-use-ref' element={ <UseRef breadcrumbs={BreadCrumbsItems} />} />
 
         
-
+        {/*node js*/}
         <Route path='/read-more-node' element={ <ReadMoreHomeNode breadcrumbs={BreadCrumbsItems}  />} />
+        <Route path='/node-js-blocking' element={ <Blocking breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/node-js-none-blocking' element={ <Nonblocking breadcrumbs={BreadCrumbsItems} />} />
+
         <Route path='/read-more-express' element={ <ReadMoreHomeExpress breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/read-more-php' element={<ReadMoreHomePhp breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  breadcrumbs={BreadCrumbsItems}
