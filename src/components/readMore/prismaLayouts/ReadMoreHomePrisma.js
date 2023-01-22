@@ -23,7 +23,7 @@ const ReadMoreHomePrisma = (props) => {
   return (
     <div>
         <TopBar />
-        <Breadcrumb bread={props.breadcrumbs.javascript} />
+        <Breadcrumb bread={props.breadcrumbs.prisma} />
         <Container>
             <LeftMenu>
                     <LeftMTitle>

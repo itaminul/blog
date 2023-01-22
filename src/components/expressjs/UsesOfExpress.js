@@ -18,7 +18,7 @@ const UsesOfExpress = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.usesexpress} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

@@ -18,7 +18,7 @@ const MongodbFeatures = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.features} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

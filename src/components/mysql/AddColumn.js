@@ -18,7 +18,7 @@ const AddColumn = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.addcolumng} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

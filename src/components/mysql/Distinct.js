@@ -18,7 +18,7 @@ const Distinct = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.distinct} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

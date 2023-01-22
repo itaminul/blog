@@ -18,7 +18,7 @@ const HttpMethods = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.httpmethod} />
     <Container>
         <LeftMenu>
                     <LeftMTitle>

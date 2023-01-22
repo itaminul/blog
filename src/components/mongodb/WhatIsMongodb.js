@@ -18,7 +18,7 @@ const WhatIsMongodb = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.whatismongodb} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

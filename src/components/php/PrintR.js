@@ -18,7 +18,7 @@ const PrintR = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.printr} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

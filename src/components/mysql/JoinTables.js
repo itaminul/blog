@@ -18,7 +18,7 @@ const JoinTables = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.jointable} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

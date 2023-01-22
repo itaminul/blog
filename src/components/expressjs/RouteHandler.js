@@ -18,7 +18,7 @@ const RouteHandler = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.routehandler} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

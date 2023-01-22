@@ -18,7 +18,7 @@ const VarDump = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.vardump} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

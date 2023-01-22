@@ -21,7 +21,7 @@ const ReadMoreHomePhp = (props) => {
   return (
     <div>
         <TopBar />
-        <Breadcrumb bread={props.breadcrumbs.javascript} />
+        <Breadcrumb bread={props.breadcrumbs.readmorephp} />
         <Container>
             <LeftMenu>
                     <LeftMTitle>

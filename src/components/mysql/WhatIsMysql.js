@@ -18,7 +18,7 @@ const WhatIsMysql = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.whatismysql} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

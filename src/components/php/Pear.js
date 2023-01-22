@@ -18,7 +18,7 @@ const Pear = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.pear} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

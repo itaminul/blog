@@ -18,7 +18,7 @@ const WhatIsPrisma = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.whatisprisma} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

@@ -18,7 +18,7 @@ const TypesOfArray = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.typeofarray} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

@@ -18,7 +18,7 @@ const ForeignKey = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.foreignkey} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

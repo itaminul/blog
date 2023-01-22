@@ -18,7 +18,7 @@ const Advantages = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.advantages} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

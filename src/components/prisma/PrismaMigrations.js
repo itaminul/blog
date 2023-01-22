@@ -18,7 +18,7 @@ const PrismaMigrations = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.migration} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

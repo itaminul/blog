@@ -18,7 +18,7 @@ const MongodbCollection = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.collection} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

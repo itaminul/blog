@@ -18,7 +18,7 @@ const Cors = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.cors} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

@@ -21,7 +21,7 @@ const ReadMoreHomeMysql = (props) => {
   return (
     <div>
         <TopBar />
-        <Breadcrumb bread={props.breadcrumbs.javascript} />
+        <Breadcrumb bread={props.breadcrumbs.mysql} />
         <Container>
             <LeftMenu>
                    <LeftMTitle>

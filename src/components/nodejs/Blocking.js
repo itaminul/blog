@@ -18,7 +18,7 @@ const Blocking = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.blocking} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

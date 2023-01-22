@@ -18,7 +18,7 @@ const PrismaCli = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.prismacli} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

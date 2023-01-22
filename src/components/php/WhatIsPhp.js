@@ -18,7 +18,7 @@ const WhatIsPhp = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.whatisphp} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

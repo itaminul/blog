@@ -18,7 +18,7 @@ const MongodbShell = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.mongodbshell} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

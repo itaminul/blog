@@ -18,7 +18,7 @@ const GetAndPost = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.getpost} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

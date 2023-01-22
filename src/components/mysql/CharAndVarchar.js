@@ -18,7 +18,7 @@ const CharAndVarchar = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.charvarchar} />
     <Container>
         <LeftMenu>
         <LeftMTitle>
