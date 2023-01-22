@@ -49,7 +49,7 @@ height: auto;
 flex-direction: row;
 justify-content: space-around;
 flex-flow: wrap;
-border-left: 2px solid #999999;
+border-left: 1px solid #999999;
 
 @media screen and (max-width:600px) {
      width: 100%;
@@ -155,4 +155,10 @@ export const OverviewTitle = styled.div`
 width: 100%;
 text-aling: justify;
 font-size: 16px;
+`
+
+export const LeftMTitle = styled.div`
+    background: #e6e6e6;
+    color: black;
+    padding-left:  25px;
 `

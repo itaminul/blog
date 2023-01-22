@@ -3,7 +3,6 @@ import TopBar from '../layouts/TopBar'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import WhatisjavascriptDetails from './WhatisjavascriptDetails'
-import JavascriptArticelList from './JavascriptArticelList'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
     Container,
@@ -20,7 +19,7 @@ const WhatIsJavascript = (props) => {
     <Container>
         <LeftMenu>
          <ReadMoreLeft/>
-    </LeftMenu>
+        </LeftMenu>
         <DetailsContent>
             
             <WhatisjavascriptDetails />            

@@ -10,11 +10,20 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-flow: wrap;
+text-decoration: none;
+   &:Link {
+    text-decoration: none;
+  }
 `
 export const LeftMenu = styled.div`
 text-align: justify;
 width: 18%;
 height: 150px;
+text-decoration: none;
+
+  &:Link {
+    text-decoration: none;
+  }
 `
 
 export const DetailsContent = styled.div`

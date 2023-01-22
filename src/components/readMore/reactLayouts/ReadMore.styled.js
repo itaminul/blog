@@ -31,7 +31,6 @@ overflow:auto;
  margin-left: 0px;
  margin-right: 0px;
 padding-bottom: 0px;
-background:ORANGE;
 
 width: 64%;
 @media screen and (max-width:1200px) {    

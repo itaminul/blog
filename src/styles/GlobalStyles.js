@@ -67,6 +67,12 @@ p {
   line-height: 1.5;
   margin: 0 0 1.5 0;
 }
+
+.ul li Link {
+  color: #221;
+  text-decoration: none !important;
+}
+
 `;
 
 export default GlobalsStyles;

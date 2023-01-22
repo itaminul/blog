@@ -113,8 +113,27 @@ function App() {
     hooks: 'React -> React Hooks',
     country: 'Austria',
     blog: 'Blog -> Blog Details',
-    hoisting: '',
+    hoisting: 'React - Read More - Dom',
+    dom: 'React - Read More - Hoisting',
+    fragments: 'React - Read More - Fragments',
+    state: 'React - Read More - state',
+    usecallback: 'React - Read More - useCallback',
+    usestate: 'React - Read More - useState',
+    usememo: 'React - Read More - useMemo',
+    useref: 'React - Read More - useRef',
   };
+
+  const LeftSideMenuTitle = {
+
+    reactTitle: 'React',
+    javascriptTitle: 'Javascript',
+    nodeTitle: 'Nodejs',
+    phpTitle: 'PHP',
+    prismaTitle: 'Prisma',
+    mongodbTitle: 'Mongodb',
+    mysqlTitle: 'Mysql',
+    expressTitle: 'Express',
+  }
 
 
   return (
@@ -128,7 +147,7 @@ function App() {
         <Route path='/dashbord' element={<Dashbord />} />
         <Route path='/profile' element={<Profile />} />
         {/* <Route path='/read-more' element={<ReactDetails breadcrumbs={BreadCrumbsItems}  />} /> */}
-        <Route path='/read-more' element={<ReadMore breadcrumbs={BreadCrumbsItems} />}  />
+        <Route path='/read-more' element={<ReadMore  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />}  />
         <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/blogs' element={ <BlogIndex breadcrumbs={BreadCrumbsItems} /> }  />
         {/* javascript */}
@@ -150,7 +169,7 @@ function App() {
         <Route path='/javascript-promise' element={ <Promises breadcrumbs={BreadCrumbsItems} />} />
 
         {/* react read more*/}
-        <Route path='/read-more-react' element={ <ReadMoreHomeReact breadcrumbs={BreadCrumbsItems} /> } />
+        <Route path='/read-more-react' element={ <ReadMoreHomeReact leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} /> } />
 
         <Route path='/react-dom' element={ <Dom breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/react-fragment' element={ <Fragments breadcrumbs={BreadCrumbsItems} />} />
@@ -162,13 +181,13 @@ function App() {
 
         
         {/*node js*/}
-        <Route path='/read-more-node' element={ <ReadMoreHomeNode breadcrumbs={BreadCrumbsItems}  />} />
+        <Route path='/read-more-node' element={ <ReadMoreHomeNode leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}  />} />
         <Route path='/node-js-blocking' element={ <Blocking breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/node-js-none-blocking' element={ <Nonblocking breadcrumbs={BreadCrumbsItems} />} />
 
         {/*express js*/}
 
-        <Route path='/read-more-express' element={ <ReadMoreHomeExpress breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-express' element={ <ReadMoreHomeExpress leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/express-js-http-methods' element={ <HttpMethods breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/express-js-uses' element={ <UsesOfExpress breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/express-js-route-handler' element={ <RouteHandler breadcrumbs={BreadCrumbsItems} />} />
@@ -178,7 +197,7 @@ function App() {
 
 
       {/*php*/}
-        <Route path='/read-more-php' element={<ReadMoreHomePhp breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-php' element={<ReadMoreHomePhp leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/php-what-is-php' element={<WhatIsPhp breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/php-types-of-array' element={<TypesOfArray breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/php-var-dump' element={<VarDump breadcrumbs={BreadCrumbsItems} />} />
@@ -188,7 +207,7 @@ function App() {
         
 
       {/*mysql*/}
-        <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  breadcrumbs={BreadCrumbsItems}
+        <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}
         /> } />
           <Route path='/mysql-what-is-mysql'  element={ <WhatIsMysql  breadcrumbs={BreadCrumbsItems}
         /> } />
@@ -205,7 +224,7 @@ function App() {
 
 
         {/* mongodb */}
-        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}/> } />
         <Route path='/mongodb-what-is-mongodb' element={ <WhatIsMongodb  breadcrumbs={BreadCrumbsItems}/> } />
         <Route path='/mongodb-advantages' element={ <Advantages  breadcrumbs={BreadCrumbsItems}/> } />
         <Route path='/mongodb-documents' element={ <MongodbDocuments  breadcrumbs={BreadCrumbsItems}/> } />
@@ -214,7 +233,7 @@ function App() {
         <Route path='/mongodb-features' element={ <MongodbFeatures  breadcrumbs={BreadCrumbsItems}/> } />
 
       {/*prisma*/}
-        <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/prisma-what-is-prisma' element={ <WhatIsPrisma  breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/prisma-cli' element={ <PrismaCli  breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/prisma-client' element={ <PrismaClient  breadcrumbs={BreadCrumbsItems} />} />
