@@ -18,7 +18,7 @@ const ReadMoreLeft = () => {
       <li><Link to='/javascript-async'>Async</Link></li>
       <li><Link to='/javascript-await'>Await</Link></li>
       <li><Link to='/javascript-block-scope'>Block Scope</Link></li>
-      <li><Link to='/javascript-call-stack'>Event Loop</Link></li>
+      <li><Link to='/javascript-call-stack'>Call Stack</Link></li>
       <li><Link to='/javascript-default-parameter'>Default Parameter</Link></li>
       <li><Link to='/javascript-event-loop'>Event Loop</Link></li>
       <li><Link to='/javascript-event-queue'>Event Queue</Link></li>

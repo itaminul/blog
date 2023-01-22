@@ -1,5 +1,6 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
+import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import WhatisjavascriptDetails from './WhatisjavascriptDetails'
@@ -9,7 +10,8 @@ import {
     Container,
     DetailsContent,
     RightMenu,
-    LeftMenu
+    LeftMenu,
+    LeftMTitle
 } from './Common.styled'
 const DefaultParameter = (props) => {
   return (
@@ -20,6 +22,9 @@ const DefaultParameter = (props) => {
         bread={props.breadcrumbs.defaultParameter} />
     <Container>
         <LeftMenu>
+        <LeftMTitle>
+                       <LeftBarTitle leftbartitle={props.leftbartitle.javascriptTitle} />
+                    </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>

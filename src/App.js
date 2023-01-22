@@ -151,93 +151,100 @@ function App() {
         <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/blogs' element={ <BlogIndex breadcrumbs={BreadCrumbsItems} /> }  />
         {/* javascript */}
-        <Route path='/what-is-javascript' element={ <WhatIsJavascript breadcrumbs={BreadCrumbsItems} /> }/>
-        <Route path='/javascript-script-data-types' element={ <JavascriptScriptDataTypes breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/what-is-javascript' element={ <WhatIsJavascript leftbartitle={LeftSideMenuTitle}  breadcrumbs={BreadCrumbsItems} /> }/>
+        <Route path='/javascript-script-data-types'   element={ <JavascriptScriptDataTypes leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
 
 
-        <Route path='/javascript-arrow-function' element={ <ArrowFunction breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-arrow-function' 
+          element={ <ArrowFunction  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
 
-        <Route path='/javascript-async' element={ <Async breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-await' element={ <Await breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-block-scope' element={ <BlockScope breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-call-stack' element={ <CallStack breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-default-parameter' element={ <DefaultParameter breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-event-loop' element={ <EventLoop breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-event-queue' element={ <EventQueue breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-lexical-scope' element={ <LexicalScope breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-proto-type' element={ <Prototypes breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/javascript-promise' element={ <Promises breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-async' element={ <Async leftbartitle={LeftSideMenuTitle}   breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-await' element={ <Await  leftbartitle={LeftSideMenuTitle}  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-block-scope'  element={ <BlockScope  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/javascript-call-stack'  element={ <CallStack breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/javascript-default-parameter'   element={ <DefaultParameter breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/javascript-event-loop'   element={ <EventLoop breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/javascript-event-queue'  element={ <EventQueue breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/javascript-lexical-scope'  element={ <LexicalScope breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/javascript-proto-type' element={ <Prototypes breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/javascript-promise'   element={ <Promises breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
 
         {/* react read more*/}
         <Route path='/read-more-react' element={ <ReadMoreHomeReact leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} /> } />
 
-        <Route path='/react-dom' element={ <Dom breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/react-fragment' element={ <Fragments breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/react-state' element={ <State breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/react-use-callback' element={ <UseCallBack breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/react-use-state' element={ <UseState breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/react-use-memo' element={ <UseMemo breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/react-use-ref' element={ <UseRef breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/react-dom'  element={ <Dom breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/react-fragment'  element={ <Fragments breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/react-state' element={ <State breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/react-use-callback'  element={ <UseCallBack breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/react-use-state' element={ <UseState breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+        <Route path='/react-use-memo' element={ <UseMemo breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+        <Route path='/react-use-ref' element={ <UseRef breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}   />} />
 
         
         {/*node js*/}
-        <Route path='/read-more-node' element={ <ReadMoreHomeNode leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}  />} />
-        <Route path='/node-js-blocking' element={ <Blocking breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/node-js-none-blocking' element={ <Nonblocking breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-node'  element={ <ReadMoreHomeNode leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}  />} />
+        <Route path='/node-js-blocking' element={ <Blocking breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+        <Route path='/node-js-none-blocking'    element={ <Nonblocking breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
 
         {/*express js*/}
 
-        <Route path='/read-more-express' element={ <ReadMoreHomeExpress leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/express-js-http-methods' element={ <HttpMethods breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/express-js-uses' element={ <UsesOfExpress breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/express-js-route-handler' element={ <RouteHandler breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/express-js-cors' element={ <Cors breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/express-js-error-handler' element={ <ErrorHandler breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/express-js-middleware' element={ <Middleware breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-express'  element={ <ReadMoreHomeExpress leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/express-js-http-methods'   element={ <HttpMethods breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/express-js-uses' element={ <UsesOfExpress breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+        <Route path='/express-js-route-handler'  element={ <RouteHandler breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/express-js-cors' element={ <Cors breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/express-js-error-handler'  element={ <ErrorHandler breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/express-js-middleware'   element={ <Middleware breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
 
 
       {/*php*/}
-        <Route path='/read-more-php' element={<ReadMoreHomePhp leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/php-what-is-php' element={<WhatIsPhp breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/php-types-of-array' element={<TypesOfArray breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/php-var-dump' element={<VarDump breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/php-print-r' element={<PrintR breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/php-pear' element={<Pear breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/php-get-post' element={<GetAndPost breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/read-more-php'   element={<ReadMoreHomePhp leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/php-what-is-php' element={<WhatIsPhp breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+        <Route path='/php-types-of-array'   element={<TypesOfArray breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/php-var-dump' element={<VarDump breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/php-print-r' element={<PrintR breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/php-pear'   element={<Pear breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/php-get-post'  element={<GetAndPost breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
         
 
       {/*mysql*/}
         <Route path='/read-more-mysql'  element={ <ReadMoreHomeMysql  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}
         /> } />
           <Route path='/mysql-what-is-mysql'  element={ <WhatIsMysql  breadcrumbs={BreadCrumbsItems}
+          leftbartitle={LeftSideMenuTitle} 
         /> } />
-          <Route path='/mysql-add-column'  element={ <AddColumn  breadcrumbs={BreadCrumbsItems}
+          <Route path='/mysql-add-column'  element={ <AddColumn 
+          leftbartitle={LeftSideMenuTitle} 
+           breadcrumbs={BreadCrumbsItems}
         /> } />
-          <Route path='/mysql-foreign-key'  element={ <ForeignKey  breadcrumbs={BreadCrumbsItems}
+          <Route path='/mysql-foreign-key' element={ <ForeignKey   leftbartitle={LeftSideMenuTitle}  breadcrumbs={BreadCrumbsItems}
         /> } />
-          <Route path='/mysql-join-tables'  element={ <JoinTables  breadcrumbs={BreadCrumbsItems}
+          <Route path='/mysql-join-tables' element={ <JoinTables  leftbartitle={LeftSideMenuTitle}   breadcrumbs={BreadCrumbsItems}
         /> } />
-          <Route path='/mysql-char-varchar'  element={ <CharAndVarchar  breadcrumbs={BreadCrumbsItems}
+          <Route path='/mysql-char-varchar' element={ <CharAndVarchar  breadcrumbs={BreadCrumbsItems}
+          leftbartitle={LeftSideMenuTitle}  
         /> } />
           <Route path='/mysql-distinct'  element={ <Distinct  breadcrumbs={BreadCrumbsItems}
+          leftbartitle={LeftSideMenuTitle}  
         /> } />
 
 
         {/* mongodb */}
-        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/mongodb-what-is-mongodb' element={ <WhatIsMongodb  breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/mongodb-advantages' element={ <Advantages  breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/mongodb-documents' element={ <MongodbDocuments  breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/mongodb-collection' element={ <MongodbCollection  breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/mongodb-shell' element={ <MongodbShell  breadcrumbs={BreadCrumbsItems}/> } />
-        <Route path='/mongodb-features' element={ <MongodbFeatures  breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb   breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-what-is-mongodb' element={ <WhatIsMongodb  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}/>   } />
+        <Route path='/mongodb-advantages'element={ <Advantages   leftbartitle={LeftSideMenuTitle}  
+        breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/mongodb-documents'  element={ <MongodbDocuments  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
+        <Route path='/mongodb-collection' element={ <MongodbCollection  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
+        <Route path='/mongodb-shell' element={ <MongodbShell  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
+        <Route path='/mongodb-features' element={ <MongodbFeatures  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
 
       {/*prisma*/}
         <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/prisma-what-is-prisma' element={ <WhatIsPrisma  breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/prisma-cli' element={ <PrismaCli  breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/prisma-client' element={ <PrismaClient  breadcrumbs={BreadCrumbsItems} />} />
-        <Route path='/prisma-migrations' element={ <PrismaMigrations  breadcrumbs={BreadCrumbsItems} />} />
+        <Route path='/prisma-what-is-prisma'   element={ <WhatIsPrisma  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
+        <Route path='/prisma-cli' element={ <PrismaCli  breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
+        <Route path='/prisma-client' element={ <PrismaClient  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+        <Route path='/prisma-migrations' element={ <PrismaMigrations  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
       </Routes>
     </div>
     </ThemeProvider>

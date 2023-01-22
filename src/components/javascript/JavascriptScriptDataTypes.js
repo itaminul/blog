@@ -1,5 +1,6 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
+import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import WhatisjavascriptDetails from './WhatisjavascriptDetails'
@@ -9,7 +10,8 @@ import {
     Container,
     DetailsContent,
     RightMenu,
-    LeftMenu
+    LeftMenu,
+    LeftMTitle
 } from './Common.styled'
 
 
@@ -21,8 +23,11 @@ const JavascriptScriptDataTypes = (props) => {
    <Breadcrumbs  bread={props.breadcrumbs.dataTypes} />
     <Container>
         <LeftMenu>
+                   <LeftMTitle>
+                       <LeftBarTitle leftbartitle={props.leftbartitle.javascriptTitle} />
+                    </LeftMTitle>
          <ReadMoreLeft/>
-    </LeftMenu>
+        </LeftMenu>
         <DetailsContent>
             
             <WhatisjavascriptDetails />            
