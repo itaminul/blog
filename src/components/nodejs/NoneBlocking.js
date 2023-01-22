@@ -22,7 +22,7 @@ const Nonblocking = (props) => {
     <Container>
         <LeftMenu>
         <LeftMTitle>
-                       <LeftBarTitle leftbartitle={props.leftbartitle.javascriptTitle} />
+                       <LeftBarTitle leftbartitle={props.leftbartitle.nodeTitle} />
                     </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>

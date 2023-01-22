@@ -22,7 +22,7 @@ const State = (props) => {
     <Container>
         <LeftMenu>
         <LeftMTitle>
-                       <LeftBarTitle leftbartitle={props.leftbartitle.javascriptTitle} />
+                       <LeftBarTitle leftbartitle={props.leftbartitle.reactTitle} />
                     </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
