@@ -121,6 +121,68 @@ function App() {
     usestate: 'React - Read More - useState',
     usememo: 'React - Read More - useMemo',
     useref: 'React - Read More - useRef',
+    //node js
+    blocking: 'Node - Read More - Blocking',
+    nonblocking: 'Node - Read More - Nonblocking',
+    //express js
+    httpmethod: 'Express - Read More - Http Methods',
+    usesexpress: 'Express - Read More - Uses Express',
+    routehandler: 'Express - Read More - Route Handler',
+    cors: 'Express - Read More - Cors',
+    errorhandler: 'Express - Read More - Eror Handler',
+    middleware: 'Express - Read More - Middleware',
+    //php
+    whatisphp: 'PHP - Read More - What is PHP',
+    typeofarray: 'Express - Read More - Types of array',
+    vardump: 'Express - Read More - Var Dump',
+    printr: 'Express - Read More - Print_r',
+    pear: 'Express - Read More - Pear',
+    getpost: 'Express - Read More - Get & Post',
+    //mysql
+    whatismysql: 'Express - Read More - What is mysql',
+    addcolumng: 'Express - Read More - Add Column',
+    foreignkey: 'Express - Read More - Foreign Key',
+    jointable: 'Express - Read More - Join Table',
+    charvarchar: 'Express - Read More - Char and Varchar',
+    distinct: 'Express - Read More - Distinct',
+
+    //mongodb
+    whatismongodb: 'Express - Read More - What is mongodb',
+    advantages: 'Express - Read More - Advantages',
+    documents: 'Express - Read More - Documents',
+    collection: 'Express - Read More - Collection',
+    mongodbshell: 'Express - Read More - Mongodb Shell',
+    features: 'Express - Read More - Features',
+    //prisma
+    whatisprisma: 'Express - Read More - What is prisma',
+    prismacli: 'Express - Read More - Prisma CLI',
+    prismaclient: 'Express - Read More - Prisma Client',
+    migration: 'Express - Read More - Migration',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
   };
 
   const LeftSideMenuTitle = {

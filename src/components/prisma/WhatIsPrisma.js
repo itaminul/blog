@@ -1,13 +1,15 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
+import LeftBarTitle from '../layouts/LeftBarTitle'
 import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
 import ReadMoreLeft from '../readMore/prismaLayouts/ReadMoreLeft'
 import {
     Container,
     DetailsContent,
     RightMenu,
-    LeftMenu
+    LeftMenu,
+    LeftMTitle
 } from '../javascript/Common.styled'
 
 const WhatIsPrisma = (props) => {
@@ -19,6 +21,9 @@ const WhatIsPrisma = (props) => {
         bread={props.breadcrumbs.arrowFunction} />
     <Container>
         <LeftMenu>
+        <LeftMTitle>
+          <LeftBarTitle leftbartitle={props.leftbartitle.prismaTitle} />
+       </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
