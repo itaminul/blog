@@ -14,10 +14,11 @@ flex-flow: wrap;
 
 export const Details = styled.div`
 box-sizing: border-box;
-border: solid #5B6DCD 1px;
+border: solid #5B6DCD 0px;
 border-radius: 10px;
 padding: 5px 5px 5px 5px;
 margin-top: 8px;
+background-color: #e6e6e6;
 `
 
 

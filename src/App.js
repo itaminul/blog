@@ -95,26 +95,26 @@ function App() {
   const BreadCrumbsItems = {
     //javascript
     javascript: 'Javascript  ->   Read More ',
-    whatisjavascript: 'Javascript  -   Read More - What is javascript ',
-    dataTypes: 'Javascript  -   Read More - What is dataTypes ',
-    arrowFunction: 'Javascript  -   Read More - What is arrowFunction ',
-    async: 'Javascript  -   Read More - What is async ',
-    await: 'Javascript  -   Read More - What is await ',
-    blockScope: 'Javascript  -   Read More - What is block scope ',
-    eventLoop: 'Javascript  -   Read More - What is event loop ',
-    defaultParameter: 'Javascript  -   Read More - What is default parameter ',
-    callStack: 'Javascript  -   Read More - What is call stack ',
-    eventQueue: 'Javascript  -   Read More - What is event queue ',
-    lexicalScope: 'Javascript  -   Read More - What is laxical scope ',
-    protoType: 'Javascript  -   Read More - What is prototype ',
-    promise: 'Javascript  -   Read More - What is promise ',
+    whatisjavascript: 'Javascript  -   Read More - javascript ',
+    dataTypes: 'Javascript  -   Read More - dataTypes ',
+    arrowFunction: 'Javascript  -   Read More - arrowFunction ',
+    async: 'Javascript  -   Read More -  async ',
+    await: 'Javascript  -   Read More -  await ',
+    blockScope: 'Javascript  -   Read More - block scope ',
+    eventLoop: 'Javascript  -   Read More -  event loop ',
+    defaultParameter: 'Javascript  -   Read More - default parameter ',
+    callStack: 'Javascript  -   Read More - call stack ',
+    eventQueue: 'Javascript  -   Read More - event queue ',
+    lexicalScope: 'Javascript  -   Read More - laxical scope ',
+    protoType: 'Javascript  -   Read More - prototype ',
+    promise: 'Javascript  -   Read More - promise ',
     //react 
     react: 'React  ->   Read More ',
-    hooks: 'React -> React Hooks',
+    hooks: 'React ->  Hooks',
     country: 'Austria',
     blog: 'Blog -> Blog Details',
-    hoisting: 'React - Read More - Dom',
-    dom: 'React - Read More - Hoisting',
+    hoisting: 'React - Read More - Hoisting',
+    dom: 'React - Read More - Dom',
     fragments: 'React - Read More - Fragments',
     state: 'React - Read More - state',
     usecallback: 'React - Read More - useCallback',
@@ -157,31 +157,7 @@ function App() {
     whatisprisma: 'Express - Read More - What is prisma',
     prismacli: 'Express - Read More - Prisma CLI',
     prismaclient: 'Express - Read More - Prisma Client',
-    migration: 'Express - Read More - Migration',
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    migration: 'Express - Read More - Migration',   
 
   };
 

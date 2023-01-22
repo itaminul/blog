@@ -18,7 +18,7 @@ const UseState = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.usestate} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

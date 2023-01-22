@@ -18,7 +18,7 @@ const Fragments = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.fragments} />
     <Container>
         <LeftMenu>
                     <LeftMTitle>

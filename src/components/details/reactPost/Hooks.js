@@ -4,6 +4,7 @@ import{ Link } from 'react-router-dom'
 import TopBar from '../../layouts/TopBar'
 import Breadcrumbs from '../../layouts/Breadcrumbs'
 import RecentPost from '../../post/RecentPost'
+import RecentBlog from '../../blog/RecentBlog'
 import { HooksDetails } from './HooksDetails'
 import {
   Container,
@@ -24,7 +25,7 @@ const Hooks = (props) => {
                   <HooksDetails />
               </DetailsContent>
               <RecentPostContainer>
-                <RecentPost />
+                <RecentBlog />
               </RecentPostContainer>
           </Container>
     </>

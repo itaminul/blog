@@ -18,7 +18,7 @@ const State = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.state} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

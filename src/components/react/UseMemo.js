@@ -18,7 +18,7 @@ const UseMemo = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.usememo} />
     <Container>
         <LeftMenu>
         <LeftMTitle>

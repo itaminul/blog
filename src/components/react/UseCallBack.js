@@ -18,7 +18,7 @@ const UseCallBack = (props) => {
    <TopBar />
 
    <Breadcrumbs 
-        bread={props.breadcrumbs.arrowFunction} />
+        bread={props.breadcrumbs.usecallback} />
     <Container>
         <LeftMenu>
         <LeftMTitle>
