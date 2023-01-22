@@ -230,7 +230,9 @@ function App() {
 
 
         {/* mongodb */}
-        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb   breadcrumbs={BreadCrumbsItems}/> } />
+        <Route path='/read-more-mongodb' element={ <ReadMoreHomeMongodb   breadcrumbs={BreadCrumbsItems}
+        leftbartitle={LeftSideMenuTitle}
+        /> } />
         <Route path='/mongodb-what-is-mongodb' element={ <WhatIsMongodb  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}/>   } />
         <Route path='/mongodb-advantages'element={ <Advantages   leftbartitle={LeftSideMenuTitle}  
         breadcrumbs={BreadCrumbsItems}/> } />
