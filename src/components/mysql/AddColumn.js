@@ -16,7 +16,6 @@ const AddColumn = (props) => {
   return (
    <>
    <TopBar />
-
    <Breadcrumbs 
         bread={props.breadcrumbs.addcolumng} />
     <Container>

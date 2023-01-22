@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-padding: 120px 10px 0px 10px;
+padding: 120px 10px 0px 0px;
 text-align: justify;
 width: 100%;
 height: auto;
@@ -14,7 +14,6 @@ flex-flow: wrap;
 
 
 export const LeftMenu = styled.div`
-
 text-align: justify;
 width: 18%;
 height: 180px;
@@ -41,7 +40,7 @@ width: 78%;
 }
 `
 export const RightMenu = styled.div`
-padding: 0px 0px 0px 10px;
+padding: 0px 0px 0px 5px;
 text-align: justify;
 width: 20%;
 

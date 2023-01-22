@@ -32,7 +32,14 @@ const showExample = `
 </html>
 `; 
 
+const br = '<br />'
 
+const example = `
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+`
 const WhatisjavascriptDetails = () => {
   return (
     <div>
@@ -40,16 +47,29 @@ const WhatisjavascriptDetails = () => {
             <DetailsContainerContent>
                 <Title>
                     <div id="title">
-                     What is javascript? 
-                     </div>
-                     
+                    What is Prisma?
+                     </div>                     
                      </Title>                 
                 <Description>
                 <div id="description">
-                              JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as 
-                              realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+                Prisma is an open source next-generation ORM. It consists of the following parts:
+                <br />
+                  Prisma Client: <br />
+                  Auto-generated and type-safe query builder for Node.js & TypeScript
+                  <br />
+                  Prisma Migrate: 
+                  <br />
+                    Prisma Migrate is an imperative database schema migration tool that enables you to:
 
-              JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+                    Keep your database schema in sync with your Prisma schema as it evolves and
+                    Maintain existing data in your database
+                    Prisma Migrate generates a history of .sql migration files, and plays a role in both development and deployment. 
+                  <br />
+                  Prisma Studio: 
+                  <br />
+                  GUI to view and edit data in your database.
+
+
                 </div>
                 </Description>
                 <Overview>
@@ -57,36 +77,19 @@ const WhatisjavascriptDetails = () => {
                     Overview
                     <OverviewTitle>
                       <div>
-                      To define a variable in JavaScript, you use var keyword. For example:
+                      The Prisma schema has powerful data modeling features. For example, it allows you to define "Prisma-level" relation fields which will make it easier to work with relations in the Prisma Client API. In the case above, the posts field on User is defined only on "Prisma-level", meaning it does not manifest as a foreign key in the underlying database.
                       </div>
-                    </OverviewTitle>
-                    <GeneralExample>
-                    var x = 10;
-                    </GeneralExample>
-                    <GeneralExample>
-                    var y = 20;
-                    </GeneralExample>
-
-                    <OverviewTitle>
-                      <div>
-                      ES6 added a new way to declare a variable with the let keyword:
-                      </div>
-                    </OverviewTitle>
-                    <GeneralExample>
-                    const x = 10;
-                    </GeneralExample>
-                    <GeneralExample>
-                    let = 20;
-                    </GeneralExample>
+                    </OverviewTitle>                    
                   </div>
                 </Overview>
                 <Example>
                   <div id="example">
                     Example
                     <GeneralExample>
+                    {example}
                     {/* <div {{ __html: showExample }}></div> */}
                     {/* <div dangerouslySetInnerHTML={{__html: html}}></div> */}
-                    <div dangerouslySetInnerHTML={{ __html: "<p>some data </p>" }} />
+                    {/* <div dangerouslySetInnerHTML={{ __html: "<p>some data </p>" }} /> */}
 
                    {/* {parse(showExample)} */}
                     </GeneralExample>
@@ -98,7 +101,6 @@ const WhatisjavascriptDetails = () => {
           <ul>
               <ol> <a href='#title'> What is JavaScript? </a> </ol>
               <ol>  <a href='#overview'> Overview </a> </ol>
-              <ol>  <a href='#example'> example </a> </ol>
               <ol>  <a href='#example'> example </a> </ol>
           </ul>   
         </RightMenu>

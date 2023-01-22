@@ -25,20 +25,23 @@ const ReadMoreHomeExpress = (props) => {
         <Breadcrumb bread={props.breadcrumbs.javascript} />
         <Container>
             <LeftMenu>
-                    <LeftMTitle>
-                       <LeftBarTitle leftbartitle={props.leftbartitle.expressTitle} />
-                    </LeftMTitle>
+
+            <LeftMTitle>
+                <LeftBarTitle leftbartitle={props.leftbartitle.expressTitle} />
+            </LeftMTitle>
+
                <ReadMoreLeft />
+
             </LeftMenu>
+
             <DetailsContent>
                 <ReadMoreContent />
             </DetailsContent>
+            
             <RightMenu>
                 <ReadMoreRight />
             </RightMenu>
-
-        </Container>
-      
+        </Container>      
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-padding-top: 120px;
+padding: 120px 10px 10px 14px;
 width: 100%;
 height: auto;
 background: white;
@@ -26,13 +26,10 @@ height: 180px;
 `
 
 export const DetailsContent = styled.div`
-overflow:auto;
- padding: 0px;
- margin-left: 0px;
- margin-right: 0px;
-padding-bottom: 0px;
+ overflow:auto;
+ padding: 0px 0px 0px 0px;
+ width: 64%;
 
-width: 64%;
 @media screen and (max-width:1200px) {    
     width: 100%;   
     margin-top: 10px
