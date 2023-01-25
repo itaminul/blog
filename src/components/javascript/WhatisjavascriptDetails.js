@@ -47,29 +47,12 @@ const WhatisjavascriptDetails = () => {
             <DetailsContainerContent>
                 <Title>
                     <div id="title">
-                    What is Prisma?
+                    Prisma CLI ?
                      </div>                     
                      </Title>                 
                 <Description>
                 <div id="description">
-                Prisma is an open source next-generation ORM. It consists of the following parts:
-                <br />
-                  Prisma Client: <br />
-                  Auto-generated and type-safe query builder for Node.js & TypeScript
-                  <br />
-                  Prisma Migrate: 
-                  <br />
-                    Prisma Migrate is an imperative database schema migration tool that enables you to:
-
-                    Keep your database schema in sync with your Prisma schema as it evolves and
-                    Maintain existing data in your database
-                    Prisma Migrate generates a history of .sql migration files, and plays a role in both development and deployment. 
-                  <br />
-                  Prisma Studio: 
-                  <br />
-                  GUI to view and edit data in your database.
-
-
+                The Prisma command line interface (CLI) is the primary way to interact with your Prisma project from the command line. It can initialize new project assets, generate Prisma Client, and analyze existing database structures through introspection to automatically create your application models.
                 </div>
                 </Description>
                 <Overview>
@@ -86,7 +69,7 @@ const WhatisjavascriptDetails = () => {
                   <div id="example">
                     Example
                     <GeneralExample>
-                    {example}
+                    npx prisma
                     {/* <div {{ __html: showExample }}></div> */}
                     {/* <div dangerouslySetInnerHTML={{__html: html}}></div> */}
                     {/* <div dangerouslySetInnerHTML={{ __html: "<p>some data </p>" }} /> */}

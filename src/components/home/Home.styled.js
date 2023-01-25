@@ -75,6 +75,7 @@ box-sizing: border-box;
  width: 100%;
  height: 120%;
  border: solid #5B6DCD 0px;
+ background: #eef4fa;
  padding: 5px;
  display: flex;
  flex-direction: row;
@@ -84,15 +85,15 @@ box-sizing: border-box;
  ` 
 export const Blog = styled.div`
 box-sizing: border-box;
-width: 24%;
-height: 78%;
+width: 18%;
+height: 16%;
 border: solid #5B6DCD 1px;
 padding: 5px 5px 5px 5px;
-margin-top: 10px;
+margin-top: 5px;
 margin-left: 0px;
 color: black;
 border-radius: 3%;
-background: #e6e6e6;
+background: white;
 box-shadow: 5px 0px 0px 0px #888888;
  
 // transition: transform 250ms;
@@ -112,10 +113,24 @@ box-shadow: 5px 0px 0px 0px #888888;
  }
 
 `
+
+export const BlogImage = styled.div`
+font-size: 20px;
+width: 100%;
+padding: 0px 0px 0px 0px;
+text-align: justify;
+`
+export const BlogImageTitle = styled.div`
+width: 100%;
+margin-left: 80px !important;
+text-aling: right;
+text-decoration:none;
+`
+
 export const BlogTitle = styled.div`
 font-size: 20px;
 width: 100%;
-padding: 30px 20px 20px 20px;
+padding: 0px 0px 0px 0px;
 `
 export const ReadMore = styled.button`
 border-radius: 10px;

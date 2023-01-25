@@ -14,7 +14,9 @@ import {
    ReadMore,
    ExplorAllTopic,
    ExplorSummary,
-   ExpButton
+   ExpButton,
+   BlogImage,
+   BlogImageTitle
    } from '../home/Home.styled'
 
 
@@ -35,16 +37,24 @@ function Home() {
       </div>      
         <BoxLeft>
           <BlogBox>
-              <Blog>
-                  <img src="./javascript1.jpeg"  width="35%" />
-                  <BlogTitle>Total Post - 50</BlogTitle>
-                  <h2 style={{fontWeight: '300'}}> 
-                  Javascript
-                  </h2>  
-                  <Link to='/read-more'>
-                  <ReadMore>Read More</ReadMore>
-                  </Link>           
-              </Blog>
+             
+       
+                <Blog>
+                <Link to='/read-more'>
+                    <BlogImage>
+                      <img src="./javascript.svg"  width="25%" />
+                      <BlogImageTitle
+                      style={{marginLeft: "20px",  
+                      marginTop: "-50px",
+                      textDecoration : "none"}}>JavaScript</BlogImageTitle>
+                      </BlogImage>
+                    
+                      {/* <Link to='/read-more'>
+                      <ReadMore>Read More</ReadMore>
+                      </Link>            */}
+                      </Link> 
+                  </Blog>
+             
               <Blog>              
                   <img src="./reactImage.png" width="35%" height="30%" />
                   <BlogTitle>Total Post - 50</BlogTitle>
