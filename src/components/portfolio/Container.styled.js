@@ -24,7 +24,7 @@ box-sizing: border-box;
 export const BoxLeft = styled.div`
 width: 20%;
 height: 376px;
-background: blue;
+background: white;
 margin: 10px;
 margin-top: -90px;
 box-size: 20px;
@@ -145,7 +145,7 @@ padding: 15px 0px 0px 0px;
 height: 50px;
 @media screen and (max-width:1200px) {    
         width: 100%;   
-        margin-top: 190px;
+        margin-top: 290px;
         ont-size: 1.5rem;
 }
 
@@ -153,7 +153,7 @@ height: 50px;
         font-size: 1.5rem;
         margin-left: 20px;
         width: 90%;
-        margin-top: 190px
+        margin-top: 270px
  }
 
 `

@@ -14,7 +14,9 @@ function ProfileSummary () {
       
         <TopBackground/>
         <BoxLeft>
-        <img src="/pro.webp" alt="image"
+        <img 
+        style={{width: '370px'}}
+        src="/aminul.jpeg" alt="image"
         />
         </BoxLeft>
         <BoxRight>
