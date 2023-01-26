@@ -1,14 +1,28 @@
 import React from 'react'
-import { Input, Button } from './SearchBox.styled'
-import SearchIcon from '@mui/icons-material/Search';
+import { InputFiled } from './SearchBox.styled'
+
+const inputFi = {
+fontSize: "14px",
+lineHeight: "1",
+backgroundColor: "white",
+width: "85%",
+height: "50px",
+borderRadius: "8px",
+border: "none",
+color: "black",
+alignItems: "center",
+flexDirection: "column",
+rowGap: "20px",
+transition: "margin 300ms cubic-bezier(0.645, 0.045, 0.355, 1)",
+}
 const SearchBox = () => {
   return (
     <div>
-        <Input placeholder = 'Enter text'></Input>
-        <Button>
+     
+        <input type='text' style={inputFi} placeholder=' Search find the tutorials' />
+        {/* <Button>
         Search
-        </Button>
-      
+        </Button> */}    
     </div>
   )
 }

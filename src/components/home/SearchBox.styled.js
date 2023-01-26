@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const Input = styled.input`
+export const InputFiled = styled.div`
 font-size: 14px;
 line-height: 1;
 background-color: white;
-width: 55%;
+width: 85%;
 height: 50px;
 border-radius: 8px;
 border: none;

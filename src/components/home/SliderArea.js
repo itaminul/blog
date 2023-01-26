@@ -78,7 +78,7 @@ const SliderArea = (props, color) => {
         
         <h1 style={{paddingTop: '120px', marginLeft: '-250px'}}>
            
-        You Can Learn 
+        Find the Best Programming  Tutorials
 
         <SliderDiv>
         {props.items.map(item => (

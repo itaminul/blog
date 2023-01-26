@@ -36,81 +36,101 @@ function Home() {
         <TopBar />
       </div>      
         <BoxLeft>
-          <BlogBox>
-             
-       
-                <Blog>
-                <Link to='/read-more'>
-                    <BlogImage>
-                      <img src="./javascript.svg"  width="25%" />
-                      <BlogImageTitle
-                      style={{marginLeft: "20px",  
-                      marginTop: "-50px",
-                      textDecoration : "none"}}>JavaScript</BlogImageTitle>
-                      </BlogImage>
-                    
-                      {/* <Link to='/read-more'>
-                      <ReadMore>Read More</ReadMore>
-                      </Link>            */}
-                      </Link> 
+                  <BlogBox>            
+                  <Blog>
+                        <Link to='/read-more' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./javascript.svg"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-40px"}}>JavaScript</BlogImageTitle>
+                              </BlogImage>
+                          </Link> 
+                      </Blog>             
+                  <Blog>      
+
+                    <Link to='/read-more-react' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./react.svg"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-40px"}}>React</BlogImageTitle>
+                              </BlogImage>
+                          </Link>
                   </Blog>
-             
-              <Blog>              
-                  <img src="./reactImage.png" width="35%" height="30%" />
-                  <BlogTitle>Total Post - 50</BlogTitle>
-                  <h2 style={{fontWeight: '300'}}>React</h2>                 
-                  <Link to='/read-more-react'>
-                  <ReadMore>Read More</ReadMore>
-                  </Link>   
-              </Blog>
-              <Blog>              
-                  <img src="./nodejs.png" width="35%" />
-                  <BlogTitle>Total Post - 50</BlogTitle>
-                  <h2 style={{fontWeight: '300'}}>NodeJS</h2>
-                  <Link to='/read-more-node'>
-                  <ReadMore>Read More</ReadMore>
-                  </Link>   
-              </Blog>
-              <Blog>              
-                  <img src="./express.png" width="35%" />
-                  <BlogTitle>Total Post - 50</BlogTitle>
-                  <h2 style={{fontWeight: '300'}}>Express.js</h2>                
-                  <Link to='/read-more-express'>
-                  <ReadMore>Read More</ReadMore>
-                  </Link>   
-              </Blog>
-              <Blog>              
-                    <img src="./php.png"  width="35%" />
-                    <BlogTitle>Total Post - 50</BlogTitle>
-                    <h2 style={{fontWeight: '300'}}>PHP</h2> 
-                    <Link to='/read-more-php'>
-                    <ReadMore>Read More</ReadMore>
-                    </Link>   
-              </Blog>
-              <Blog>              
-                    <img src="./mysql.png" width="35%" height="30%" />
-                    <BlogTitle>Total Post - 50</BlogTitle>
-                    <h2 style={{fontWeight: '300'}}>Mysql</h2>  
-                    <Link to='/read-more-mysql'>
-                    <ReadMore>Read More</ReadMore>
-                    </Link>   
-              </Blog>
-              <Blog>              
-                    <img src="./mongodb.jpeg"  width="35%" height="30%" />
-                    <BlogTitle>Total Post - 50</BlogTitle>
-                    <h2 style={{fontWeight: '300'}}>MongoDB</h2>    
-                    <Link to='/read-more-mongodb'>
-                    <ReadMore>Read More</ReadMore>
-                    </Link>   
-              </Blog>
-              <Blog>              
-                    <img src="./prisam.png" width="35%" height="30%" />
-                    <BlogTitle>Total Post - 50</BlogTitle>
-                    <h2 style={{fontWeight: '300'}}>Prisma</h2>    
-                    <Link to='/read-more-prisma'>
-                    <ReadMore>Read More</ReadMore>
-                    </Link>   
-              </Blog>
+                  <Blog>    
+
+                    <Link to='/read-more-node' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./nodejs.png"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>NodeJs</BlogImageTitle>
+                              </BlogImage>
+                          </Link>  
+                  </Blog>
+                  <Blog>      
+
+                    <Link to='/read-more-express' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./expressjs-logo.png"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>ExpressJs</BlogImageTitle>
+                              </BlogImage>
+                      </Link>   
+                  </Blog>
+                  <Blog>  
+
+                    <Link to='/read-more-php' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./php-logo.png"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>PHP</BlogImageTitle>
+                              </BlogImage>                      
+                        </Link>   
+                  </Blog>
+                  <Blog> 
+                  <Link to='/read-more-mysql' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./mysql (1).png"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>MySql</BlogImageTitle>
+                              </BlogImage>
+                          </Link>   
+                  </Blog>
+                  <Blog> 
+                  <Link to='/read-more-mongodb' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./mongodb (1).png"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>Mongodb</BlogImageTitle>
+                              </BlogImage>
+                          </Link>
+                  </Blog>
+                  <Blog>      
+                        <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./prisma2.svg"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-30px"}}>Prisma</BlogImageTitle>
+                              </BlogImage>
+                          </Link>
+                  </Blog>
+                  <Blog>      
+                        <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./javascript.svg"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>JavaScript</BlogImageTitle>
+                              </BlogImage>
+                          </Link>
+                  </Blog>
+                  <Blog>      
+                        <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./javascript.svg"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>JavaScript</BlogImageTitle>
+                              </BlogImage>
+                          </Link>
+                  </Blog>
           </BlogBox>
         </BoxLeft>  
         <ExplorAllTopic>
