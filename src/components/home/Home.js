@@ -116,18 +116,18 @@ function Home() {
                   <Blog>      
                         <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
                           <BlogImage>
-                              <img src="./javascript.svg"  width="20%" />
+                              <img src="./git-home.png"  width="20%" />
                               <BlogImageTitle
-                              style={{marginTop: "-50px"}}>JavaScript</BlogImageTitle>
+                              style={{marginTop: "-50px"}}>GIT</BlogImageTitle>
                               </BlogImage>
                           </Link>
                   </Blog>
                   <Blog>      
                         <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
                           <BlogImage>
-                              <img src="./javascript.svg"  width="20%" />
+                              <img src="./laravel-home.png"  width="20%" />
                               <BlogImageTitle
-                              style={{marginTop: "-50px"}}>JavaScript</BlogImageTitle>
+                              style={{marginTop: "-50px"}}>Laravel</BlogImageTitle>
                               </BlogImage>
                           </Link>
                   </Blog>

@@ -1,22 +1,23 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
-import BlogList from './BlogList'
-import RecentBlog from './RecentBlog'
+import RecentBlog from '../blog/RecentBlog'
 import Breadcrumbs from '../layouts/Breadcrumbs'
+
 import {
   Container,
   DetailsContent,
   RightMenu
-} from './BlogIndex.styled'
+} from '../blog/BlogIndex.styled'
 
-const BlogIndex = (props) => {
+const HookRecentPost = (props) => {
   return (
     <>
-      <TopBar />
-      <Breadcrumbs  bread={props.breadcrumbs.blog} />
+    <TopBar />
+      <Breadcrumbs  bread={props.breadcrumbs.recenthook} />
         <Container>
             <DetailsContent>
-               <BlogList />
+              ddddd
+               {/* <BlogList /> */}
             </DetailsContent>
             <RightMenu>
               <RecentBlog />
@@ -26,4 +27,4 @@ const BlogIndex = (props) => {
   )
 }
 
-export default BlogIndex
+export default HookRecentPost

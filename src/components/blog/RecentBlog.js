@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import {
     RightContainer
 } from './RecentBlog.styled'
@@ -8,14 +10,12 @@ const  RecentBlog = () => {
     Recent Post
     <RightContainer>
     <ul>
-      <li> What is react is the new waork what is reat port mena topast new ss lons?</li>
-      <li>What is useMemo?</li>
-      <li>What is useEffect?</li>
-      <li>What is hooks?</li>
-      <li>What is hooks?</li>
-      <li>What is hooks?</li>
-      <li>What is hooks?</li>
-      <li>What is hooks?</li>
+      <Link to='/recent-post-promise'> <li> What is promise ? </li> </Link>
+      <Link to='/recent-post-react'> <li> What is react ? </li> </Link>
+      <Link to='/recent-post-use-memo'> <li> What is useMemo ? </li> </Link>
+      <Link to='/recent-post-use-effect'> <li> What is useEffect ? </li> </Link>
+      <Link to='/recent-post-hooks'> <li> What is hooks ? </li> </Link>
+      <Link to='/recent-post-arrow-function'> <li> What is arrow function? </li> </Link>
     </ul>
     </RightContainer>
     </>

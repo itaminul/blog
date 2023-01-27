@@ -1,9 +1,6 @@
 import React from 'react'
-
-import{ Link } from 'react-router-dom'
 import TopBar from '../../layouts/TopBar'
 import Breadcrumbs from '../../layouts/Breadcrumbs'
-import RecentPost from '../../post/RecentPost'
 import RecentBlog from '../../blog/RecentBlog'
 import { HooksDetails } from './HooksDetails'
 import {
@@ -14,6 +11,7 @@ import {
 import {
   RecentPostContainer
 } from '../../post/RecentPost.styled'
+
 
 const Hooks = (props) => {
   return (

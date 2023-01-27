@@ -85,6 +85,25 @@ import PrismaCli from './components/prisma/PrismaCli';
 import PrismaClient from './components/prisma/PrismaClient';
 import PrismaMigrations from './components/prisma/PrismaMigrations';
 
+//Recent post
+import PromiseRecentPost from './components/recentPost/PromiseRecentPost';
+import WhatIsReactRecentPost from './components/recentPost/WhatIsReactRecentPost';
+import UseMemoRecentPost from './components/recentPost/UseMemoRecentPost'
+import HookRecentPost from './components/recentPost/HookRecentPost'
+import ArrowFunctionRecentPost from './components/recentPost/ArrowFunctionRecentPost'
+import UseEffectRecentPost from './components/recentPost/UseEffectRecentPost';
+
+//blog
+import BlogUseState from './components/blogDetails/BlogUseState';
+import BlogHooks from './components/blogDetails/BlogHooks';
+import BlogPromise from './components/blogDetails/BlogPromise';
+import BlogUseCallback from './components/blogDetails/BlogUseCallback';
+import BlogUseMemo from './components/blogDetails/BlogUseMemo';
+import BlogArrowFunction from './components/blogDetails/BlogArrowFunction';
+import BlogPrismaClient from './components/blogDetails/BlogPrismaClient';
+import BlogBlocking from './components/blogDetails/BlogBlocking';
+import BlogNonBlocking from './components/blogDetails/BlogNonBlocking';
+
 function App() {
   const theme = {
     colors: {
@@ -94,74 +113,93 @@ function App() {
   }
   const BreadCrumbsItems = {
     //javascript
-    javascript: 'Javascript  ->   Read More ',
-    whatisjavascript: 'Javascript  -   Read More - javascript ',
-    dataTypes: 'Javascript  -   Read More - dataTypes ',
-    arrowFunction: 'Javascript  -   Read More - arrowFunction ',
-    async: 'Javascript  -   Read More -  async ',
-    await: 'Javascript  -   Read More -  await ',
-    blockScope: 'Javascript  -   Read More - block scope ',
-    eventLoop: 'Javascript  -   Read More -  event loop ',
-    defaultParameter: 'Javascript  -   Read More - default parameter ',
-    callStack: 'Javascript  -   Read More - call stack ',
-    eventQueue: 'Javascript  -   Read More - event queue ',
-    lexicalScope: 'Javascript  -   Read More - laxical scope ',
-    protoType: 'Javascript  -   Read More - prototype ',
-    promise: 'Javascript  -   Read More - promise ',
+    javascript: '</> Javascript  </>   Read More ',
+    whatisjavascript: '</> Javascript  </>   Read More </> javascript ',
+    dataTypes: '</> Javascript  </>   Read More </> dataTypes ',
+    arrowFunction: '</> Javascript  </>   Read More </> arrowFunction ',
+    async: '</> Javascript  </>   Read More </>  async ',
+    await: '</> Javascript  </>   Read More </>  await ',
+    blockScope: '</> Javascript  </>   Read More </> block scope ',
+    eventLoop: '</> Javascript  </>   Read More </>  event loop ',
+    defaultParameter: '</> Javascript  </>   Read More </> default parameter ',
+    callStack: '</> Javascript  </>   Read More </> call stack ',
+    eventQueue: '</> Javascript  </>   Read More </> event queue ',
+    lexicalScope: '</> Javascript  </>   Read More </> laxical scope ',
+    protoType: '</> Javascript  </>   Read More </> prototype ',
+    promise: '</> Javascript  </>   Read More </> promise ',
     //react 
-    react: 'React  ->   Read More ',
-    hooks: 'React ->  Hooks',
+    react: '</> React  </>   Read More ',
+    hooks: '</> React </>  Hooks',
     country: 'Austria',
-    blog: 'Blog -> Blog Details',
-    hoisting: 'React - Read More - Hoisting',
-    dom: 'React - Read More - Dom',
-    fragments: 'React - Read More - Fragments',
-    state: 'React - Read More - state',
-    usecallback: 'React - Read More - useCallback',
-    usestate: 'React - Read More - useState',
-    usememo: 'React - Read More - useMemo',
-    useref: 'React - Read More - useRef',
+    blog: '</> Blog </> Blog Details',
+    hoisting: '</> React </> Read More </> Hoisting',
+    dom: '</> React </> Read More </> Dom',
+    fragments: '</> React </> Read More </> Fragments',
+    state: '</> React </> Read More </> state',
+    usecallback: '</> React </> Read More </> useCallback',
+    usestate: '</> React </> Read More </> useState',
+    usememo: '</> React </> Read More </> useMemo',
+    useref: '</> React </> Read More </> useRef',
     //node js
-    blocking: 'Node - Read More - Blocking',
-    noneblocking: 'Node - Read More - Nonblocking',
+    blocking: '</> Node </> Read More </> Blocking',
+    noneblocking: '</> Node </> Read More </> Nonblocking',
     //express js
-    httpmethod: 'Express - Read More - Http Methods',
-    usesexpress: 'Express - Read More - Uses Express',
-    routehandler: 'Express - Read More - Route Handler',
-    cors: 'Express - Read More - Cors',
-    errorhandler: 'Express - Read More - Error Handler',
-    middleware: 'Express - Read More - Middleware',
+    httpmethod: '</> Express </> Read More </> Http Methods',
+    usesexpress: '</> Express </> Read More </> Uses Express',
+    routehandler: '</> Express </> Read More </> Route Handler',
+    cors: '</> Express </> Read More </> Cors',
+    errorhandler: '</> Express </> Read More </> Error Handler',
+    middleware: '</> Express </> Read More </> Middleware',
     //php
-    readmorephp: 'PHP - Read More',
-    whatisphp: 'PHP - Read More - What is PHP',
-    typeofarray: 'PHP - Read More - Types of array',
-    vardump: 'PHP - Read More - Var Dump',
-    printr: 'PHP - Read More - Print_r',
-    pear: 'PHP - Read More - Pear',
-    getpost: 'PHP - Read More - Get & Post',
+    readmorephp: '</> PHP </> Read More',
+    whatisphp: '</> PHP </> Read More </> What is PHP',
+    typeofarray: '</> PHP </> Read More </> Types of array',
+    vardump: '</> PHP </> Read More </> Var Dump',
+    printr: '</> PHP </> Read More </> Print_r',
+    pear: '</> PHP </> Read More </> Pear',
+    getpost: '</> PHP </> Read More </> Get & Post',
     //mysql
-    mysql: 'Mysql - Read More',
-    whatismysql: 'Mysql - Read More - What is mysql',
-    addcolumng: 'Mysql - Read More - Add Column',
-    foreignkey: 'Mysql - Read More - Foreign Key',
-    jointable: 'Mysql - Read More - Join Table',
-    charvarchar: 'Mysql - Read More - Char and Varchar',
-    distinct: 'Mysql - Read More - Distinct',
+    mysql: '</> Mysql </> Read More',
+    whatismysql: '</> Mysql </> Read More </> What is mysql',
+    addcolumng: '</> Mysql </> Read More </> Add Column',
+    foreignkey: '</> Mysql </> Read More </> Foreign Key',
+    jointable: '</> Mysql </> Read More </> Join Table',
+    charvarchar: '</> Mysql </> Read More </> Char and Varchar',
+    distinct: '</> Mysql </> Read More </> Distinct',
 
     //mongodb
-    mongodb: 'Mongodb - Read More',
-    whatismongodb: 'Mongodb - Read More - What is mongodb',
-    advantages: 'Mongodb - Read More - Advantages',
-    documents: 'Mongodb - Read More - Documents',
-    collection: 'Mongodb - Read More - Collection',
-    mongodbshell: 'Mongodb - Read More - Mongodb Shell',
-    features: 'Mongodb - Read More - Features',
+    mongodb: '</> Mongodb </> Read More',
+    whatismongodb: '</> Mongodb </> Read More </> What is mongodb',
+    advantages: '</> Mongodb </> Read More </> Advantages',
+    documents: '</> Mongodb </> Read More </> Documents',
+    collection: '</> Mongodb </> Read More </> Collection',
+    mongodbshell: '</> Mongodb </> Read More </> Mongodb Shell',
+    features: '</> Mongodb </> Read More </> Features',
     //prisma
-    prisma: 'Prisma - Read More',
-    whatisprisma: 'Prisma - Read More - What is prisma',
-    prismacli: 'Prisma - Read More - Prisma CLI',
-    prismaclient: 'Prisma - Read More - Prisma Client',
-    migration: 'Prisma - Read More - Migration',   
+    prisma: '</> Prisma </> Read More',
+    whatisprisma: '</> Prisma </> Read More </> What is prisma',
+    prismacli: '</> Prisma </> Read More </> Prisma CLI',
+    prismaclient: '</> Prisma </> Read More </> Prisma Client',
+    migration: '</> Prisma </> Read More </> Migration',   
+
+    //recent blog post
+    recentprisma: '</> Recent Post </> Promise',
+    recentwhatisreact: '</> Recent Post </> What is react',
+    recentusememo: '</> Recent Post </> What is useMemo',
+    recentuseeffect: '</> Recent Post </> What is useEffect',
+    recenthook: '</> Recent Post </> What is hook',  
+    recentarrowfunction: '</> Recent Post </> What is arrow function',  
+
+    //recent blog post
+    blogusestate: '</> Blog Post </> What is usestate',
+    blogcallback: '</> Blog Post </> What is useCallback',
+    blogusememo: '</> Blog Post </> What is useMemo',
+    blogarrowfunction: '</> Blog Post </> What is arrow function',  
+    blogpromise: '</> Blog Post </> What is promise',  
+    blogblocking: '</> Blog Post </> What is blocking',  
+    blognoneblocking: '</> Blog Post </> What is nonblocking',  
+    bloghooks: '</> Blog Post </> What is hooks',  
+    blogprismaclient: '</> Blog Post </> What is prisma client',  
 
   };
 
@@ -289,6 +327,31 @@ function App() {
         <Route path='/prisma-cli' element={ <PrismaCli  breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
         <Route path='/prisma-client' element={ <PrismaClient  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
         <Route path='/prisma-migrations' element={ <PrismaMigrations  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}   />} />
+
+        {/* Recent post*/}
+
+        <Route path='/recent-post-promise' element={ <PromiseRecentPost breadcrumbs={BreadCrumbsItems}  /> } />
+        <Route  path='/recent-post-react' element={ <WhatIsReactRecentPost breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/recent-post-use-memo' element={ <UseMemoRecentPost  breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/recent-post-use-effect' element={ <UseEffectRecentPost breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/recent-post-hooks' element={ <HookRecentPost breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/recent-post-arrow-function' element={ <ArrowFunctionRecentPost breadcrumbs={BreadCrumbsItems} /> } />
+
+         {/* Blog post*/}
+
+         <Route path='/blog-use-state' element={ <BlogUseState breadcrumbs={BreadCrumbsItems}  /> } />
+        <Route  path='/blog-call-back' element={ <BlogUseCallback breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-use-memo' element={ <BlogUseMemo  breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-arrow-function' element={ <BlogArrowFunction breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-blocking' element={ <BlogBlocking breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-promise' element={ <BlogPrismaClient breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-non-blocking' element={ <BlogNonBlocking breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-promise' element={ <BlogPromise breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-hooks' element={ <BlogHooks breadcrumbs={BreadCrumbsItems} /> } />
+        <Route  path='/blog-prisma-client' element={ <BlogPrismaClient breadcrumbs={BreadCrumbsItems} /> } />
+        
+
+
       </Routes>
     </div>
     </ThemeProvider>
