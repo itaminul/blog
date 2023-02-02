@@ -77,6 +77,11 @@ import MongodbDocuments from './components/mongodb/MongodbDocuments';
 import MongodbCollection from './components/mongodb/MongodbCollection';
 import MongodbShell from './components/mongodb/MongodbShell';
 import MongodbFeatures from './components/mongodb/MongodbFeatures';
+//postgressql
+import ReadMoreHomePostgresSql from './components/readMore/postgreSqlLayouts/ReadMoreHomePostgresSql';
+
+//laravel
+import ReadMoreHomeLaravel from './components/readMore/laravelLayouts/ReadMoreHomeLaravel';
 
 //read more prisma
 import ReadMoreHomePrisma from './components/readMore/prismaLayouts/ReadMoreHomePrisma';
@@ -158,6 +163,11 @@ function App() {
     printr: '</> PHP </> Read More </> Print_r',
     pear: '</> PHP </> Read More </> Pear',
     getpost: '</> PHP </> Read More </> Get & Post',
+
+    //Larvel
+    readmorelaravel: '</> PHP </> Read More',
+    whatislaravel: '</> PHP </> Read More </> What is PHP',
+
     //mysql
     mysql: '</> Mysql </> Read More',
     whatismysql: '</> Mysql </> Read More </> What is mysql',
@@ -175,6 +185,11 @@ function App() {
     collection: '</> Mongodb </> Read More </> Collection',
     mongodbshell: '</> Mongodb </> Read More </> Mongodb Shell',
     features: '</> Mongodb </> Read More </> Features',
+
+    //postgresql
+    postgresql: '</> PostgreSQL </> Read More',
+    whatisPostgreSQL: '</> PostgreSQL </> Read More </> What is PostgreSQL',
+ 
     //prisma
     prisma: '</> Prisma </> Read More',
     whatisprisma: '</> Prisma </> Read More </> What is prisma',
@@ -209,8 +224,10 @@ function App() {
     javascriptTitle: 'Javascript',
     nodeTitle: 'Nodejs',
     phpTitle: 'PHP',
+    laravelTitle: 'Laravel',
     prismaTitle: 'Prisma',
     mongodbTitle: 'Mongodb',
+    PostgreSQLTitle: 'PostgreSQL',
     mysqlTitle: 'Mysql',
     expressTitle: 'Express',
   }
@@ -285,6 +302,9 @@ function App() {
         <Route path='/php-print-r' element={<PrintR breadcrumbs={BreadCrumbsItems}  leftbartitle={LeftSideMenuTitle}  />} />
         <Route path='/php-pear'   element={<Pear breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} />} />
         <Route path='/php-get-post'  element={<GetAndPost breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  />} />
+
+        {/* laravel */}
+        <Route path='/read-more-laravel' element={ <ReadMoreHomeLaravel breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} /> }  />
         
 
       {/*mysql*/}
@@ -320,6 +340,11 @@ function App() {
         <Route path='/mongodb-collection' element={ <MongodbCollection  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
         <Route path='/mongodb-shell' element={ <MongodbShell  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
         <Route path='/mongodb-features' element={ <MongodbFeatures  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle}  /> } />
+
+        {/*postgresql*/}
+        <Route path='/read-more-post-gre-sql' element={ <ReadMoreHomePostgresSql 
+         leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems}
+         />} />
 
       {/*prisma*/}
         <Route path='/read-more-prisma' element={ <ReadMoreHomePrisma  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
@@ -382,4 +407,5 @@ function App() {
 
 //https://codesandbox.io/s/marcus-9s7g8?from-embed=&file=/src/styles.css
 
+//code 97dec172 from Visual Studio Code (vscode✓) installed
 export default App;

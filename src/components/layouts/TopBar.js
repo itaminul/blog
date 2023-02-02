@@ -39,7 +39,7 @@ const TopBar = () => {
   return (
     <div>
           <AppBar position="fixed" sx={{background: 'white'}} open={open}>
-          <Toolbar>
+          <Toolbar sx={{justifyContent: "flex-end"}}>
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -52,13 +52,24 @@ const TopBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div">
+            <Typography 
+             sx={{
+              mr: 0,
+              fontFamily: 'monospace',
+              fontWeight: 900,
+              color: 'inherit',
+              textDecoration: 'none',
+              typography: 'body2',
+               display: "flex",
+            
+            }}
+            >
             <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
-             Home
+             <span style={{ fontWeight: '100' }}>Home</span>
            </Link>
-           <Link to="/dashbord" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
+           {/* <Link to="/dashbord" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
             Dashbord
-           </Link>
+           </Link> */}
            <Link to="/profile" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
             Profile
            </Link>

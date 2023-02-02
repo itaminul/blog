@@ -71,7 +71,7 @@ box-sizing: border-box;
  width: 100%;
  height: 200px;
  border: solid #5B6DCD 0px;
- background: #e6e6e6;
+ background: rgb(95, 99, 104);
  padding: 0px 12px 18px 10px;
  display: flex;
  flex-direction: row;
@@ -114,7 +114,7 @@ padding: 10px 5px 12px 5px;
 margin-top: 10px;
 margin-left: 0px;
 color: black;
-border-radius: 3%;
+border-radius: 0%;
 background: white;
 box-shadow: 0px 0px 0px 0px #5B6DCD;
  
@@ -122,7 +122,7 @@ box-shadow: 0px 0px 0px 0px #5B6DCD;
 &:hover{
         background: white;
         border: solid #5B6DCD 0px;
-        box-shadow: 2px 2px 2px 2px #5B6DCD;
+        box-shadow: 0px 0px 0px 0px #5B6DCD;
        transform: translateY(-5px);
 }
 

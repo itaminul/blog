@@ -105,6 +105,15 @@ function Home() {
                           </Link>
                   </Blog>
                   <Blog>      
+                        <Link to='/read-more-post-gre-sql' style={{textDecoration: 'none'}}>
+                          <BlogImage>
+                              <img src="./postgresql.png"  width="20%" />
+                              <BlogImageTitle
+                              style={{marginTop: "-50px"}}>PostgreSQL</BlogImageTitle>
+                              </BlogImage>
+                          </Link>
+                  </Blog>
+                  <Blog>      
                         <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
                           <BlogImage>
                               <img src="./prisma2.svg"  width="20%" />
@@ -114,16 +123,7 @@ function Home() {
                           </Link>
                   </Blog>
                   <Blog>      
-                        <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
-                          <BlogImage>
-                              <img src="./git-home.png"  width="20%" />
-                              <BlogImageTitle
-                              style={{marginTop: "-50px"}}>GIT</BlogImageTitle>
-                              </BlogImage>
-                          </Link>
-                  </Blog>
-                  <Blog>      
-                        <Link to='/read-more-prisma' style={{textDecoration: 'none'}}>
+                        <Link to='/read-more-laravel' style={{textDecoration: 'none'}}>
                           <BlogImage>
                               <img src="./laravel-home.png"  width="20%" />
                               <BlogImageTitle
