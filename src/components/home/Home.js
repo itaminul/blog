@@ -22,8 +22,7 @@ import {
 
 //https://www.npmjs.com/package/react-awesome-watermark
 
-const tutorials = ["   Javascript ", "   React ", "   NodeJs "];
-
+const tutorials = ["   Javascript ", "   React ", "   NodeJs ", " API ", " ReactJs ", " NodeJs ", " Express.js ", " Redux Toolkit ", " MongoDB "," Mongoose "," prisma.io "," PHP "," CodeIgniter ","MySQL","Oracle","PostgreSQL","Jquery","Ajax","CSS","Bootstrap"]
 function Home() {
   return (
     <>
@@ -118,7 +117,7 @@ function Home() {
                           <BlogImage>
                               <img src="./prisma2.svg"  width="20%" />
                               <BlogImageTitle
-                              style={{marginTop: "-30px"}}>Prisma</BlogImageTitle>
+                              style={{marginTop: "-30px"}}>prisma.io</BlogImageTitle>
                               </BlogImage>
                           </Link>
                   </Blog>
@@ -145,7 +144,7 @@ function Home() {
              <ExpButton>Redux Toolkit</ExpButton>
              <ExpButton>MongoDB</ExpButton>
              <ExpButton>Mongoose</ExpButton>
-             <ExpButton>Prisma ORM</ExpButton>
+             <ExpButton>prisma.io</ExpButton>
              <ExpButton>PHP</ExpButton>
              <ExpButton>CodeIgniter</ExpButton>
              <ExpButton>MySQL</ExpButton>

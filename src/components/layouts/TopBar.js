@@ -39,19 +39,23 @@ const TopBar = () => {
   return (
     <div>
           <AppBar position="fixed" sx={{background: 'white'}} open={open}>
-          <Toolbar sx={{justifyContent: "flex-end"}}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={() => dispatch(handleDrawerOpen())}
-              edge="start"
-              sx={{
-                marginRight: 5,
-                ...(open && { display: 'none' }),
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
+          <Toolbar sx={{justifyContent: "flex-end"}}>            
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 105,
+              fontSize: '22px',
+              fontFamily: 'monospace',
+              color: 'black',
+              textDecoration: 'none',
+              display: { xs: "none", sm: "block", md: "block" },
+            }}
+          >
+            Aminul Huq
+          </Typography>
             <Typography 
              sx={{
               mr: 0,

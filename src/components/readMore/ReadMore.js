@@ -2,7 +2,7 @@ import React from 'react'
 import Breadcrumb from '../layouts/Breadcrumbs'
 import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-
+import RecentBlog from '../blog/RecentBlog'
 import {
     Container,
     LeftMenu,

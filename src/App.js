@@ -82,6 +82,7 @@ import ReadMoreHomePostgresSql from './components/readMore/postgreSqlLayouts/Rea
 
 //laravel
 import ReadMoreHomeLaravel from './components/readMore/laravelLayouts/ReadMoreHomeLaravel';
+import WhatIsLaravel from './components/laravel/WhatIsLaravel';
 
 //read more prisma
 import ReadMoreHomePrisma from './components/readMore/prismaLayouts/ReadMoreHomePrisma';
@@ -165,8 +166,8 @@ function App() {
     getpost: '</> PHP </> Read More </> Get & Post',
 
     //Larvel
-    readmorelaravel: '</> PHP </> Read More',
-    whatislaravel: '</> PHP </> Read More </> What is PHP',
+    readmorelaravel: '</> Laravel </> Read More',
+    whatislaravel: '</> Laravel </> Read More </> What is laravel',
 
     //mysql
     mysql: '</> Mysql </> Read More',
@@ -305,6 +306,7 @@ function App() {
 
         {/* laravel */}
         <Route path='/read-more-laravel' element={ <ReadMoreHomeLaravel breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} /> }  />
+        <Route path='/laravel-what-is-laravel' element={ <WhatIsLaravel  breadcrumbs={BreadCrumbsItems} leftbartitle={LeftSideMenuTitle} /> }  />
         
 
       {/*mysql*/}

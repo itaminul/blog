@@ -20,7 +20,7 @@ function ProfileSummary () {
         />
         </BoxLeft>
         <BoxRight>
-          <Title>Aminul Huq</Title>
+          <Title>Aminul Huqz</Title>
           <SubTitle>
                 Senior Web Developer in ATI Limited, Uttar, Dhaka since November 15, 2014
                 </SubTitle>
@@ -36,7 +36,7 @@ function ProfileSummary () {
              <ExpButton>Redux Toolkit</ExpButton>
              <ExpButton>MongoDB</ExpButton>
              <ExpButton>Mongoose</ExpButton>
-             <ExpButton>Prisma ORM</ExpButton>
+             <ExpButton>prisma.io</ExpButton>
              <ExpButton>PHP</ExpButton>
              <ExpButton>CodeIgniter</ExpButton>
              <ExpButton>MySQL</ExpButton>

@@ -33,23 +33,27 @@ const topToBottom = keyframes`
 const SliderDiv = styled.div`
   display: inline;
   padding-left: 20px;
-  & span {
-    animation: ${topToBottom} 10s linear infinite 0s;
-    opacity: 0;
-    position: absolute;
+  // & span {
+  //   animation: ${topToBottom} 10s linear infinite 0s;
+  //   opacity: 0;
+  //   position: absolute;
 
-    :nth-child(2) {
-      animation-delay: 2.5s;
-    }
+  //   :nth-child(2) {
+  //     animation-delay: 2.5s;
+  //   }
 
-    :nth-child(3) {
-      animation-delay: 5s;
-    }
+  //   :nth-child(3) {
+  //     animation-delay: 5s;
+  //   }
 
-    :nth-child(4) {
-      animation-delay: 7.5s;
-    }
-  }
+  //   :nth-child(4) {
+  //     animation-delay: 7.5s;
+  //   }
+
+  //   :nth-child(5) {
+  //     animation-delay: 9s;
+  //   }
+  // }
   @media screen and (max-width:1200px) {    
     width: 100%;   
 }
@@ -77,8 +81,10 @@ const SliderArea = (props, color) => {
     <StyledContent>
         
         <h1 style={{paddingTop: '120px', marginLeft: '-250px'}}>
-           
+
+        <marquee style={{ color: 'white', fontSize: '1em' }}>
         Find the Best Programming  Tutorials
+        
 
         <SliderDiv>
         {props.items.map(item => (
@@ -87,6 +93,9 @@ const SliderArea = (props, color) => {
             </span>
             ))}
         </SliderDiv>
+
+        </marquee>
+        
 
         </h1>
 
