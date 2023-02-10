@@ -99,7 +99,7 @@ export const ArrowSign = styled.div`
 
 export const WrapperSkilsRight = styled.section`
 width: 100%;
-padding: 0px 10px 10px 10px;
+padding: 0px 10px 10px 30px;
 line-height: 180%;
 text-align: left;
 font-weight: 350;

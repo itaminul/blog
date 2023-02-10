@@ -69,7 +69,7 @@ p {
 }
 
 .ul li Link {
-  color: #221;
+  color: #z;
   text-decoration: none !important;
 }
 

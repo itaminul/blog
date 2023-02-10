@@ -18,7 +18,7 @@ function Experience () {
       <WrapperEmploymentLeft>   
                      
                      <WrapperEmploymentTitle>
-                     <BrightnessMediumIcon fontSize="smal" style={{marginRight: "10px"}}></BrightnessMediumIcon> 
+                     <BrightnessMediumIcon fontSize="smal" style={{marginRight: "5px"}}></BrightnessMediumIcon> 
                      
                      Skils 
                      </WrapperEmploymentTitle>
@@ -95,7 +95,7 @@ function Experience () {
               <ul>
                 <li>              
                 
-                 Mongoose, Prisma.
+                 Mongoose, Prisma.io
 
                 </li>
               </ul>

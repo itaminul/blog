@@ -20,12 +20,12 @@ function ProfileSummary () {
         />
         </BoxLeft>
         <BoxRight>
-          <Title>Aminul Huqz</Title>
+          <Title>Aminul Huq</Title>
           <SubTitle>
-                Senior Web Developer in ATI Limited, Uttar, Dhaka since November 15, 2014
+                Senior Web Developer in ATI Limited, Uttara, Dhaka since November 15, 2014.
                 </SubTitle>
              <TitleSummary>
-             Since 2011, Emily has been working in UI/UX, mobile, and product design leading projects for clients including Samsung, YETI, Toronto Star, Thomson Reuters, SmartThings, Pizza Hut, a blockchain company, and more. Emily also has experience in project management and leading design teams and she enjoys working closely with engineers to deliver intuitive user experiences. All in all, Emily is a collaborative team member and a positive thinker.
+             Since 2014, I am has been working in web application, and product design leading projects for clients and more. I am also has experience in team lead and enjoy working closely with all team members. All in all, I am a collaborative team member and a positive thinker.
              </TitleSummary>
              <ExpSummary>
              <ExpButton>API</ExpButton>
