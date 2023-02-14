@@ -103,8 +103,7 @@ function Experience () {
               Other
               <ul>
                 <li>              
-                Back-end Development, Leadership, Software Architecture, Software Development, QA Testing, Software Development, Full-stack, Front-end Development, Data Visualization.
-
+                Back-end Development, Leadership, Software Development, Full-stack, Front-end Development.
                 </li>
               </ul>
             </WrapperSkilsRight> 

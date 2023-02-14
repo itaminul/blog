@@ -25,8 +25,7 @@ const WhatIsJavascript = (props) => {
                     </LeftMTitle>
          <ReadMoreLeft/>
         </LeftMenu>
-        <DetailsContent>
-            
+        <DetailsContent>            
             <WhatisjavascriptDetails />            
         </DetailsContent>
         {/* <RightMenu>      

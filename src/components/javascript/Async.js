@@ -3,7 +3,7 @@ import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
+import AsybcDetails from './AsybcDetails'
 import JavascriptArticelList from './JavascriptArticelList'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 
@@ -32,7 +32,7 @@ const Async = (props) => {
     </LeftMenu>
         <DetailsContent>
             
-            <WhatisjavascriptDetails />            
+            <AsybcDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

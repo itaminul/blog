@@ -3,7 +3,7 @@ import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
+import AwaitDetails from './AwaitDetails'
 import JavascriptArticelList from './JavascriptArticelList'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
@@ -30,7 +30,7 @@ const Await = (props) => {
     </LeftMenu>
         <DetailsContent>
             
-            <WhatisjavascriptDetails />            
+            <AwaitDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

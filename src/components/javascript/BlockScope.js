@@ -3,7 +3,7 @@ import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
+import BlockScopeDetails from './BlockScopeDetails'
 import JavascriptArticelList from './JavascriptArticelList'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
@@ -30,7 +30,7 @@ const BlockScope = (props) => {
     </LeftMenu>
         <DetailsContent>
             
-            <WhatisjavascriptDetails />            
+            <BlockScopeDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

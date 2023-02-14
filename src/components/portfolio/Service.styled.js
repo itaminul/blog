@@ -27,7 +27,7 @@ box-sizing: border-box;
 
 export const BoxCenter = styled.div`
 width: 31%;
-height: 375px;
+height: 395px;
 background: white;
 margin: 10px;
 box-size: 20px;
@@ -44,7 +44,7 @@ box-sizing: border-box;
 `
 export const BoxRight = styled.div`
 width: 31%;
-height: 375px;
+height: 395px;
 background: white;
 margin: 10px;
 box-size: 20px;

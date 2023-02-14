@@ -3,7 +3,7 @@ import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
+import ArrowFunctionDetails from './ArrowFunctionDetails'
 import JavascriptArticelList from './JavascriptArticelList'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
@@ -28,7 +28,7 @@ const ArrowFunction = (props) => {
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <ArrowFunctionDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

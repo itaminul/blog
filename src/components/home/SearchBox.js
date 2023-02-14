@@ -19,7 +19,7 @@ const SearchBox = () => {
   return (
     <div>
      
-        <input type='text' style={inputFi} placeholder=' Search find the tutorials' />
+        <input type='text' style={inputFi} placeholder=' Search find tutorials' />
         {/* <Button>
         Search
         </Button> */}    

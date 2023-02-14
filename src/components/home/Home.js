@@ -22,7 +22,7 @@ import {
 
 //https://www.npmjs.com/package/react-awesome-watermark
 
-const tutorials = ["   Javascript, ", "   React, ", "   NodeJs, ", " API, ", " NodeJs, ", " Express.js, ", " Redux Toolkit, ", " MongoDB, "," Mongoose, "," prisma.io, "," PHP, "," CodeIgniter, ","MySQL,"," Oracle,"," PostgreSQL, "," Jquery, "," Ajax,"," CSS,"," Bootstrap,"]
+const tutorials = ["   Javascript ", "   React ", "   NodeJs", "ExpressJs"]
 function Home() {
   return (
     <>

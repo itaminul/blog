@@ -1,10 +1,8 @@
 import React from 'react'
 import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
-import JavascriptArticelList from './JavascriptArticelList'
+import CallStackDetails from './CallStackDetails'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
     Container,
@@ -28,9 +26,8 @@ const CallStack = (props) => {
                     </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
-        <DetailsContent>
-            
-            <WhatisjavascriptDetails />            
+        <DetailsContent>            
+            <CallStackDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

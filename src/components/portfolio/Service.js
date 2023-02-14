@@ -72,8 +72,7 @@ function Service () {
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>MongoDB </span>
-                 <span style={{marginLeft: "70%"}}>2 years</span>
-                
+                 <span style={{marginLeft: "70%"}}>2 years</span>                
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>Mysql </span>
@@ -82,6 +81,12 @@ function Service () {
               </ExperienceTitleButton>
               <ExperienceTitleButton>
               <span>Oracle </span>
+                 <span style={{marginLeft: "68%"}}>8 years</span>
+                
+              </ExperienceTitleButton>            
+          
+              <ExperienceTitleButton>
+              <span>Prisma.io </span>
                  <span style={{marginLeft: "68%"}}>8 years</span>
                 
               </ExperienceTitleButton>            

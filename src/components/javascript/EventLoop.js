@@ -3,7 +3,7 @@ import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
 import InTheArticle from './InTheArticle'
 import Breadcrumbs from '../layouts/Breadcrumbs'
-import WhatisjavascriptDetails from './WhatisjavascriptDetails'
+import EventLoopDetails from './EventLoopDetails'
 import JavascriptArticelList from './JavascriptArticelList'
 import ReadMoreLeft from '../readMore/ReadMoreLeft'
 import {
@@ -30,7 +30,7 @@ const EventLoop = (props) => {
     </LeftMenu>
         <DetailsContent>
             
-            <WhatisjavascriptDetails />            
+            <EventLoopDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

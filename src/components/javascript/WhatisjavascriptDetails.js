@@ -47,7 +47,7 @@ const WhatisjavascriptDetails = () => {
             <DetailsContainerContent>
                 <Title>
                     <div id="title">
-                    Prisma CLI ?
+                    What is javascript ?
                      </div>                     
                      </Title>                 
                 <Description>
@@ -82,7 +82,7 @@ const WhatisjavascriptDetails = () => {
         <RightMenu>
           In this article
           <ul>
-              <ol> <a href='#title'> What is JavaScript? </a> </ol>
+              <ol> <a href='#title'> Description</a> </ol>
               <ol>  <a href='#overview'> Overview </a> </ol>
               <ol>  <a href='#example'> example </a> </ol>
           </ul>   

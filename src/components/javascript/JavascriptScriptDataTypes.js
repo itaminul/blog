@@ -1,3 +1,4 @@
+
 import React from 'react'
 import TopBar from '../layouts/TopBar'
 import LeftBarTitle from '../layouts/LeftBarTitle'
@@ -13,6 +14,7 @@ import {
     LeftMenu,
     LeftMTitle
 } from './Common.styled'
+import JavaScriptDataTypeDetails from './JavaScriptDataTypeDetails'
 
 
 const JavascriptScriptDataTypes = (props) => {
@@ -30,7 +32,7 @@ const JavascriptScriptDataTypes = (props) => {
         </LeftMenu>
         <DetailsContent>
             
-            <WhatisjavascriptDetails />            
+            <JavaScriptDataTypeDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import DomDetails from './DomDetails'
 import ReadMoreLeft from '../readMore/reactLayouts/ReadMoreLeft'
 import {
     Container,
@@ -27,7 +27,7 @@ const Dom = (props) => {
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <DomDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       
