@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import NonBlockingDetails from './NonBlockingDetails'
 import ReadMoreLeft from '../readMore/nodejsLayouts/ReadMoreLeft'
 import {
     Container,
@@ -22,12 +22,12 @@ const Nonblocking = (props) => {
     <Container>
         <LeftMenu>
         <LeftMTitle>
-                       <LeftBarTitle leftbartitle={props.leftbartitle.nodeTitle} />
-                    </LeftMTitle>
+            <LeftBarTitle leftbartitle={props.leftbartitle.nodeTitle} />
+        </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <NonBlockingDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       
