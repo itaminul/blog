@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import UseRefDetails from './UseRefDetails'
 import ReadMoreLeft from '../readMore/reactLayouts/ReadMoreLeft'
 import {
     Container,
@@ -22,12 +22,12 @@ const UseRef = (props) => {
     <Container>
         <LeftMenu>
         <LeftMTitle>
-                       <LeftBarTitle leftbartitle={props.leftbartitle.reactTitle} />
-                    </LeftMTitle>
+            <LeftBarTitle leftbartitle={props.leftbartitle.reactTitle} />
+        </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <UseRefDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

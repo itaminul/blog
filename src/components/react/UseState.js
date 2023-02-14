@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import UseStateDetails from './UseStateDetails'
 import ReadMoreLeft from '../readMore/reactLayouts/ReadMoreLeft'
 import {
     Container,
@@ -27,7 +27,7 @@ const UseState = (props) => {
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <UseStateDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

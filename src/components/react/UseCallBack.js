@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import UseCallBackDetails from './UseCallBackDetails'
 import ReadMoreLeft from '../readMore/reactLayouts/ReadMoreLeft'
 import {
     Container,
@@ -27,7 +27,7 @@ const UseCallBack = (props) => {
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <UseCallBackDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       
