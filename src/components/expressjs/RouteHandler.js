@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import RouteHandlerDetails from './RouteHandlerDetails'
 import ReadMoreLeft from '../readMore/expressjsLayouts/ReadMoreLeft'
 import {
     Container,
@@ -22,12 +22,12 @@ const RouteHandler = (props) => {
     <Container>
         <LeftMenu>
         <LeftMTitle>
-                       <LeftBarTitle leftbartitle={props.leftbartitle.expressTitle} />
-                    </LeftMTitle>
+             <LeftBarTitle leftbartitle={props.leftbartitle.expressTitle} />
+        </LeftMTitle>
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <RouteHandlerDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       

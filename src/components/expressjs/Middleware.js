@@ -2,7 +2,7 @@ import React from 'react'
 import TopBar from '../layouts/TopBar'
 import Breadcrumbs from '../layouts/Breadcrumbs'
 import LeftBarTitle from '../layouts/LeftBarTitle'
-import WhatisjavascriptDetails from '../javascript/WhatisjavascriptDetails'
+import MiddlewareDetails from './MiddlewareDetails'
 import ReadMoreLeft from '../readMore/expressjsLayouts/ReadMoreLeft'
 import {
     Container,
@@ -27,7 +27,7 @@ const Middleware = (props) => {
          <ReadMoreLeft/>
     </LeftMenu>
         <DetailsContent>            
-            <WhatisjavascriptDetails />            
+            <MiddlewareDetails />            
         </DetailsContent>
         {/* <RightMenu>      
             <JavascriptArticelList />       
