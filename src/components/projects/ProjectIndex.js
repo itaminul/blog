@@ -24,6 +24,3 @@ function ProjectIndex(props) {
 }
 
 export default ProjectIndex;
-
-git config --global user.email "itaminul@gmail.com"
-git config --global user.name "itaminul"
