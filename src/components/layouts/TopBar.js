@@ -81,9 +81,12 @@ const TopBar = () => {
            <Link to="/blogs" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
             Blog
            </Link>
+           <Link to="/projects" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
+            Projects
+           </Link>
 
            <Link to="/profile" style={{ textDecoration: 'none', color: 'black', paddingLeft: 15 }}>
-            Contact Us
+            Contact
            </Link>
             </Typography>            
           </Toolbar>

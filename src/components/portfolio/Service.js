@@ -46,7 +46,10 @@ function Service () {
         <span style={{fontWeight: '40'}}>
         Experience
         </span>  
-          
+        <ExperienceTitleButton>
+                <span>NestJS </span>
+                 <span style={{marginLeft: "70%"}}>2 years</span>
+              </ExperienceTitleButton>
               <ExperienceTitleButton>
                 <span>NodeJs </span>
                  <span style={{marginLeft: "70%"}}>2 years</span>

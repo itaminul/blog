@@ -77,14 +77,15 @@ function Home() {
                   </Blog>
                   <Blog>  
 
-                    <Link to='/read-more-php' style={{textDecoration: 'none'}}>
+                    <Link to='#' style={{textDecoration: 'none'}}>
                           <BlogImage>
-                              <img src="./php-logo.png"  width="20%" />
+                              <img src="./nestjs.svg"  width="20%" />
                               <BlogImageTitle
-                              style={{marginTop: "-50px"}}>PHP</BlogImageTitle>
+                              style={{marginTop: "-50px"}}>NestJS</BlogImageTitle>
                               </BlogImage>                      
                         </Link>   
                   </Blog>
+                  
                   <Blog> 
                   <Link to='/read-more-mysql' style={{textDecoration: 'none'}}>
                           <BlogImage>
@@ -121,6 +122,16 @@ function Home() {
                               </BlogImage>
                           </Link>
                   </Blog>
+                  {/* <Blog>  
+                  <Link to='/read-more-php' style={{textDecoration: 'none'}}>
+                        <BlogImage>
+                            <img src="./php-logo.png"  width="20%" />
+                            <BlogImageTitle
+                            style={{marginTop: "-50px"}}>PHP</BlogImageTitle>
+                            </BlogImage>                      
+                      </Link>   
+                  </Blog> */}
+
                   <Blog>      
                         <Link to='/read-more-laravel' style={{textDecoration: 'none'}}>
                           <BlogImage>

@@ -112,6 +112,7 @@ import BlogArrowFunction from './components/blogDetails/BlogArrowFunction';
 import BlogPrismaClient from './components/blogDetails/BlogPrismaClient';
 import BlogBlocking from './components/blogDetails/BlogBlocking';
 import BlogNonBlocking from './components/blogDetails/BlogNonBlocking';
+import ProjectIndex from './components/projects/ProjectIndex';
 
 function App() {
   const theme = {
@@ -209,6 +210,9 @@ function App() {
     recenthook: '</> Recent Post </> What is hook',  
     recentarrowfunction: '</> Recent Post </> What is arrow function',  
 
+    //project index
+    projectIndex: '</> Project </> Projects List',
+
     //recent blog post
     blogusestate: '</> Blog Post </> What is usestate',
     blogcallback: '</> Blog Post </> What is useCallback',
@@ -251,7 +255,8 @@ function App() {
         <Route path='/read-more' element={<ReadMore  leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />}  />
         <Route path='/hooks' element={ <Hooks breadcrumbs={BreadCrumbsItems} />} />
         <Route path='/blogs' element={ <BlogIndex breadcrumbs={BreadCrumbsItems} /> }  />
-        {/* javascript */}
+        <Route path='/projects' element={ <ProjectIndex breadcrumbs={BreadCrumbsItems} />} />
+         {/* javascript */}
         <Route path='/what-is-javascript' element={ <WhatIsJavascript leftbartitle={LeftSideMenuTitle}  breadcrumbs={BreadCrumbsItems} /> }/>
         <Route path='/javascript-script-data-types'   element={ <JavascriptScriptDataTypes leftbartitle={LeftSideMenuTitle} breadcrumbs={BreadCrumbsItems} />} />
 
