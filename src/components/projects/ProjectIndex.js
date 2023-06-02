@@ -13,8 +13,10 @@ function ProjectIndex(props) {
         <Breadcrumbs  bread={props.breadcrumbs.projectIndex} />
           <Container>
               <DetailsContent>
+                
                 aaaaaaaaaaaaaaaa
               </DetailsContent>
+
               <RightMenu>
                ddddddddddddd
               </RightMenu>
