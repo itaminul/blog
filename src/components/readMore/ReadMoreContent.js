@@ -7,15 +7,19 @@ import {
   DetailsDescription,
 } from './ReadMoreContent.styled'
 const ReadMoreContent = () => {
+
+  const clickHandler = () => {
+    console.log('Clicked me')
+  }
   return (
     <>
    <Container>
     <Details>
       <DetailsTitle>
-        What is Hooks?
+        What is Hooks s?
       </DetailsTitle>
-      <DetailsDescription>
-      Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don't work inside classes — they let you use React without classes....<Link to="/hooks">Details</Link>
+      <DetailsDescription>      
+      <button onClick={clickHandler}>Change Title</button>
       </DetailsDescription>
     </Details>  
    </Container>    
